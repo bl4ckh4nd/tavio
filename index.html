@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Call, notes, whiteboard and recording share one room. Guests need no account." />
+    <meta name="keywords" content="video conferencing, webrtc, source available, self-hosted, privacy, docker, react, typescript, tavio" />
+    <meta property="og:title" content="Tavio: Meeting rooms in the browser." />
+    <meta property="og:description" content="Call, notes, whiteboard and recording share one room. Guests need no account." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Tavio: Meeting rooms in the browser.</title>
+    <!-- Before the first paint, so a stored dark mode never flashes light. A file, because the production CSP allows no inline script. -->
+    <script src="/color-mode.js"></script>
+    <link rel="preload" href="/fonts/GeneralSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/GeneralSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/GeneralSans-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

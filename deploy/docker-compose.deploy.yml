@@ -1,0 +1,192 @@
+services:
+  livekit:
+    # 1.13.10 and later refuse TCP relays over TURN and relay to this host only on media ports.
+    image: livekit/livekit-server:v1.13.11
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+    expose:
+      - "7880"
+    ports:
+      - "7881:7881/tcp"
+      - "7882:7882/udp"
+      - "3481:3481/udp"
+    # TURN/TLS: Traefik terminates TLS on 443 and passes plain TCP to the embedded TURN server.
+    # TURN_DOMAIN must resolve to this host.
+    labels:
+      - traefik.tcp.routers.tavio-turn.entrypoints=https
+      - traefik.tcp.routers.tavio-turn.rule=HostSNI(`${TURN_DOMAIN:?TURN_DOMAIN is required}`)
+      - traefik.tcp.routers.tavio-turn.service=tavio-turn
+      - traefik.tcp.routers.tavio-turn.tls=true
+      - traefik.tcp.routers.tavio-turn.tls.certresolver=letsencrypt
+      - traefik.tcp.services.tavio-turn.loadbalancer.server.port=5349
+    environment:
+      # advertise_internal_ip stays: egress reaches LiveKit only through the container IP, because the
+      # host firewall drops hairpin traffic to the public IP. The same reason sends TURN relays to the
+      # internal candidate, which allow_restricted_peer_cidrs permits for this network only. Set
+      # TURN_PEER_CIDR to the subnet of this stack's Docker network. Anyone in a call can relay to
+      # that network, so nothing on it may answer without a password: Redis requires REDIS_PASSWORD.
+      # It is written into the YAML below in single quotes, so it must not contain one; a hex secret
+      # such as `openssl rand -hex 32` fits.
+      LIVEKIT_CONFIG: |
+        port: 7880
+        redis:
+          address: redis:6379
+          password: '${REDIS_PASSWORD:?REDIS_PASSWORD is required}'
+        rtc:
+          tcp_port: 7881
+          udp_port: 7882
+          use_external_ip: true
+          advertise_internal_ip: true
+          skip_external_ip_validation: true
+        turn:
+          enabled: true
+          domain: ${TURN_DOMAIN:?TURN_DOMAIN is required}
+          tls_port: 5349
+          external_tls: true
+          udp_port: 3481
+          allow_restricted_peer_cidrs:
+            - ${TURN_PEER_CIDR:?TURN_PEER_CIDR is required}
+      LIVEKIT_KEYS: "${LIVEKIT_API_KEY:?LIVEKIT_API_KEY is required}: ${LIVEKIT_API_SECRET:?LIVEKIT_API_SECRET is required}"
+    # The VPS is shared and swaps heavily; a swapped-out SFU stalls every call at once.
+    mem_limit: 512m
+    memswap_limit: 512m
+    cpu_shares: 2048
+
+  livekit-egress:
+    image: livekit/egress:v1.15.0
+    restart: unless-stopped
+    depends_on:
+      redis:
+        condition: service_healthy
+      livekit:
+        condition: service_started
+    cap_add:
+      - SYS_ADMIN
+    entrypoint:
+      # egress v1.15 starts tini from its image entrypoint, which this override replaces.
+      - /tini
+      - '--'
+      - /bin/sh
+      - -c
+      - |
+        profile_dir="$$(mktemp -d 2>/dev/null || true)"
+        log_file="$$(mktemp 2>/dev/null || true)"
+        chrome_pid=''
+        chrome_bin=''
+        gst_pid=''
+        prewarm_outcome='unavailable'
+        gst_prewarm_outcome='unavailable'
+        cleanup() {
+          if [ -n "$$gst_pid" ]; then
+            kill "$$gst_pid" >/dev/null 2>&1 || true
+            wait "$$gst_pid" >/dev/null 2>&1 || true
+          fi
+          if [ -n "$$chrome_pid" ]; then
+            kill "$$chrome_pid" >/dev/null 2>&1 || true
+            wait "$$chrome_pid" >/dev/null 2>&1 || true
+          fi
+          [ -z "$$profile_dir" ] || rm -rf "$$profile_dir" >/dev/null 2>&1 || true
+          [ -z "$$log_file" ] || rm -f "$$log_file" >/dev/null 2>&1 || true
+        }
+        trap cleanup EXIT
+        trap 'cleanup; exit 143' HUP INT TERM
+        if command -v gst-inspect-1.0 >/dev/null 2>&1; then
+          gst_bin="$$(command -v gst-inspect-1.0)"
+          "$$gst_bin" >/dev/null 2>&1 &
+          gst_pid="$$!"
+          gst_attempt=0
+          while [ "$$gst_attempt" -lt 30 ]; do
+            if kill -0 "$$gst_pid" >/dev/null 2>&1; then
+              sleep 1 >/dev/null 2>&1 || true
+              gst_attempt=$$((gst_attempt + 1))
+              continue
+            fi
+            if wait "$$gst_pid" >/dev/null 2>&1; then
+              gst_prewarm_outcome='ready'
+            else
+              gst_prewarm_outcome='failed'
+            fi
+            gst_pid=''
+            break
+          done
+          if [ "$$gst_prewarm_outcome" = 'unavailable' ] && [ -n "$$gst_pid" ]; then
+            if kill -0 "$$gst_pid" >/dev/null 2>&1; then
+              kill "$$gst_pid" >/dev/null 2>&1 || true
+              wait "$$gst_pid" >/dev/null 2>&1 || true
+              gst_prewarm_outcome='timed out'
+            elif wait "$$gst_pid" >/dev/null 2>&1; then
+              gst_prewarm_outcome='ready'
+            else
+              gst_prewarm_outcome='failed'
+            fi
+            gst_pid=''
+          fi
+        fi
+        printf 'egress gstreamer prewarm=%s\n' "$$gst_prewarm_outcome" >&2
+        if command -v google-chrome >/dev/null 2>&1; then
+          chrome_bin="$$(command -v google-chrome)"
+        elif command -v chromium >/dev/null 2>&1; then
+          chrome_bin="$$(command -v chromium)"
+        elif command -v chromium-browser >/dev/null 2>&1; then
+          chrome_bin="$$(command -v chromium-browser)"
+        fi
+        if [ -n "$$chrome_bin" ] && [ -n "$$profile_dir" ] && [ -n "$$log_file" ]; then
+          "$$chrome_bin" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --remote-debugging-port=0 --user-data-dir="$$profile_dir" about:blank >"$$log_file" 2>&1 &
+          chrome_pid="$$!"
+          attempt=0
+          while [ "$$attempt" -lt 60 ]; do
+            if grep -F 'DevTools listening' "$$log_file" >/dev/null 2>&1; then
+              prewarm_outcome='ready'
+              break
+            fi
+            if ! kill -0 "$$chrome_pid" >/dev/null 2>&1; then
+              break
+            fi
+            sleep 1 >/dev/null 2>&1 || true
+            attempt=$$((attempt + 1))
+          done
+          if [ "$$prewarm_outcome" = 'unavailable' ] && kill -0 "$$chrome_pid" >/dev/null 2>&1; then
+            prewarm_outcome='timed out'
+          elif [ "$$prewarm_outcome" = 'unavailable' ]; then
+            wait "$$chrome_pid" >/dev/null 2>&1 || true
+            prewarm_outcome='failed'
+          fi
+        fi
+        printf 'egress chrome prewarm=%s\n' "$$prewarm_outcome" >&2
+        cleanup
+        trap - EXIT HUP INT TERM
+        exec /entrypoint.sh
+    environment:
+      EGRESS_CONFIG_BODY: |
+        log_level: info
+        api_key: ${LIVEKIT_API_KEY:?LIVEKIT_API_KEY is required}
+        api_secret: ${LIVEKIT_API_SECRET:?LIVEKIT_API_SECRET is required}
+        ws_url: ws://livekit:7880
+        insecure: true
+        redis:
+          address: redis:6379
+          password: '${REDIS_PASSWORD:?REDIS_PASSWORD is required}'
+    mem_limit: 2g
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD:?REDIS_PASSWORD is required}"]
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?REDIS_PASSWORD is required}
+    volumes:
+      - redis-data:/data
+    mem_limit: 256m
+    memswap_limit: 256m
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli -a \"$$REDIS_PASSWORD\" --no-auth-warning ping | grep -q PONG"]
+      interval: 30s
+      timeout: 3s
+      retries: 12
+      start_period: 60s
+      start_interval: 2s
+
+volumes:
+  redis-data:

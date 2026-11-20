@@ -1,0 +1,79 @@
+# Compose spec shared by Docker Compose and rootless Podman Compose.
+services:
+  # ---- Convex backend (self-hosted) ----
+  convex-backend:
+    image: ghcr.io/get-convex/convex-backend:latest
+    container_name: convex-backend
+    restart: unless-stopped
+    stop_grace_period: 10s
+    stop_signal: SIGINT
+    ports:
+      - "3210:3210"
+      - "3211:3211"
+    volumes:
+      - convex-data:/convex/data
+    environment:
+      INSTANCE_NAME: convex-self-hosted
+      INSTANCE_SECRET: "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+      CONVEX_CLOUD_ORIGIN: http://localhost:3210
+      CONVEX_SITE_ORIGIN: http://localhost:3211
+      DO_NOT_REQUIRE_SSL: "true"
+      DISABLE_BEACON: "true"
+    # Convex calls LiveKit's Room Service API (breakouts, end for all) via the host.
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3210/"]
+      interval: 5s
+      start_period: 10s
+
+  # Optional: Convex dashboard
+  convex-dashboard:
+    image: ghcr.io/get-convex/convex-dashboard:latest
+    container_name: convex-dashboard
+    restart: unless-stopped
+    stop_grace_period: 10s
+    stop_signal: SIGINT
+    ports:
+      - "${CONVEX_DASHBOARD_PORT:-6791}:6791"
+    environment:
+      NEXT_PUBLIC_DEPLOYMENT_URL: ${NEXT_PUBLIC_DEPLOYMENT_URL:-http://localhost:3210}
+    depends_on:
+      convex-backend:
+        condition: service_healthy
+
+  # ---- LiveKit media SFU ----
+  livekit:
+    image: livekit/livekit-server:latest
+    container_name: livekit
+    restart: unless-stopped
+    # Dev mode advertises the node IP; host networking makes it reachable by a local browser.
+    # --bind opens the API to the Convex container, which sits behind the host gateway.
+    network_mode: host
+    command: ["--dev", "--bind", "0.0.0.0"]
+
+  # ---- Tavio frontend app ----
+  app:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+      args:
+        VITE_CONVEX_URL: ${VITE_CONVEX_URL:-http://localhost:3210}
+        VITE_CONVEX_SITE_URL: ${VITE_CONVEX_SITE_URL:-http://localhost:3211}
+        DEPLOYMENT_SHA: ${DEPLOYMENT_SHA:-local}
+    container_name: tavio-app
+    restart: unless-stopped
+    depends_on:
+      - convex-backend
+      - livekit
+    environment:
+      # Convex URL used by src/lib/convexClient.ts
+      VITE_CONVEX_URL: ${VITE_CONVEX_URL:-http://localhost:3210}
+      # Optional: if you ever read it directly in the client,
+      # but usually we rely on Convex's LIVEKIT_HOST via livekit.issueToken
+      VITE_LIVEKIT_URL: ${VITE_LIVEKIT_URL:-ws://localhost:7880}
+    ports:
+      - "3000:80"  # http://localhost:3000
+
+volumes:
+  convex-data:

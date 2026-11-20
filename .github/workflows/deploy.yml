@@ -1,0 +1,85 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
+# Deploys the hosted instance. Forks without the PUBLIC_SITE repository variable skip it.
+env:
+  PUBLIC_SITE: ${{ vars.PUBLIC_SITE }}
+
+jobs:
+  deploy:
+    if: vars.PUBLIC_SITE != ''
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run tests
+        run: pnpm run test
+
+      - name: Type check
+        run: pnpm exec tsc --noEmit
+
+      # Without this check a missing token would ship the backend and then fail before the frontend.
+      - name: Check deploy secrets
+        env:
+          CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          : "${CONVEX_DEPLOY_KEY:?CONVEX_DEPLOY_KEY is required}"
+          : "${CLOUDFLARE_API_TOKEN:?CLOUDFLARE_API_TOKEN is required}"
+
+      # Backend first: the new frontend needs the new functions, and old clients keep working meanwhile.
+      - name: Deploy Convex and build frontend
+        env:
+          CONVEX_DEPLOY_KEY: ${{ secrets.CONVEX_DEPLOY_KEY }}
+          VITE_CONVEX_SITE_URL: ${{ vars.CONVEX_SITE_URL }}
+          # Public KLIPY key for chat GIFs (repository variable). Unset hides the GIF button.
+          VITE_KLIPY_API_KEY: ${{ vars.KLIPY_API_KEY }}
+        run: >-
+          pnpm exec convex deploy --yes --typecheck disable
+          --cmd 'pnpm run build' --cmd-url-env-var-name VITE_CONVEX_URL
+
+      - name: Deploy Cloudflare Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          printf '%s\n' "$GITHUB_SHA" > dist/deployment.txt
+          pnpm exec wrangler deploy
+
+      - name: Verify live deployment
+        run: |
+          for attempt in $(seq 1 12); do
+            marker="$(curl --fail --silent --max-time 15 "${PUBLIC_SITE}/deployment.txt?sha=${GITHUB_SHA}" || true)"
+            [ "$marker" = "$GITHUB_SHA" ] && exit 0
+            sleep 10
+          done
+          echo "Live site did not report ${GITHUB_SHA}." >&2
+          exit 1

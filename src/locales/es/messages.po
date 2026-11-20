@@ -1,0 +1,4670 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2025-12-18 18:10+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:67
+#: src/views/Goodbye.tsx:85
+#: src/views/Lobby.tsx:616
+msgid "Tavio home"
+msgstr "Inicio de Tavio"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:141
+msgid "Email or password is incorrect."
+msgstr "El correo electrónico o la contraseña son incorrectos."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:142
+#: src/views/Auth.tsx:143
+msgid "An account with this email already exists. Sign in instead."
+msgstr "Ya existe una cuenta con este correo. Inicia sesión."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:144
+msgid "Password must be at least 8 characters."
+msgstr "La contraseña debe tener al menos 8 caracteres."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:145
+msgid "Password is too long."
+msgstr "La contraseña es demasiado larga."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:146
+msgid "Enter a valid email address."
+msgstr "Introduce un correo electrónico válido."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:152
+msgid "Could not send reset link. Please try again."
+msgstr "No se pudo enviar el enlace de restablecimiento. Por favor, inténtelo de nuevo."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:153
+msgid "Authentication failed. Please check your details and try again."
+msgstr "Autenticación fallida. Por favor, verifique sus datos e inténtelo de nuevo."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:173
+msgid "Social sign-in failed. Please try again."
+msgstr "Error en el inicio de sesión social. Por favor, inténtelo de nuevo."
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:218
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:220
+msgid "e.g. Sarah Miller"
+msgstr "p. ej., Sarah Miller"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:225
+msgid "How you appear in meetings"
+msgstr "Cómo apareces en las reuniones"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:231
+msgid "Email Address"
+msgstr "Correo electronico"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:262
+#: src/views/Auth.tsx:287
+msgid "At least 8 characters"
+msgstr "Al menos 8 caracteres"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:273
+msgid "Weak"
+msgstr "Débil"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:274
+msgid "Fair"
+msgstr "Aceptable"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:275
+msgid "Good"
+msgstr "Buena"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:276
+msgid "Strong"
+msgstr "Fuerte"
+
+#. js-lingui-explicit-id
+#: src/views/Goodbye.tsx:48
+msgid "Tasks"
+msgstr "Tareas"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:37
+msgid "Invalid or expired reset link. Please request a new password reset."
+msgstr "Enlace de restablecimiento invalido o caducado. Solicita un nuevo restablecimiento de contrasena."
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:41
+#: src/views/PasswordReset.tsx:67
+msgid "Invalid or missing reset token. Please request a new password reset."
+msgstr "Token de restablecimiento invalido o ausente. Solicita un nuevo restablecimiento de contrasena."
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:47
+msgid "Password must be at least 8 characters"
+msgstr "La contrasena debe tener al menos 8 caracteres"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:50
+msgid "Password must contain at least one uppercase letter"
+msgstr "La contrasena debe contener al menos una letra mayuscula"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:53
+msgid "Password must contain at least one lowercase letter"
+msgstr "La contrasena debe contener al menos una letra minuscula"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:56
+msgid "Password must contain at least one number"
+msgstr "La contrasena debe contener al menos un numero"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:78
+msgid "Passwords do not match"
+msgstr "Las contrasenas no coinciden"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:90
+#: src/views/PasswordReset.tsx:95
+msgid "Failed to reset password. The link may have expired."
+msgstr "No se pudo restablecer la contrasena. Es posible que el enlace haya caducado."
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:149
+msgid "New Password"
+msgstr "Nueva contrasena"
+
+#. js-lingui-explicit-id
+#: src/views/PasswordReset.tsx:161
+msgid "Confirm Password"
+msgstr "Confirmar contrasena"
+
+#. placeholder {0}: shown[0].heard
+#: src/views/meeting/assistant/AssistantOverlay.tsx:162
+msgid "“{0}”"
+msgstr "«{0}»"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:143
+msgid "“Vivo, add a task: Jonas sends the numbers.”"
+msgstr "«Vivo, añade una tarea: Jonas envía las cifras.»"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:142
+msgid "“Vivo, put on the board: release on December 3.”"
+msgstr "«Vivo, pon en la pizarra: lanzamiento el 3 de diciembre.»"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:144
+msgid "“Vivo, summarize the last ten minutes into the notes.”"
+msgstr "«Vivo, resume los últimos diez minutos en las notas.»"
+
+#: src/views/meeting/MeetingTopBar.tsx:89
+msgid "(main room only)"
+msgstr "(solo la sala principal)"
+
+#: src/views/meeting/PeopleList.tsx:62
+msgid "(You)"
+msgstr "(Usted)"
+
+#. placeholder {0}: reaction.count
+#. placeholder {1}: reaction.emoji
+#. placeholder {2}: reaction.emoji
+#: src/views/meeting/chat/ChatMessageItem.tsx:70
+msgid "{0, plural, one {{1} # reaction} other {{2} # reactions}}"
+msgstr "{0, plural, one {{1} # reacción} other {{2} # reacciones}}"
+
+#. placeholder {0}: thread.replies.length
+#: src/views/meeting/boards/CommentPin.tsx:92
+msgid "{0, plural, one {# comment} other {# comments}}"
+msgstr "{0, plural, one {# comentario} other {# comentarios}}"
+
+#. placeholder {0}: r.votes
+#: src/views/meeting/boards/DotVote.tsx:70
+msgid "{0, plural, one {# dot} other {# dots}}"
+msgstr "{0, plural, one {# punto} other {# puntos}}"
+
+#. placeholder {0}: room.activeParticipants
+#: src/views/Lobby.tsx:896
+msgid "{0} participants already in the room"
+msgstr "Ya hay {0} participantes en la sala"
+
+#. placeholder {0}: planId.charAt(0).toUpperCase() + planId.slice(1)
+#: src/views/admin/components/modals/RoomModal.tsx:349
+msgid "{0} Plan"
+msgstr "Plan {0}"
+
+#. placeholder {0}: unassigned.length
+#: src/components/BreakoutRooms.tsx:215
+msgid "{0} unassigned"
+msgstr "{0} sin asignar"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:74
+msgid "{count, plural, one {Changed # element} other {Changed # elements}}"
+msgstr "{count, plural, one {# elemento cambiado} other {# elementos cambiados}}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:73
+msgid "{count, plural, one {Drew # arrow} other {Drew # arrows}}"
+msgstr "{count, plural, one {# flecha dibujada} other {# flechas dibujadas}}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:77
+msgid "{count, plural, one {Put # idea on the mind map} other {Put # ideas on the mind map}}"
+msgstr "{count, plural, one {Añadí # idea al mapa mental} other {Añadí # ideas al mapa mental}}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:72
+msgid "{count, plural, one {Put # note on the board} other {Put # notes on the board}}"
+msgstr "{count, plural, one {# nota en la pizarra} other {# notas en la pizarra}}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:76
+msgid "{count, plural, one {Put # task on the board} other {Put # tasks on the board}}"
+msgstr "{count, plural, one {Se puso # tarea en la pizarra} other {Se pusieron # tareas en la pizarra}}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:79
+msgid "{count, plural, one {Removed # element from the board} other {Removed # elements from the board}}"
+msgstr "{count, plural, one {# elemento quitado de la pizarra} other {# elementos quitados de la pizarra}}"
+
+#: src/views/meeting/boards/CommentPin.tsx:93
+msgid "{count}, done"
+msgstr "{count}, hecho"
+
+#: src/components/sessions/format.ts:39
+msgid "{hours} h"
+msgstr "{hours} h"
+
+#: src/components/sessions/format.ts:39
+msgid "{hours} h {rest} min"
+msgstr "{hours} h {rest} min"
+
+#. placeholder {0}: round.dots
+#: src/views/meeting/boards/DotVote.tsx:79
+msgid "{left} of {0} dots left"
+msgstr "Quedan {left} de {0} puntos"
+
+#: src/components/sessions/format.ts:36
+#: src/views/admin/components/sections/OverviewSection.tsx:101
+msgid "{minutes} min"
+msgstr "{minutes} min"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:482
+msgid "{more} more"
+msgstr "{more} más"
+
+#: src/views/meeting/MeetingTopBar.tsx:81
+msgid "{roomName} logo"
+msgstr "Logotipo de {roomName}"
+
+#: src/views/meeting/ScreenShareToast.tsx:26
+msgid "{sharerName} started screen sharing"
+msgstr "{sharerName} ha empezado a compartir pantalla"
+
+#: src/components/sessions/format.ts:31
+msgid "{start} to {end}"
+msgstr "{start} a {end}"
+
+#: src/views/meeting/boards/DotVote.tsx:79
+msgid "{voters, plural, one {# person has voted} other {# people have voted}}"
+msgstr "{voters, plural, one {Ha votado # persona} other {Han votado # personas}}"
+
+#: src/components/Whiteboard.tsx:1906
+msgid "+ Column"
+msgstr "+ Columna"
+
+#: src/components/Whiteboard.tsx:1903
+msgid "+ Row"
+msgstr "+ Fila"
+
+#: src/views/Landing.tsx:244
+msgid "<0>Built in the open.</0> Use Tavio hosted, or run the stack on your own servers. You decide where it runs, how guests join and who controls the meeting data."
+msgstr "<0>Desarrollado en abierto.</0> Use Tavio alojado o ejecute la pila en sus propios servidores. Usted decide dónde se ejecuta, cómo entran los invitados y quién controla los datos de las reuniones."
+
+#: src/views/Docs.tsx:350
+msgid "<0>docker-compose.yml</0> starts a trial on one machine: Convex and its dashboard, LiveKit, and the web app at <1>http://localhost:3000</1>."
+msgstr "<0>docker-compose.yml</0> inicia una prueba en una sola máquina: Convex y su panel, LiveKit y la app web en <1>http://localhost:3000</1>."
+
+#: src/views/Landing.tsx:196
+msgid "<0>Meetings shouldn’t create more work.</0> The call happens in one tool and the notes live in another. Decisions disappear into chat, and guests lose time on accounts and installs. Tavio keeps the conversation and its outcome in one place."
+msgstr "<0>Las reuniones no deberían generar más trabajo.</0> La llamada ocurre en una herramienta y las notas están en otra. Las decisiones se pierden en el chat y los invitados pierden tiempo con cuentas e instalaciones. Tavio mantiene la conversación y su resultado en un solo lugar."
+
+#: src/views/Docs.tsx:480
+msgid "<0>OPEN</0> (default): anyone with the link. <1>MEMBERS</1>: workspace members only. <2>PASSWORD</2>: anyone with the link and the password."
+msgstr "<0>OPEN</0> (predeterminado): cualquiera con el enlace. <1>MEMBERS</1>: solo miembros del espacio de trabajo. <2>PASSWORD</2>: cualquiera con el enlace y la contraseña."
+
+#: src/components/Whiteboard.tsx:1907
+msgid "− Column"
+msgstr "− Columna"
+
+#: src/components/Whiteboard.tsx:1904
+msgid "− Row"
+msgstr "− Fila"
+
+#: src/views/Lobby.tsx:895
+msgid "1 participant already in the room"
+msgstr "Ya hay 1 participante en la sala"
+
+#: src/views/Docs.tsx:456
+msgid "A failed request answers with a status code and a body like <0>{ERROR_SHAPE}</0>. Each key may send 120 requests a minute, with bursts of up to 60. Above that the API answers 429 and says in <1>Retry-After</1> how many seconds to wait."
+msgstr "Una solicitud fallida responde con un código de estado y un cuerpo como <0>{ERROR_SHAPE}</0>. Cada clave puede enviar 120 solicitudes por minuto, con ráfagas de hasta 60. Por encima, la API responde 429 e indica en <1>Retry-After</1> cuántos segundos esperar."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:77
+msgid "A key lets your own server create, list and delete this workspace's rooms and read its recordings."
+msgstr "Una clave permite a su propio servidor crear, listar y eliminar las salas de este espacio de trabajo y leer sus grabaciones."
+
+#: src/views/Auth.tsx:48
+#: src/views/Goodbye.tsx:42
+#: src/views/Landing.tsx:167
+msgid "A recording was made and is processing"
+msgstr "Se realizó una grabación y se está procesando"
+
+#: src/views/admin/room/SessionPage.tsx:206
+msgid "A recording was made."
+msgstr "Se hizo una grabación."
+
+#: src/components/Whiteboard.tsx:1739
+msgid "A task"
+msgstr "Una tarea"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:120
+#: src/views/meeting/EffectsPanel.tsx:31
+msgid "bg_abstract"
+msgstr "Abstracto"
+
+#: src/views/admin/components/RoomsTable.tsx:74
+#: src/views/Onboarding.tsx:53
+msgid "Access"
+msgstr "Acceso"
+
+#: src/views/Lobby.tsx:802
+#: src/views/Onboarding.tsx:136
+msgid "Access Denied"
+msgstr "Acceso denegado"
+
+#: src/views/Onboarding.tsx:130
+msgid "Access Granted"
+msgstr "Acceso concedido"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:54
+msgid "Access is enforced via Convex memberships"
+msgstr "El acceso se controla mediante las membresías de Convex"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:110
+msgid "Account"
+msgstr "Cuenta"
+
+#: src/views/admin/components/RecordingsSection.tsx:157
+#: src/views/admin/components/RoomsTable.tsx:76
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:101
+#: src/views/admin/components/TeamSettingsCard.tsx:94
+msgid "Action"
+msgstr "Acción"
+
+#: src/components/Whiteboard.tsx:1736
+#: src/components/whiteboard/StylePanel.tsx:328
+msgid "Actions"
+msgstr "Acciones"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:20
+msgid "Active"
+msgstr "Activo"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:103
+msgid "Add"
+msgstr "Añadir"
+
+#: src/views/admin/components/modals/RoomModal.tsx:286
+msgid "Add a partner website first."
+msgstr "Añade primero el sitio web del socio."
+
+#: src/views/meeting/chat/ChatComposer.tsx:139
+msgid "Add image"
+msgstr "Añadir imagen"
+
+#: src/views/meeting/chat/ChatMessageItem.tsx:80
+#: src/views/meeting/chat/ChatMessageItem.tsx:92
+msgid "Add reaction"
+msgstr "Añadir reacción"
+
+#: src/components/BreakoutRooms.tsx:204
+msgid "Add room"
+msgstr "Añadir sala"
+
+#: src/views/Docs.tsx:382
+msgid "Address of your Convex deployment."
+msgstr "Dirección de su despliegue de Convex."
+
+#: src/views/Docs.tsx:386
+msgid "Address of your LiveKit server."
+msgstr "Dirección de su servidor LiveKit."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:100
+#: src/views/admin/components/settings/ProfilePanel.tsx:23
+#: src/views/admin/components/TeamSettingsCard.tsx:124
+#: src/views/admin/components/TeamSettingsCard.tsx:170
+msgid "Admin"
+msgstr "Administrador"
+
+#: src/views/admin/room/RoomPage.tsx:149
+msgid "After the first meeting its record is here: who was there, what was on the board and what was noted."
+msgstr "Después de la primera reunión, aquí queda su registro: quién estuvo, qué había en la pizarra y qué se anotó."
+
+#: src/components/whiteboard/StylePanel.tsx:312
+msgid "Align"
+msgstr "Alinear"
+
+#: src/components/whiteboard/StylePanel.tsx:319
+msgid "Align bottom"
+msgstr "Alinear abajo"
+
+#: src/components/whiteboard/StylePanel.tsx:314
+msgid "Align left"
+msgstr "Alinear a la izquierda"
+
+#: src/components/whiteboard/StylePanel.tsx:316
+msgid "Align right"
+msgstr "Alinear a la derecha"
+
+#: src/components/whiteboard/StylePanel.tsx:317
+msgid "Align top"
+msgstr "Alinear arriba"
+
+#: src/views/Docs.tsx:452
+msgid "All addresses below start with <0>{API_BASE}</0>. Bodies are JSON, times are ISO 8601 in UTC, and lists come as <1>{LIST_SHAPE}</1>."
+msgstr "Todas las direcciones siguientes empiezan por <0>{API_BASE}</0>. Los cuerpos son JSON, las horas ISO 8601 en UTC y las listas llegan como <1>{LIST_SHAPE}</1>."
+
+#: src/components/BreakoutRooms.tsx:215
+msgid "All assigned"
+msgstr "Todos asignados"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:165
+msgid "All recordings"
+msgstr "Todas las grabaciones"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:108
+msgid "All rooms"
+msgstr "Todas las salas"
+
+#: src/components/OnboardingChecklist.tsx:70
+msgid "All set! 🎉"
+msgstr "Todo listo! 🎉"
+
+#: src/views/Auth.tsx:374
+msgid "Already have an account? "
+msgstr "¿Ya tiene una cuenta? "
+
+#: src/views/Docs.tsx:464
+msgid "Another room already uses this slug."
+msgstr "Otra sala ya usa este slug."
+
+#: src/views/Docs.tsx:484
+msgid "Answers 201 with the room:"
+msgstr "Responde 201 con la sala:"
+
+#: src/views/admin/components/sections/SettingsSection.tsx:64
+#: src/views/Docs.tsx:270
+#: src/views/Docs.tsx:439
+msgid "API"
+msgstr "API"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:75
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:83
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:96
+msgid "API keys"
+msgstr "Claves de API"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:96
+#: src/views/admin/components/settings/ProfilePanel.tsx:99
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: src/views/Docs.tsx:27
+#: src/views/Docs.tsx:334
+msgid "Architecture"
+msgstr "Arquitectura"
+
+#: src/views/admin/components/modals/DeleteConfirmModal.tsx:18
+msgid "Are you sure you want to delete"
+msgstr "¿Seguro que quieres eliminar"
+
+#: src/components/Whiteboard.tsx:2029
+msgid "Arrow"
+msgstr "Flecha"
+
+#: src/components/Whiteboard.tsx:1728
+msgid "Arrow shape"
+msgstr "Forma de flecha"
+
+#: src/components/whiteboard/StylePanel.tsx:249
+#: src/components/whiteboard/StylePanel.tsx:251
+msgid "Arrowheads"
+msgstr "Puntas de flecha"
+
+#. placeholder {0}: user.name
+#: src/components/BreakoutRooms.tsx:425
+msgid "Assign {0}"
+msgstr "Asignar a {0}"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:59
+msgid "Assistant heard you"
+msgstr "El asistente te ha oído"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:59
+msgid "Assistant is listening"
+msgstr "El asistente escucha"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:59
+msgid "Assistant is writing"
+msgstr "El asistente escribe"
+
+#: src/views/PasswordReset.tsx:174
+msgid "At least 8 characters"
+msgstr "Al menos 8 caracteres"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:103
+msgid "Attempting to reconnect..."
+msgstr "Intentando reconectar..."
+
+#: src/views/admin/components/modals/RoomModal.tsx:48
+msgid "Auto-search failed"
+msgstr "La búsqueda automática falló"
+
+#: src/views/admin/components/modals/RoomModal.tsx:46
+msgid "Auto-search running"
+msgstr "Búsqueda automática en curso"
+
+#: src/views/admin/components/modals/RoomModal.tsx:507
+msgid "Automatic discovery is preferred. You can still paste a direct URL or upload a file manually."
+msgstr "Se recomienda la detección automática. Aun así, puedes pegar una URL directa o subir un archivo manualmente."
+
+#: src/views/admin/components/modals/RoomModal.tsx:298
+msgid "Automatic logo search started"
+msgstr "Se inició la búsqueda automática del logotipo"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:58
+msgid "Avatar URL"
+msgstr "URL del avatar"
+
+#: src/views/admin/components/modals/RoomModal.tsx:49
+msgid "Awaiting source"
+msgstr "Esperando la fuente"
+
+#: src/components/OnboardingTour.tsx:323
+#: src/views/Lobby.tsx:775
+#: src/views/Onboarding.tsx:173
+msgid "Back"
+msgstr "Atrás"
+
+#: src/views/Docs.tsx:237
+msgid "Back to App"
+msgstr "Volver a la app"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:671
+msgid "Back to grid"
+msgstr "Volver a la cuadrícula"
+
+#: src/views/Docs.tsx:202
+#: src/views/MeetingFallback.tsx:19
+msgid "Back to home"
+msgstr "Volver al inicio"
+
+#: src/views/PasswordReset.tsx:197
+msgid "Back to Login"
+msgstr "Volver al inicio de sesion"
+
+#: src/views/admin/room/RoomPage.tsx:169
+#: src/views/Goodbye.tsx:110
+msgid "Back to Rooms"
+msgstr "Volver a las salas"
+
+#: src/views/Auth.tsx:197
+#: src/views/Auth.tsx:389
+msgid "Back to Sign In"
+msgstr "Volver a iniciar sesión"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:671
+msgid "Back to speaker view"
+msgstr "Volver a la vista del orador"
+
+#: src/views/meeting/boards/RoomBoard.tsx:313
+msgid "Back to the current board"
+msgstr "Volver a la pizarra actual"
+
+#: src/views/admin/room/SessionPage.tsx:67
+msgid "Back to the room"
+msgstr "Volver a la sala"
+
+#: src/components/whiteboard/StylePanel.tsx:184
+msgid "Background"
+msgstr "Fondo"
+
+#: src/components/whiteboard/StylePanel.tsx:187
+msgid "Background {c}"
+msgstr "Fondo {c}"
+
+#: src/views/meeting/mediaProcessing.tsx:132
+msgid "Background effects are not supported in this browser."
+msgstr "Los efectos de fondo no son compatibles con este navegador."
+
+#: src/views/meeting/EffectsPanel.tsx:82
+msgid "Background effects are not supported in this browser. Filters are still available."
+msgstr "Los efectos de fondo no son compatibles con este navegador. Los filtros siguen disponibles."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:456
+msgid "bg_effect_engine_missing"
+msgstr "No se pudo cargar el motor de fondo. Intenta actualizar la pagina."
+
+#: src/views/admin/components/modals/RoomModal.tsx:591
+#: src/views/admin/components/modals/RoomModal.tsx:649
+msgid "Background Image"
+msgstr "Imagen de fondo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:597
+msgid "Background preview"
+msgstr "Vista previa del fondo"
+
+#: src/components/Whiteboard.tsx:1740
+msgid "Being worked on"
+msgstr "En curso"
+
+#: src/views/Docs.tsx:341
+msgid "Better Auth handles accounts, with email and password, GitHub or Google."
+msgstr "Better Auth gestiona las cuentas, con correo y contraseña, GitHub o Google."
+
+#: src/views/admin/components/sections/SettingsSection.tsx:63
+msgid "Billing"
+msgstr "Facturación"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:70
+msgid "Billing portal coming soon"
+msgstr "El portal de facturación estará disponible próximamente"
+
+#: src/components/Whiteboard.tsx:1722
+msgid "Blue"
+msgstr "Azul"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:117
+#: src/views/meeting/EffectsPanel.tsx:28
+msgid "bg_blur"
+msgstr "Desenfoque"
+
+#: src/views/meeting/boards/RoomBoard.tsx:282
+msgid "Board"
+msgstr "Pizarra"
+
+#: src/components/Whiteboard.tsx:2123
+msgid "Board as PNG"
+msgstr "Pizarra como PNG"
+
+#: src/components/Whiteboard.tsx:2126
+msgid "Board as SVG"
+msgstr "Pizarra como SVG"
+
+#: src/views/meeting/boards/RoomBoard.tsx:305
+msgid "Board from"
+msgstr "Pizarra del"
+
+#: src/views/meeting/boards/RoomBoard.tsx:381
+#: src/views/meeting/boards/RoomBoard.tsx:382
+msgid "Board name"
+msgstr "Nombre de la pizarra"
+
+#: src/views/meeting/boards/RoomBoard.tsx:359
+msgid "Boards of this room"
+msgstr "Pizarras de esta sala"
+
+#: src/components/MeetingDoc.tsx:258
+#: src/components/whiteboard/StylePanel.tsx:216
+msgid "Bold"
+msgstr "Negrita"
+
+#: src/components/Whiteboard.tsx:1743
+msgid "Brainstorming"
+msgstr "Lluvia de ideas"
+
+#: src/views/admin/components/modals/RoomModal.tsx:450
+msgid "Branding & Theme"
+msgstr "Marca y tema"
+
+#: src/views/Meeting.tsx:754
+#: src/views/Meeting.tsx:766
+#: src/views/meeting/LKControls.tsx:354
+msgid "Breakout Rooms"
+msgstr "Salas de grupos"
+
+#: src/components/whiteboard/StylePanel.tsx:307
+msgid "Bring forward"
+msgstr "Traer adelante"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:193
+msgid "Bring in the assistant"
+msgstr "Llamar al asistente"
+
+#: src/components/whiteboard/StylePanel.tsx:308
+msgid "Bring to front"
+msgstr "Traer al frente"
+
+#: src/views/Docs.tsx:402
+msgid "Browsers only give access to the camera and microphone on HTTPS or localhost, so a public deployment needs a certificate. The app container serves plain HTTP on port 80, so put a reverse proxy with TLS in front of it."
+msgstr "Los navegadores solo dan acceso a la cámara y al micrófono en HTTPS o localhost, así que una instalación pública necesita un certificado. El contenedor de la app sirve HTTP simple en el puerto 80, así que coloque delante un proxy inverso con TLS."
+
+#: src/views/Docs.tsx:382
+#: src/views/Docs.tsx:383
+msgid "Build"
+msgstr "Compilación"
+
+#: src/views/Docs.tsx:369
+msgid "Build settings go into <0>.env.local</0> and backend settings are set with <1>npx convex env set</1>. <2>.env.example</2> lists all of them."
+msgstr "Los ajustes de compilación van en <0>.env.local</0> y los del backend se definen con <1>npx convex env set</1>. <2>.env.example</2> los enumera todos."
+
+#: src/components/MeetingDoc.tsx:299
+msgid "Bullet List"
+msgstr "Lista con viñetas"
+
+#: src/views/meeting/EffectsPanel.tsx:33
+msgid "Cafe"
+msgstr "Cafetería"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:925
+msgid "lobby_camera_label"
+msgstr "Camara"
+
+#: src/views/meeting/LKControls.tsx:259
+#: src/views/meeting/SettingsModal.tsx:139
+#: src/views/meeting/SettingsModal.tsx:145
+msgid "Camera"
+msgstr "Cámara"
+
+#: src/views/Landing.tsx:260
+msgid "Can we run Tavio ourselves?"
+msgstr "¿Podemos ejecutar Tavio por nuestra cuenta?"
+
+#: src/components/BreakoutRooms.tsx:306
+#: src/router.tsx:437
+#: src/views/admin/components/modals/DeleteConfirmModal.tsx:22
+#: src/views/admin/components/modals/RoomModal.tsx:669
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:158
+#: src/views/admin/room/SessionPage.tsx:216
+#: src/views/Lobby.tsx:1006
+#: src/views/meeting/LeaveMeetingDialog.tsx:28
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:81
+msgid "Cancel link"
+msgstr "Cancelar enlace"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:23
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: src/components/Whiteboard.tsx:1845
+msgid "Cell"
+msgstr "Celda"
+
+#: src/components/whiteboard/StylePanel.tsx:281
+msgid "Centre"
+msgstr "Centro"
+
+#: src/components/whiteboard/StylePanel.tsx:315
+msgid "Centre horizontally"
+msgstr "Centrar horizontalmente"
+
+#: src/components/whiteboard/StylePanel.tsx:318
+msgid "Centre vertically"
+msgstr "Centrar verticalmente"
+
+#: src/views/admin/room/RoomPage.tsx:122
+#: src/views/admin/room/RoomPage.tsx:131
+msgid "changed"
+msgstr "modificado"
+
+#: src/views/admin/room/SessionPage.tsx:179
+#: src/views/Meeting.tsx:750
+#: src/views/Meeting.tsx:762
+#: src/views/meeting/LKControls.tsx:289
+msgid "Chat"
+msgstr "Chat"
+
+#: src/views/meeting/chat/ChatPanel.tsx:187
+msgid "Chat could not be loaded. Leave the meeting and join again to retry."
+msgstr "No se pudo cargar el chat. Salga de la reunión y vuelva a entrar para reintentarlo."
+
+#: src/views/admin/room/SessionPage.tsx:119
+#: src/views/Auth.tsx:41
+#: src/views/Goodbye.tsx:32
+#: src/views/Landing.tsx:164
+msgid "Chat messages"
+msgstr "Mensajes de chat"
+
+#: src/views/Lobby.tsx:934
+msgid "Check permissions"
+msgstr "Verificar permisos"
+
+#: src/views/Auth.tsx:190
+msgid "Check your email"
+msgstr "Revise su correo electrónico"
+
+#: src/components/Whiteboard.tsx:2004
+msgid "Circle"
+msgstr "Círculo"
+
+#: src/components/BreakoutRooms.tsx:207
+msgid "Clear"
+msgstr "Borrar"
+
+#: src/components/Whiteboard.tsx:2117
+msgid "Clear canvas"
+msgstr "Borrar lienzo"
+
+#: src/views/admin/components/sections/RoomsSection.tsx:70
+msgid "Clear search"
+msgstr "Borrar búsqueda"
+
+#: src/views/admin/constants.ts:26
+msgid "Click here to set up your first permanent meeting room with custom branding and permissions."
+msgstr "Haz clic aquí para configurar tu primera sala permanente con marca y permisos propios."
+
+#: src/components/ui.tsx:467
+#: src/components/Whiteboard.tsx:2131
+#: src/views/admin/components/modals/NotesModal.tsx:26
+#: src/views/admin/components/modals/RoomModal.tsx:340
+#: src/views/meeting/chat/ChatPanel.tsx:257
+#: src/views/meeting/ConnectionStatusOverlay.tsx:125
+#: src/views/meeting/DeviceHandoffDialog.tsx:65
+#: src/views/meeting/LiveKitVideoArea.tsx:217
+#: src/views/meeting/LiveKitVideoArea.tsx:620
+msgid "Close"
+msgstr "Cerrar"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:689
+msgid "close_meeting_settings"
+msgstr "Cerrar ajustes de la reunión"
+
+#: src/views/Landing.tsx:127
+msgid "Close menu"
+msgstr "Cerrar menú"
+
+#: src/components/MeetingDoc.tsx:246
+msgid "Close notes"
+msgstr "Cerrar notas"
+
+#: src/views/Meeting.tsx:771
+msgid "Close panel"
+msgstr "Cerrar panel"
+
+#: src/views/admin/components/RecordingViewerModal.tsx:53
+msgid "Close recording"
+msgstr "Cerrar grabación"
+
+#: src/views/meeting/SettingsModal.tsx:122
+msgid "Close settings"
+msgstr "Cerrar ajustes"
+
+#: src/components/OnboardingTour.tsx:306
+msgid "Close tour"
+msgstr "Cerrar recorrido"
+
+#: src/components/Whiteboard.tsx:1728
+msgid "Cloud"
+msgstr "Nube"
+
+#: src/views/Docs.tsx:458
+#: src/views/Docs.tsx:459
+#: src/views/Docs.tsx:460
+#: src/views/Docs.tsx:461
+#: src/views/Docs.tsx:462
+#: src/views/Docs.tsx:463
+#: src/views/Docs.tsx:464
+#: src/views/Docs.tsx:465
+msgid "Code"
+msgstr "Código"
+
+#: src/components/MeetingDoc.tsx:241
+msgid "Collapse to sidebar"
+msgstr "Contraer a la barra lateral"
+
+#: src/views/meeting/boards/CommentPin.tsx:128
+#: src/views/meeting/boards/CommentPin.tsx:132
+msgid "Comment"
+msgstr "Comentar"
+
+#: src/views/meeting/boards/CommentPin.tsx:93
+msgid "Comment on this element"
+msgstr "Comentar este elemento"
+
+#: src/views/meeting/boards/CommentPin.tsx:104
+msgid "Comments"
+msgstr "Comentarios"
+
+#: src/views/admin/room/SessionPage.tsx:149
+msgid "Comments on the board"
+msgstr "Comentarios en la pizarra"
+
+#: src/views/admin/components/RecordingsSection.tsx:62
+msgid "Completed"
+msgstr "Completada"
+
+#: src/views/Docs.tsx:31
+#: src/views/Docs.tsx:367
+msgid "Configuration"
+msgstr "Configuracion"
+
+#: src/router.tsx:438
+msgid "Confirm and join"
+msgstr "Confirmar y unirse"
+
+#: src/router.tsx:432
+msgid "Confirm device handoff"
+msgstr "Confirmar el cambio de dispositivo"
+
+#: src/router.tsx:438
+msgid "Connecting…"
+msgstr "Conectando…"
+
+#: src/views/meeting/MeetingTopBar.tsx:18
+msgid "Connection excellent"
+msgstr "Conexión excelente"
+
+#: src/views/meeting/MeetingTopBar.tsx:18
+msgid "Connection good"
+msgstr "Conexión buena"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:134
+msgid "Connection Lost"
+msgstr "Conexion perdida"
+
+#: src/views/meeting/MeetingTopBar.tsx:26
+msgid "Connection poor"
+msgstr "Conexión débil"
+
+#: src/components/Whiteboard.tsx:2030
+msgid "Connector"
+msgstr "Conector"
+
+#: src/views/Onboarding.tsx:185
+msgid "Continue"
+msgstr "Continuar"
+
+#: src/router.tsx:434
+msgid "Continue on this device?"
+msgstr "¿Continuar en este dispositivo?"
+
+#: src/views/Landing.tsx:249
+msgid "Convex · LiveKit · web app"
+msgstr "Convex · LiveKit · aplicación web"
+
+#: src/views/Docs.tsx:340
+msgid "Convex keeps rooms, notes, the whiteboard, chat history and permissions."
+msgstr "Convex guarda las salas, las notas, la pizarra, el historial del chat y los permisos."
+
+#: src/views/Docs.tsx:413
+msgid "Convex receives events from other services at these paths on its HTTP address."
+msgstr "Convex recibe eventos de otros servicios en estas rutas de su dirección HTTP."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:133
+#: src/views/Docs.tsx:113
+msgid "Copied"
+msgstr "Copiado"
+
+#. placeholder {0}: room.slug
+#: src/views/admin/hooks/useAdminController.ts:257
+msgid "Copied /room/{0}"
+msgstr "/room/{0} copiado"
+
+#: src/views/admin/components/RoomMenu.tsx:117
+#: src/views/Docs.tsx:113
+#: src/views/meeting/DeviceHandoffDialog.tsx:77
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:133
+msgid "Copy key"
+msgstr "Copiar clave"
+
+#: src/views/admin/room/RoomPage.tsx:188
+msgid "Copy link"
+msgstr "Copiar enlace"
+
+#: src/views/meeting/boards/RoomBoard.tsx:310
+msgid "Copy selection to the current board"
+msgstr "Copiar la selección a la pizarra actual"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:129
+msgid "Copy the key now. You will not see it again."
+msgstr "Copie la clave ahora. No volverá a verla."
+
+#: src/views/admin/hooks/useAdminController.ts:259
+msgid "Could not copy room link"
+msgstr "No se pudo copiar el enlace de la sala"
+
+#: src/views/meeting/PeopleList.tsx:42
+msgid "Could not copy the meeting link. Copy it from the address bar instead."
+msgstr "No se pudo copiar el enlace de la reunión. Cópialo desde la barra de direcciones."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:51
+#: src/views/Docs.tsx:104
+msgid "Could not copy. Select the text instead."
+msgstr "No se pudo copiar. Seleccione el texto."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:39
+msgid "Could not create the key."
+msgstr "No se pudo crear la clave."
+
+#: src/views/Meeting.tsx:391
+msgid "Could not end the meeting for everyone."
+msgstr "No se pudo finalizar la reunión para todos."
+
+#: src/views/admin/components/TeamSettingsCard.tsx:44
+msgid "Could not invite member"
+msgstr "No se pudo invitar al miembro"
+
+#: src/app-state/joinErrors.ts:37
+msgid "Could not join room. Please try again."
+msgstr "No se pudo unir a la sala. Inténtalo de nuevo."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:41
+msgid "Could not remove membership"
+msgstr "No se pudo eliminar la membresía"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:63
+msgid "Could not revoke the key."
+msgstr "No se pudo revocar la clave."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:30
+msgid "Could not save membership"
+msgstr "No se pudo guardar la membresía"
+
+#: src/views/admin/hooks/useAdminController.ts:219
+msgid "Could not save room"
+msgstr "No se pudo guardar la sala"
+
+#: src/views/admin/hooks/useAdminController.ts:281
+msgid "Could not sign out. Please try again."
+msgstr "No se pudo cerrar la sesión. Inténtelo de nuevo."
+
+#: src/views/meeting/LKControls.tsx:157
+msgid "Could not start screen sharing."
+msgstr "No se pudo iniciar la pantalla compartida."
+
+#: src/views/meeting/LKControls.tsx:157
+msgid "Could not stop screen sharing."
+msgstr "No se pudo detener la pantalla compartida."
+
+#: src/views/meeting/LKControls.tsx:156
+msgid "Could not turn the camera off."
+msgstr "No se pudo apagar la cámara."
+
+#: src/views/meeting/LKControls.tsx:156
+msgid "Could not turn the camera on."
+msgstr "No se pudo encender la cámara."
+
+#: src/views/meeting/LKControls.tsx:155
+msgid "Could not turn the microphone off."
+msgstr "No se pudo desactivar el micrófono."
+
+#: src/views/meeting/LKControls.tsx:155
+msgid "Could not turn the microphone on."
+msgstr "No se pudo activar el micrófono."
+
+#: src/views/Landing.tsx:126
+#: src/views/Landing.tsx:140
+msgid "Create a room"
+msgstr "Crear una sala"
+
+#: src/views/admin/constants.ts:25
+msgid "Create a Room"
+msgstr "Crear una sala"
+
+#: src/views/Landing.tsx:275
+msgid "Create a room, share the link and start."
+msgstr "Cree una sala, comparta el enlace y empiece."
+
+#: src/views/Auth.tsx:325
+msgid "Create Account"
+msgstr "Crear cuenta"
+
+#: src/views/Auth.tsx:205
+msgid "Create an account"
+msgstr "Crear una cuenta"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:149
+msgid "Create key"
+msgstr "Crear clave"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:86
+msgid "Create new link"
+msgstr "Crear un enlace nuevo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:334
+msgid "Create New Room"
+msgstr "Crear nueva sala"
+
+#: src/views/admin/components/modals/RoomModal.tsx:671
+msgid "Create Room"
+msgstr "Crear sala"
+
+#: src/views/Onboarding.tsx:162
+msgid "Create your first permanent room"
+msgstr "Crea tu primera sala permanente"
+
+#: src/views/admin/hooks/useAdminController.ts:160
+#: src/views/Landing.tsx:185
+#: src/views/Landing.tsx:276
+msgid "Create your first room"
+msgstr "Cree su primera sala"
+
+#: src/views/Onboarding.tsx:99
+msgid "Create your profile"
+msgstr "Crea tu perfil"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:99
+msgid "Created"
+msgstr "Creada"
+
+#: src/views/Docs.tsx:476
+msgid "Creates a room and returns it with the link for your guests."
+msgstr "Crea una sala y la devuelve con el enlace para sus invitados."
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:68
+msgid "Creating secure link…"
+msgstr "Creando un enlace seguro…"
+
+#: src/views/admin/components/modals/RoomModal.tsx:540
+msgid "Creating the room will automatically start background discovery when no logo is set yet."
+msgstr "Al crear la sala, la detección en segundo plano se iniciará automáticamente si aún no se ha establecido ningún logotipo."
+
+#: src/components/whiteboard/StylePanel.tsx:202
+msgid "Crossed"
+msgstr "Cruzado"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:275
+msgid "Current page"
+msgstr "Página actual"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:48
+msgid "Current Plan"
+msgstr "Plan actual"
+
+#: src/views/Onboarding.tsx:164
+msgid "Customize your lobby branding"
+msgstr "Personaliza la imagen de tu lobby"
+
+#: src/views/admin/hooks/useAdminController.ts:166
+msgid "Customize your profile"
+msgstr "Personaliza tu perfil"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:104
+msgid "Dark"
+msgstr "Oscuro"
+
+#: src/views/admin/components/modals/RoomModal.tsx:483
+#: src/views/meeting/SettingsModal.tsx:178
+msgid "Dark Mode"
+msgstr "Modo oscuro"
+
+#: src/components/whiteboard/StylePanel.tsx:231
+msgid "Dashed"
+msgstr "Discontinua"
+
+#: src/components/Whiteboard.tsx:1727
+msgid "Database"
+msgstr "Base de datos"
+
+#: src/views/admin/components/modals/RoomModal.tsx:459
+msgid "Default"
+msgstr "Predeterminado"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:674
+msgid "default_device"
+msgstr "Dispositivo predeterminado"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:673
+msgid "default_mic"
+msgstr "Micrófono predeterminado"
+
+#: src/views/admin/components/modals/DeleteConfirmModal.tsx:25
+#: src/views/admin/components/RoomMenu.tsx:126
+#: src/views/admin/room/SessionPage.tsx:217
+msgid "Delete"
+msgstr "Eliminar"
+
+#: src/views/admin/components/modals/DeleteConfirmModal.tsx:15
+#: src/views/admin/components/modals/DeleteConfirmModal.tsx:16
+msgid "Delete room?"
+msgstr "¿Eliminar sala?"
+
+#: src/components/whiteboard/StylePanel.tsx:336
+msgid "Delete selection"
+msgstr "Eliminar la selección"
+
+#: src/views/admin/room/SessionPage.tsx:127
+#: src/views/admin/room/SessionPage.tsx:212
+msgid "Delete session"
+msgstr "Eliminar sesión"
+
+#: src/views/admin/room/SessionPage.tsx:213
+msgid "Delete the session from {shortDate}?"
+msgstr "¿Eliminar la sesión del {shortDate}?"
+
+#. placeholder {0}: confirmDeleteRoom.name
+#: src/views/admin/hooks/useAdminController.ts:247
+msgid "Deleted room \"{0}\""
+msgstr "Sala \"{0}\" eliminada"
+
+#: src/views/Docs.tsx:494
+msgid "Deletes the room and its past sessions with their filed boards, and answers 204. Recordings stay."
+msgstr "Elimina la sala y sus sesiones pasadas con sus pizarras archivadas, y responde 204. Las grabaciones se conservan."
+
+#: src/views/Docs.tsx:259
+msgid "Deployment"
+msgstr "Despliegue"
+
+#: src/views/Docs.tsx:378
+#: src/views/Docs.tsx:477
+msgid "Description"
+msgstr "Descripcion"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:266
+msgid "msg_device_error"
+msgstr "Error de dispositivo"
+
+#: src/components/Whiteboard.tsx:2003
+msgid "Diamond"
+msgstr "Rombo"
+
+#: src/components/MeetingDoc.tsx:113
+msgid "Discuss upcoming release"
+msgstr "Comentar la próxima versión"
+
+#: src/components/ToastProvider.tsx:92
+msgid "Dismiss"
+msgstr "Cerrar"
+
+#: src/components/OnboardingChecklist.tsx:45
+msgid "Dismiss checklist"
+msgstr "Ocultar lista"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:903
+msgid "lobby_display_name_label"
+msgstr "Nombre para mostrar"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:52
+#: src/views/Onboarding.tsx:106
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#: src/components/whiteboard/StylePanel.tsx:321
+msgid "Distribute horizontally"
+msgstr "Distribuir horizontalmente"
+
+#: src/components/whiteboard/StylePanel.tsx:322
+msgid "Distribute vertically"
+msgstr "Distribuir verticalmente"
+
+#: src/views/Landing.tsx:257
+msgid "Do guests need an account or an app?"
+msgstr "¿Los invitados necesitan una cuenta o una aplicación?"
+
+#: src/views/Docs.tsx:30
+#: src/views/Docs.tsx:348
+msgid "Docker"
+msgstr "Docker"
+
+#: src/views/Docs.tsx:205
+#: src/views/Landing.tsx:107
+#: src/views/Landing.tsx:135
+#: src/views/Landing.tsx:286
+msgid "Docs"
+msgstr "Documentación"
+
+#: src/components/Whiteboard.tsx:1740
+msgid "Doing"
+msgstr "En curso"
+
+#: src/views/Auth.tsx:363
+msgid "Don't have an account? "
+msgstr "¿No tiene una cuenta? "
+
+#: src/components/Whiteboard.tsx:1724
+#: src/components/Whiteboard.tsx:1741
+#: src/components/Whiteboard.tsx:1876
+#: src/components/whiteboard/BoardView.tsx:30
+#: src/views/admin/room/SessionPage.tsx:156
+#: src/views/Goodbye.tsx:55
+#: src/views/Lobby.tsx:758
+#: src/views/meeting/boards/CommentPin.tsx:114
+#: src/views/meeting/SettingsModal.tsx:186
+msgid "Done"
+msgstr "Listo"
+
+#: src/views/meeting/boards/DotVote.tsx:63
+#: src/views/meeting/boards/DotVote.tsx:64
+msgid "Dot vote"
+msgstr "Votación con puntos"
+
+#: src/components/whiteboard/StylePanel.tsx:232
+msgid "Dotted"
+msgstr "Punteada"
+
+#: src/components/Whiteboard.tsx:2119
+#: src/views/admin/components/RecordingViewerModal.tsx:52
+msgid "Download"
+msgstr "Descargar"
+
+#: src/components/MeetingDoc.tsx:231
+msgid "Download HTML"
+msgstr "Descargar HTML"
+
+#: src/views/admin/components/RecordingViewerModal.tsx:52
+msgid "Download recording"
+msgstr "Descargar grabación"
+
+#: src/components/BreakoutRooms.tsx:394
+msgid "Drop here"
+msgstr "Suelta aqui"
+
+#: src/views/meeting/chat/ChatPanel.tsx:242
+msgid "Drop the image to share it"
+msgstr "Suelta la imagen para compartirla"
+
+#: src/components/Whiteboard.tsx:1894
+msgid "Due"
+msgstr "Vence"
+
+#: src/components/whiteboard/StylePanel.tsx:330
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#: src/views/admin/components/RecordingsSection.tsx:154
+#: src/views/admin/components/RecordingsSection.tsx:165
+#: src/views/admin/room/SessionPage.tsx:117
+#: src/views/Auth.tsx:39
+#: src/views/Goodbye.tsx:30
+#: src/views/Landing.tsx:162
+msgid "Duration"
+msgstr "Duración"
+
+#: src/views/Onboarding.tsx:107
+msgid "e.g. Sarah Miller"
+msgstr "p. ej., Sarah Miller"
+
+#: src/views/admin/components/modals/RoomModal.tsx:369
+msgid "e.g. Weekly Standup"
+msgstr "p. ej., Reunión semanal"
+
+#: src/views/admin/components/modals/RoomModal.tsx:383
+msgid "e.g. weekly-standup"
+msgstr "p. ej., reunion-semanal"
+
+#: src/views/meeting/chat/ChatPanel.tsx:196
+msgid "Earlier sessions"
+msgstr "Sesiones anteriores"
+
+#: src/components/whiteboard/StylePanel.tsx:238
+#: src/components/whiteboard/StylePanel.tsx:240
+msgid "Edges"
+msgstr "Esquinas"
+
+#: src/views/admin/components/RoomMenu.tsx:123
+msgid "Edit"
+msgstr "Editar"
+
+#: src/views/admin/components/modals/RoomModal.tsx:334
+msgid "Edit Room"
+msgstr "Editar sala"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:683
+#: src/views/Lobby.tsx:852
+#: src/views/Lobby.tsx:853
+msgid "effects_tooltip"
+msgstr "Aplicar efectos a su video"
+
+#: src/views/Lobby.tsx:687
+#: src/views/Meeting.tsx:753
+#: src/views/Meeting.tsx:765
+#: src/views/meeting/LKControls.tsx:357
+msgid "Effects"
+msgstr "Efectos"
+
+#: src/views/meeting/boards/DotVote.tsx:19
+msgid "Element without text"
+msgstr "Elemento sin texto"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:151
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:56
+msgid "Email Address"
+msgstr "Dirección de correo electrónico"
+
+#: src/views/meeting/chat/ChatComposer.tsx:85
+#: src/views/meeting/chat/ChatComposer.tsx:156
+msgid "Emoji"
+msgstr "Emoji"
+
+#: src/views/meeting/chat/EmojiPicker.tsx:69
+msgid "Emoji could not be loaded."
+msgstr "No se pudieron cargar los emoji."
+
+#: src/components/BreakoutRooms.tsx:277
+#: src/components/BreakoutRooms.tsx:394
+msgid "Empty"
+msgstr "Vacío"
+
+#: src/components/Whiteboard.tsx:1974
+msgid "Empty whiteboard"
+msgstr "Pizarra vacía"
+
+#: src/views/Onboarding.tsx:119
+msgid "Enable Access"
+msgstr "Habilitar acceso"
+
+#: src/views/Docs.tsx:385
+msgid "Encrypts sessions."
+msgstr "Cifra las sesiones."
+
+#: src/components/BreakoutRooms.tsx:296
+msgid "End breakout session"
+msgstr "Finalizar sesión de grupos"
+
+#: src/components/BreakoutRooms.tsx:300
+msgid "End breakout session?"
+msgstr "¿Finalizar la sesión de grupos?"
+
+#: src/views/meeting/LeaveMeetingDialog.tsx:34
+msgid "End for everyone"
+msgstr "Finalizar para todos"
+
+#: src/components/BreakoutRooms.tsx:309
+msgid "End session"
+msgstr "Finalizar sesión"
+
+#: src/components/BreakoutRooms.tsx:288
+msgid "End Session"
+msgstr "Finalizar sesion"
+
+#: src/views/meeting/boards/DotVote.tsx:97
+msgid "End vote"
+msgstr "Terminar votación"
+
+#: src/views/meeting/LeaveMeetingDialog.tsx:34
+msgid "Ending..."
+msgstr "Finalizando..."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:971
+msgid "password_modal_title"
+msgstr "Introducir la contraseña de la sala"
+
+#: src/views/Lobby.tsx:973
+msgid "Enter Room Password"
+msgstr "Escriba la contraseña de la sala"
+
+#: src/views/Auth.tsx:209
+msgid "Enter your credentials to access your workspace."
+msgstr "Escriba sus credenciales para acceder a su espacio de trabajo."
+
+#: src/views/Auth.tsx:211
+msgid "Enter your email to receive a reset link."
+msgstr "Escriba su correo electrónico para recibir un enlace de restablecimiento."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:904
+msgid "lobby_display_name_placeholder"
+msgstr "Introduce tu nombre"
+
+#: src/views/PasswordReset.tsx:129
+msgid "Enter your new password below"
+msgstr "Introduce tu nueva contrasena abajo"
+
+#: src/components/Whiteboard.tsx:2078
+msgid "Eraser"
+msgstr "Borrador"
+
+#: src/views/Docs.tsx:454
+msgid "Errors and limits"
+msgstr "Errores y límites"
+
+#: src/components/BreakoutRooms.tsx:302
+msgid "Everyone in a breakout room will return to the main meeting."
+msgstr "Todas las personas de los grupos volverán a la reunión principal."
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:146
+msgid "Everyone in the call sees that the assistant is listening. It keeps only what it writes down."
+msgstr "Todos en la llamada ven que el asistente escucha. Solo guarda lo que escribe."
+
+#: src/components/MeetingDoc.tsx:241
+msgid "Expand to fullscreen"
+msgstr "Expandir a pantalla completa"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:444
+msgid "Expand your camera"
+msgstr "Ampliar tu cámara"
+
+#. placeholder {0}: Math.ceil(remaining / 1000)
+#: src/views/meeting/DeviceHandoffDialog.tsx:80
+msgid "Expires in {0} seconds"
+msgstr "Caduca en {0} segundos"
+
+#: src/components/MeetingDoc.tsx:234
+msgid "Export PDF"
+msgstr "Exportar PDF"
+
+#: src/components/whiteboard/StylePanel.tsx:217
+msgid "Extra bold"
+msgstr "Muy gruesa"
+
+#: src/views/admin/components/RecordingsSection.tsx:63
+msgid "Failed"
+msgstr "Error"
+
+#: src/views/admin/hooks/useAdminController.ts:250
+msgid "Failed to delete room"
+msgstr "No se pudo eliminar la sala"
+
+#: src/views/admin/components/modals/RoomModal.tsx:300
+msgid "Failed to start automatic logo search"
+msgstr "No se pudo iniciar la búsqueda automática del logotipo"
+
+#: src/views/admin/hooks/useAdminController.ts:233
+msgid "Failed to update profile"
+msgstr "No se pudo actualizar el perfil"
+
+#: src/views/admin/components/modals/RoomModal.tsx:221
+msgid "Failed to upload background image. Please try again."
+msgstr "No se pudo subir la imagen de fondo. Inténtalo de nuevo."
+
+#: src/views/admin/components/modals/RoomModal.tsx:274
+msgid "Failed to upload logo image. Please try again."
+msgstr "No se pudo subir la imagen del logotipo. Inténtalo de nuevo."
+
+#: src/views/Onboarding.tsx:89
+msgid "Fast Everywhere"
+msgstr "Rápido en cualquier lugar"
+
+#: src/components/Whiteboard.tsx:1746
+msgid "Favourites"
+msgstr "Favoritas"
+
+#: src/views/Docs.tsx:477
+msgid "Field"
+msgstr "Campo"
+
+#: src/views/meeting/boards/RoomBoard.tsx:391
+msgid "Filed"
+msgstr "Archivadas"
+
+#: src/components/whiteboard/StylePanel.tsx:193
+#: src/components/whiteboard/StylePanel.tsx:195
+msgid "Fill"
+msgstr "Relleno"
+
+#: src/views/Docs.tsx:321
+msgid "Fill in the Convex and LiveKit values in <0>.env.local</0>, then start the backend and the app in two terminals."
+msgstr "Complete los valores de Convex y LiveKit en <0>.env.local</0> y luego inicie el backend y la app en dos terminales."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:168
+#: src/views/meeting/LiveKitVideoArea.tsx:209
+msgid "Fill the frame"
+msgstr "Rellenar el encuadre"
+
+#: src/views/Lobby.tsx:725
+#: src/views/meeting/EffectsPanel.tsx:142
+msgid "Filters background noise for clearer audio."
+msgstr "Filtra el ruido de fondo para un audio más claro."
+
+#: src/views/meeting/SettingsModal.tsx:162
+msgid "Filters background noise for clearer microphone audio."
+msgstr "Filtra el ruido de fondo para obtener un audio de micrófono más claro."
+
+#: src/views/admin/components/modals/RoomModal.tsx:536
+msgid "Find Logo Automatically"
+msgstr "Buscar el logotipo automáticamente"
+
+#: src/components/OnboardingTour.tsx:327
+msgid "Finish"
+msgstr "Finalizar"
+
+#: src/components/Whiteboard.tsx:1741
+msgid "Finished"
+msgstr "Terminado"
+
+#: src/components/OnboardingChecklist.tsx:37
+msgid "First steps"
+msgstr "Primeros pasos"
+
+#: src/components/whiteboard/StylePanel.tsx:266
+#: src/components/whiteboard/StylePanel.tsx:268
+msgid "Font size"
+msgstr "Tamaño de letra"
+
+#: src/views/Landing.tsx:285
+msgid "Footer navigation"
+msgstr "Navegación del pie de página"
+
+#: src/views/Landing.tsx:261
+msgid "For each room you choose: open, workspace members only, or password protected."
+msgstr "Para cada sala, usted elige: abierta, solo para miembros del espacio de trabajo o protegida con contraseña."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:139
+msgid "For example: Booking system"
+msgstr "Por ejemplo: sistema de reservas"
+
+#: src/views/Docs.tsx:360
+msgid "For trials only: LiveKit runs in dev mode with public keys, and the Convex instance secret is a sample. For production use <0>deploy/docker-compose.deploy.yml</0>, which requires your own secrets."
+msgstr "Solo para pruebas: LiveKit se ejecuta en modo de desarrollo con claves públicas y el secreto de la instancia de Convex es de ejemplo. En producción use <0>deploy/docker-compose.deploy.yml</0>, que requiere sus propios secretos."
+
+#: src/views/Auth.tsx:298
+msgid "Forgot password?"
+msgstr "¿Olvidó su contraseña?"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:15
+msgid "Free"
+msgstr "Gratis"
+
+#: src/views/Auth.tsx:210
+msgid "Free to use. Signing up asks for no payment details."
+msgstr "Gratis. Para registrarse no hacen falta datos de pago."
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Friday"
+msgstr "Viernes"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:160
+msgid "Full name"
+msgstr "Nombre completo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:365
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: src/views/Docs.tsx:248
+msgid "Getting Started"
+msgstr "Primeros pasos"
+
+#: src/views/admin/room/SessionPage.tsx:185
+#: src/views/meeting/chat/ChatMessageItem.tsx:59
+#: src/views/meeting/chat/GifPicker.tsx:59
+msgid "GIF"
+msgstr "GIF"
+
+#: src/views/meeting/chat/ChatComposer.tsx:102
+msgid "GIF ready to send"
+msgstr "GIF listo para enviar"
+
+#: src/views/meeting/chat/chatMedia.ts:124
+#: src/views/meeting/chat/GifPicker.tsx:36
+msgid "GIF search is unavailable right now."
+msgstr "La búsqueda de GIF no está disponible ahora."
+
+#: src/views/meeting/chat/ChatComposer.tsx:90
+#: src/views/meeting/chat/ChatComposer.tsx:163
+#: src/views/meeting/chat/ChatComposer.tsx:164
+msgid "GIFs"
+msgstr "GIF"
+
+#: src/views/Auth.tsx:346
+#: src/views/Landing.tsx:136
+#: src/views/Landing.tsx:287
+msgid "GitHub"
+msgstr "GitHub"
+
+#: src/views/meeting/boards/DotVote.tsx:82
+msgid "Give a dot"
+msgstr "Dar un punto"
+
+#: src/views/Docs.tsx:405
+msgid "Give LiveKit a <0>wss://</0> address in <1>LIVEKIT_HOST</1> and set <2>SITE_URL</2> to your public address."
+msgstr "Asigne a LiveKit una dirección <0>wss://</0> en <1>LIVEKIT_HOST</1> y defina <2>SITE_URL</2> con su dirección pública."
+
+#: src/views/meeting/boards/DotVote.tsx:77
+msgid "Give the selected element a dot."
+msgstr "Dé un punto al elemento seleccionado."
+
+#: src/views/MeetingFallback.tsx:15
+msgid "Go to a room URL (e.g., /room/<slug>), join from the lobby, and you'll be issued a LiveKit token."
+msgstr "Ve a la URL de una sala (por ejemplo, /room/<slug>), unete desde el lobby y se te emitira un token de LiveKit."
+
+#: src/views/Onboarding.tsx:185
+msgid "Go to Dashboard"
+msgstr "Ir al panel de control"
+
+#: src/router.tsx:98
+#: src/views/Lobby.tsx:664
+msgid "Go to Home"
+msgstr "Ir al inicio"
+
+#: src/views/PasswordReset.tsx:114
+#: src/views/PasswordReset.tsx:141
+msgid "Go to Login"
+msgstr "Ir a iniciar sesion"
+
+#: src/views/Auth.tsx:355
+msgid "Google"
+msgstr "Google"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:151
+msgid "Got it"
+msgstr "Entendido"
+
+#: src/components/Whiteboard.tsx:1722
+msgid "Green"
+msgstr "Verde"
+
+#: src/components/Whiteboard.tsx:2091
+#: src/views/meeting/MeetingTopBar.tsx:105
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: src/views/meeting/MeetingTopBar.tsx:103
+msgid "Grid view"
+msgstr "Vista de cuadrícula"
+
+#: src/components/whiteboard/StylePanel.tsx:331
+msgid "Group"
+msgstr "Agrupar"
+
+#: src/views/meeting/boards/CommentPin.tsx:89
+#: src/views/meeting/PeopleList.tsx:22
+msgid "Guest"
+msgstr "Invitado"
+
+#: src/views/Onboarding.tsx:90
+msgid "Guest-Ready"
+msgstr "Listo para invitados"
+
+#: src/views/Landing.tsx:201
+msgid "Guests are in with one link"
+msgstr "Los invitados entran con un enlace"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:253
+#: src/views/meeting/MeetingTopBar.tsx:97
+#: src/views/meeting/PeopleList.tsx:67
+msgid "Hand Raised"
+msgstr "Mano levantada"
+
+#: src/views/admin/components/modals/RoomModal.tsx:405
+msgid "Hangout"
+msgstr "Quedada"
+
+#: src/components/whiteboard/StylePanel.tsx:201
+msgid "Hatched"
+msgstr "Rayado"
+
+#: src/components/MeetingDoc.tsx:282
+msgid "Heading 1"
+msgstr "Encabezado 1"
+
+#: src/components/MeetingDoc.tsx:289
+msgid "Heading 2"
+msgstr "Encabezado 2"
+
+#: src/components/Whiteboard.tsx:1724
+msgid "Heart"
+msgstr "Corazón"
+
+#: src/views/admin/components/AdminTopBar.tsx:50
+#: src/views/admin/components/AdminTopBar.tsx:56
+msgid "Help & Docs"
+msgstr "Ayuda y Documentacion"
+
+#: src/components/BreakoutRooms.tsx:243
+#: src/components/BreakoutRooms.tsx:264
+msgid "Here"
+msgstr "Aquí"
+
+#: src/components/Whiteboard.tsx:1727
+msgid "Hexagon"
+msgstr "Hexágono"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:251
+#: src/views/Lobby.tsx:995
+msgid "Hide password"
+msgstr "Ocultar contraseña"
+
+#: src/views/admin/room/RoomPage.tsx:194
+msgid "History"
+msgstr "Historial"
+
+#: src/views/Landing.tsx:273
+msgid "Hold your next meeting in a room that stays."
+msgstr "Celebre su próxima reunión en una sala que permanece."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:98
+msgid "Host"
+msgstr "Anfitrión"
+
+#: src/views/Landing.tsx:261
+msgid "How do we control room access?"
+msgstr "¿Cómo controlamos el acceso a las salas?"
+
+#: src/views/Onboarding.tsx:100
+msgid "How should you appear in meetings?"
+msgstr "Como quieres aparecer en las reuniones?"
+
+#: src/components/Whiteboard.tsx:2069
+msgid "HTML page"
+msgstr "Página HTML"
+
+#: src/components/Whiteboard.tsx:1724
+msgid "Idea"
+msgstr "Idea"
+
+#: src/components/Whiteboard.tsx:1735
+#: src/components/Whiteboard.tsx:1745
+msgid "Ideas"
+msgstr "Ideas"
+
+#: src/views/admin/room/SessionPage.tsx:185
+msgid "Image"
+msgstr "Imagen"
+
+#: src/views/meeting/chat/ChatMessageItem.tsx:51
+msgid "Image from {name}"
+msgstr "Imagen de {name}"
+
+#: src/views/admin/components/modals/RoomModal.tsx:189
+#: src/views/admin/components/modals/RoomModal.tsx:238
+msgid "Image must be less than 5MB."
+msgstr "La imagen debe pesar menos de 5 MB."
+
+#: src/views/meeting/chat/ChatComposer.tsx:102
+msgid "Image ready to send"
+msgstr "Imagen lista para enviar"
+
+#: src/views/admin/room/RoomPage.tsx:198
+msgid "In the room"
+msgstr "En la sala"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:27
+msgid "Incomplete"
+msgstr "Incompleto"
+
+#: src/app-state/joinErrors.ts:16
+msgid "Incorrect room password. Please try again."
+msgstr "Contraseña de sala incorrecta. Inténtalo de nuevo."
+
+#: src/views/Lobby.tsx:809
+msgid "Initializing devices..."
+msgstr "Inicializando dispositivos..."
+
+#: src/views/Docs.tsx:25
+#: src/views/Docs.tsx:287
+msgid "Introduction"
+msgstr "Introduccion"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:149
+msgid "Invite Member"
+msgstr "Invitar a un miembro"
+
+#: src/views/meeting/PeopleList.tsx:79
+msgid "Invite People"
+msgstr "Invitar personas"
+
+#: src/views/Onboarding.tsx:163
+msgid "Invite team members via email"
+msgstr "Invita a miembros del equipo por correo"
+
+#: src/views/admin/room/RoomPage.tsx:86
+msgid "It is filed once the room has been empty for 10 minutes."
+msgstr "Se archiva cuando la sala lleva 10 minutos vacía."
+
+#: src/components/MeetingDoc.tsx:265
+msgid "Italic"
+msgstr "Cursiva"
+
+#: src/views/Docs.tsx:383
+msgid "Its HTTP address, used for sign-in."
+msgstr "Su dirección HTTP, usada para iniciar sesión."
+
+#: src/components/BreakoutRooms.tsx:266
+#: src/views/admin/components/RoomsTable.tsx:102
+#: src/views/admin/components/sections/OverviewSection.tsx:138
+#: src/views/admin/room/RoomPage.tsx:189
+#: src/views/Lobby.tsx:1013
+msgid "Join"
+msgstr "Unirse"
+
+#: src/views/Landing.tsx:122
+msgctxt "join a room"
+msgid "Join"
+msgstr "Unirse"
+
+#: src/views/MeetingFallback.tsx:13
+msgid "Join a room to start the meeting"
+msgstr "Unete a una sala para iniciar la reunion"
+
+#: src/views/meeting/MeetingAccessBoundary.tsx:33
+msgid "Join again"
+msgstr "Volver a unirse"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:948
+msgid "msg_join_meeting"
+msgstr "Unirse a la reunión"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:947
+msgid "msg_join_protected"
+msgstr "Unirse con contraseña"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:945
+msgid "msg_joining"
+msgstr "Uniéndose..."
+
+#: src/views/Lobby.tsx:1013
+msgid "Joining…"
+msgstr "Uniéndose…"
+
+#: src/components/Whiteboard.tsx:1738
+msgid "Kanban"
+msgstr "Kanban"
+
+#: src/views/meeting/boards/RoomBoard.tsx:450
+msgid "Keep working"
+msgstr "Seguir trabajando"
+
+#: src/views/Docs.tsx:443
+msgid "Keys"
+msgstr "Claves"
+
+#: src/components/Whiteboard.tsx:1845
+msgid "Label"
+msgstr "Etiqueta"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:90
+msgid "Language"
+msgstr "Idioma"
+
+#. js-lingui-explicit-id
+#: src/components/LanguageSwitcher.tsx:27
+msgid "language_switcher_label"
+msgstr "Idioma"
+
+#: src/components/Whiteboard.tsx:1930
+msgid "Large"
+msgstr "Grande"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:100
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:111
+msgid "Last used"
+msgstr "Último uso"
+
+#: src/components/whiteboard/StylePanel.tsx:303
+msgid "Layers"
+msgstr "Capas"
+
+#: src/views/meeting/MeetingTopBar.tsx:102
+msgid "Layout"
+msgstr "Vista"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:139
+#: src/views/meeting/LeaveMeetingDialog.tsx:31
+#: src/views/meeting/LKControls.tsx:381
+msgid "Leave"
+msgstr "Salir"
+
+#: src/views/meeting/LeaveMeetingDialog.tsx:17
+#: src/views/meeting/LeaveMeetingDialog.tsx:20
+msgid "Leave meeting"
+msgstr "Salir de la reunión"
+
+#: src/views/Landing.tsx:225
+msgid "Leave the meeting with decisions"
+msgstr "Salga de la reunión con decisiones"
+
+#: src/components/whiteboard/StylePanel.tsx:281
+msgid "Left"
+msgstr "Izquierda"
+
+#: src/views/Docs.tsx:307
+msgid "Licensed under the Functional Source License (FSL-1.1-ALv2). Each release becomes Apache-2.0 two years after it ships."
+msgstr "Con licencia Functional Source License (FSL-1.1-ALv2). Cada versión pasa a Apache-2.0 dos años después de su publicación."
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:103
+msgid "Light"
+msgstr "Claro"
+
+#: src/views/admin/components/modals/RoomModal.tsx:482
+msgid "Light Mode"
+msgstr "Modo claro"
+
+#: src/components/Whiteboard.tsx:2031
+msgid "Line"
+msgstr "Línea"
+
+#: src/views/Docs.tsx:488
+msgid "Lists all rooms of the workspace. <0>activeParticipants</0> counts who is in the room now."
+msgstr "Lista todas las salas del espacio de trabajo. <0>activeParticipants</0> cuenta quién está ahora en la sala."
+
+#: src/views/Docs.tsx:497
+msgid "Lists the room's last 100 meetings, newest first: <0>status</0> (<1>open</1> or <2>closed</2>), <3>startedAt</3>, <4>endedAt</4>, <5>participantNames</5> and <6>messageCount</6>."
+msgstr "Lista las últimas 100 reuniones de la sala, la más reciente primero: <0>status</0> (<1>open</1> o <2>closed</2>), <3>startedAt</3>, <4>endedAt</4>, <5>participantNames</5> y <6>messageCount</6>."
+
+#: src/views/Docs.tsx:506
+msgid "Lists the workspace's last 100 recordings, newest first. Add <0>{ROOM_FILTER}</0> for one room's recordings. <1>status</1> is <2>starting</2>, <3>recording</3>, <4>completed</4> or <5>failed</5>."
+msgstr "Lista las últimas 100 grabaciones del espacio de trabajo, la más reciente primero. Añada <0>{ROOM_FILTER}</0> para las de una sala. <1>status</1> es <2>starting</2>, <3>recording</3>, <4>completed</4> o <5>failed</5>."
+
+#: src/views/admin/components/RoomsTable.tsx:37
+msgid "Live"
+msgstr "En directo"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:99
+msgid "Live now"
+msgstr "En directo ahora"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:108
+msgid "Live rooms"
+msgstr "Salas en directo"
+
+#: src/views/Docs.tsx:339
+msgid "LiveKit carries video, audio, screen sharing and who is in the call."
+msgstr "LiveKit transporta el vídeo, el audio y la pantalla compartida, y sabe quién está en la llamada."
+
+#: src/views/Docs.tsx:423
+msgid "LiveKit reports the state of recordings here. Set <0>LIVEKIT_EGRESS_WEBHOOK_URL</0> to this address."
+msgstr "LiveKit informa aquí del estado de las grabaciones. Defina <0>LIVEKIT_EGRESS_WEBHOOK_URL</0> con esta dirección."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:119
+#: src/views/meeting/EffectsPanel.tsx:30
+msgid "bg_living_room"
+msgstr "Sala de estar"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:84
+msgid "Loading dashboard metrics"
+msgstr "Cargando métricas del panel"
+
+#: src/views/admin/room/RoomPage.tsx:47
+msgid "Loading history"
+msgstr "Cargando historial"
+
+#: src/views/admin/components/modals/NotesModal.tsx:30
+#: src/views/Meeting.tsx:782
+msgid "Loading notes..."
+msgstr "Cargando notas..."
+
+#: src/views/admin/components/RecordingsSection.tsx:101
+msgid "Loading recordings"
+msgstr "Cargando grabaciones"
+
+#: src/views/Lobby.tsx:636
+#: src/views/Meeting.tsx:557
+msgid "Loading room..."
+msgstr "Cargando sala..."
+
+#: src/views/admin/components/RoomsTable.tsx:60
+msgid "Loading rooms"
+msgstr "Cargando salas"
+
+#: src/views/admin/room/SessionPage.tsx:52
+msgid "Loading session"
+msgstr "Cargando sesión"
+
+#: src/components/AuthGuard.tsx:45
+#: src/views/admin/components/AdminTopBar.tsx:61
+#: src/views/meeting/boards/RoomBoard.tsx:287
+#: src/views/meeting/chat/ChatPanel.tsx:189
+msgid "Loading..."
+msgstr "Cargando…"
+
+#: src/components/whiteboard/StylePanel.tsx:335
+msgid "Lock"
+msgstr "Bloquear"
+
+#: src/components/MeetingDoc.tsx:220
+msgid "Lock editing (Host only)"
+msgstr "Bloquear la edición (solo el anfitrión)"
+
+#: src/views/Auth.tsx:317
+#: src/views/Auth.tsx:380
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: src/views/Landing.tsx:125
+#: src/views/Landing.tsx:139
+msgid "Log In"
+msgstr "Iniciar sesión"
+
+#: src/views/admin/components/modals/RoomModal.tsx:515
+msgid "Logo preview"
+msgstr "Vista previa del logotipo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:47
+msgid "Logo ready"
+msgstr "Logotipo listo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:546
+msgid "Logo URL"
+msgstr "URL del logotipo"
+
+#: src/views/meeting/LKControls.tsx:338
+msgid "Lower Hand"
+msgstr "Bajar la mano"
+
+#: src/views/admin/components/modals/RoomModal.tsx:391
+msgid "Lowercase letters, numbers, and hyphens only"
+msgstr "Solo letras minúsculas, números y guiones"
+
+#: src/views/Landing.tsx:104
+#: src/views/Landing.tsx:132
+msgid "Main navigation"
+msgstr "Navegación principal"
+
+#: src/components/BreakoutRooms.tsx:241
+msgid "Main Room"
+msgstr "Sala principal"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:147
+msgid "Manage rooms"
+msgstr "Gestionar salas"
+
+#: src/views/admin/constants.ts:19
+msgid "Manage Rooms"
+msgstr "Gestionar salas"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:71
+msgid "Manage team access and assign roles."
+msgstr "Gestionar el acceso del equipo y asignar roles."
+
+#: src/views/admin/components/sections/RoomsSection.tsx:50
+msgid "Manage the rooms and settings that keep your meetings moving."
+msgstr "Gestiona las salas y los ajustes que mantienen tus reuniones en marcha."
+
+#: src/views/admin/components/modals/RoomModal.tsx:580
+msgid "Manual fallback if automatic discovery fails"
+msgstr "Alternativa manual si falla la detección automática"
+
+#: src/components/Whiteboard.tsx:1999
+#: src/components/whiteboard/StylePanel.tsx:177
+msgid "Marker"
+msgstr "Rotulador"
+
+#: src/components/whiteboard/StylePanel.tsx:179
+msgid "Marker {c}"
+msgstr "Rotulador {c}"
+
+#: src/views/Docs.tsx:458
+msgid "Meaning"
+msgstr "Significado"
+
+#: src/components/Whiteboard.tsx:1930
+msgid "Medium"
+msgstr "Mediana"
+
+#: src/views/Meeting.tsx:141
+msgid "Meeting"
+msgstr "Reunión"
+
+#: src/views/meeting/LKControls.tsx:238
+msgid "Meeting Controls"
+msgstr "Controles de reunion"
+
+#: src/views/meeting/PeopleList.tsx:40
+msgid "Meeting link copied"
+msgstr "Enlace de la reunión copiado"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:122
+msgid "Meeting moved to another device"
+msgstr "La reunión se trasladó a otro dispositivo"
+
+#: src/components/MeetingDoc.tsx:109
+#: src/views/admin/components/modals/NotesModal.tsx:21
+#: src/views/admin/components/modals/NotesModal.tsx:24
+msgid "Meeting Notes"
+msgstr "Notas de la reunión"
+
+#: src/views/admin/components/RecordingsSection.tsx:125
+#: src/views/admin/components/RecordingsSection.tsx:161
+#: src/views/admin/components/RecordingViewerModal.tsx:47
+msgid "Meeting recording"
+msgstr "Grabación de la reunión"
+
+#: src/views/admin/components/sections/RoomsSection.tsx:49
+msgid "Meeting Rooms"
+msgstr "Salas de reuniones"
+
+#: src/views/Landing.tsx:284
+msgid "Meeting rooms in the browser."
+msgstr "Salas de reuniones en el navegador."
+
+#: src/components/MeetingDoc.tsx:186
+msgid "meeting-notes"
+msgstr "notas-de-reunion"
+
+#: src/components/MeetingDoc.tsx:174
+msgid "meeting-notes.html"
+msgstr "notas-de-reunion.html"
+
+#: src/views/Landing.tsx:78
+msgid "Meetings that leave a mark."
+msgstr "Reuniones que dejan huella."
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:23
+#: src/views/admin/components/TeamSettingsCard.tsx:103
+#: src/views/admin/components/TeamSettingsCard.tsx:123
+#: src/views/admin/components/TeamSettingsCard.tsx:169
+msgid "Member"
+msgstr "Miembro"
+
+#: src/views/admin/components/modals/RoomModal.tsx:419
+#: src/views/admin/components/RoomsTable.tsx:30
+msgid "Members only"
+msgstr "Solo miembros"
+
+#: src/views/meeting/chat/ChatPanel.tsx:135
+msgid "Message not sent. Try again."
+msgstr "Mensaje no enviado. Inténtelo de nuevo."
+
+#: src/views/meeting/chat/ChatPanel.tsx:201
+msgid "Messages"
+msgstr "Mensajes"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:82
+msgid "Metrics could not be loaded"
+msgstr "No se pudieron cargar las métricas"
+
+#: src/views/Lobby.tsx:862
+#: src/views/meeting/SettingsModal.tsx:52
+msgid "Mic Level"
+msgstr "Nivel del micrófono"
+
+#: src/views/meeting/PeopleList.tsx:70
+msgid "Mic on"
+msgstr "Micrófono activado"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:914
+msgid "lobby_microphone_label"
+msgstr "Microfono"
+
+#: src/views/meeting/LKControls.tsx:249
+#: src/views/meeting/SettingsModal.tsx:128
+#: src/views/meeting/SettingsModal.tsx:134
+msgid "Microphone"
+msgstr "Micrófono"
+
+#: src/views/meeting/SettingsModal.tsx:61
+msgid "Microphone not active"
+msgstr "El micrófono no está activo"
+
+#: src/views/meeting/RoomTimer.tsx:96
+#: src/views/meeting/RoomTimer.tsx:100
+msgid "min"
+msgstr "min"
+
+#: src/components/Whiteboard.tsx:2034
+msgid "Mind map"
+msgstr "Mapa mental"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:421
+msgid "Minimize your camera"
+msgstr "Minimizar tu cámara"
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Monday"
+msgstr "Lunes"
+
+#: src/views/meeting/chat/GifPicker.tsx:69
+#: src/views/meeting/LKControls.tsx:318
+#: src/views/meeting/LKControls.tsx:328
+msgid "More"
+msgstr "Más"
+
+#: src/views/meeting/chat/ChatMessageItem.tsx:100
+msgid "More emoji"
+msgstr "Más emoji"
+
+#: src/views/admin/components/RoomMenu.tsx:100
+#: src/views/admin/components/RoomMenu.tsx:111
+msgid "More room actions"
+msgstr "Más acciones de la sala"
+
+#: src/components/Whiteboard.tsx:2006
+#: src/components/Whiteboard.tsx:2010
+msgid "More shapes"
+msgstr "Más formas"
+
+#: src/components/Whiteboard.tsx:1746
+msgid "Move the best ideas here"
+msgstr "Mueva aquí las mejores ideas"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:80
+msgid "Moved the view"
+msgstr "Vista movida"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:825
+msgid "mute_microphone"
+msgstr "Silenciar micrófono"
+
+#: src/views/meeting/LKControls.tsx:248
+msgid "Mute microphone"
+msgstr "Silenciar micrófono"
+
+#: src/views/meeting/PeopleList.tsx:70
+msgid "Muted"
+msgstr "Silenciado"
+
+#: src/views/admin/components/sections/SettingsSection.tsx:61
+msgid "My Profile"
+msgstr "Mi perfil"
+
+#: src/views/admin/components/RoomsTable.tsx:73
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:98
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:138
+#: src/views/admin/components/settings/ProfilePanel.tsx:81
+#: src/views/admin/components/TeamSettingsCard.tsx:92
+msgid "Name"
+msgstr "Nombre"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:159
+msgid "Name (optional)"
+msgstr "Nombre (opcional)"
+
+#: src/views/meeting/boards/RoomBoard.tsx:369
+msgid "Name this board"
+msgstr "Poner nombre a la pizarra"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:121
+#: src/views/meeting/EffectsPanel.tsx:32
+msgid "bg_nature"
+msgstr "Naturaleza"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:112
+msgid "Never"
+msgstr "Nunca"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:126
+msgid "New API key"
+msgstr "Nueva clave de API"
+
+#: src/components/Whiteboard.tsx:2116
+#: src/views/meeting/boards/RoomBoard.tsx:414
+#: src/views/meeting/boards/RoomBoard.tsx:452
+msgid "New board"
+msgstr "Pizarra nueva"
+
+#: src/components/Whiteboard.tsx:2116
+#: src/views/meeting/boards/RoomBoard.tsx:414
+msgid "New board with the selection"
+msgstr "Pizarra nueva con la selección"
+
+#: src/views/meeting/chat/ChatPanel.tsx:221
+msgid "New messages"
+msgstr "Mensajes nuevos"
+
+#: src/views/admin/components/AdminTopBar.tsx:54
+#: src/views/admin/components/RoomsTable.tsx:43
+msgid "New Room"
+msgstr "Nueva sala"
+
+#: src/views/meeting/boards/DotVote.tsx:95
+msgid "New round"
+msgstr "Nueva ronda"
+
+#: src/components/OnboardingTour.tsx:327
+msgid "Next"
+msgstr "Siguiente"
+
+#: src/views/Landing.tsx:166
+#: src/views/Landing.tsx:233
+msgctxt "the next step of a meeting"
+msgid "Next"
+msgstr "A continuación"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:276
+msgid "Next page"
+msgstr "Página siguiente"
+
+#: src/views/Onboarding.tsx:160
+msgid "Next Steps:"
+msgstr "Siguientes pasos:"
+
+#: src/components/Whiteboard.tsx:1724
+msgid "No"
+msgstr "No"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:94
+msgid "No API keys yet."
+msgstr "Todavía no hay claves de API."
+
+#: src/views/meeting/SettingsModal.tsx:61
+msgid "No audio detected"
+msgstr "No se detectó audio"
+
+#: src/components/whiteboard/StylePanel.tsx:187
+msgid "No background"
+msgstr "Sin fondo"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:60
+msgid "No explicit members yet. For members-only rooms, the first joiner becomes Host."
+msgstr "Sin miembros explícitos aún. Para salas solo de miembros, el primer participante se convierte en anfitrión."
+
+#: src/views/meeting/chat/GifPicker.tsx:65
+msgid "No GIFs found"
+msgstr "No se encontraron GIF"
+
+#: src/views/admin/components/modals/RoomModal.tsx:522
+msgid "No logo selected yet"
+msgstr "Aún no se ha seleccionado ningún logotipo"
+
+#: src/views/meeting/chat/ChatPanel.tsx:212
+msgid "No messages in this session yet"
+msgstr "Aún no hay mensajes en esta sesión"
+
+#: src/views/meeting/chat/ChatPanel.tsx:191
+msgid "No messages yet"
+msgstr "Sin mensajes aún"
+
+#: src/views/admin/components/modals/NotesModal.tsx:34
+msgid "No notes recorded for this room."
+msgstr "No hay notas registradas para esta sala."
+
+#: src/views/admin/components/RecordingsSection.tsx:87
+msgid "No recordings yet"
+msgstr "Aún no hay grabaciones"
+
+#: src/views/Docs.tsx:228
+msgid "No results"
+msgstr "Sin resultados"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:117
+msgid "No rooms are live right now."
+msgstr "No hay salas en directo ahora mismo."
+
+#: src/views/admin/components/sections/RoomsSection.tsx:69
+msgid "No rooms match your search."
+msgstr "Ninguna sala coincide con tu busqueda."
+
+#: src/views/admin/components/RoomsTable.tsx:42
+msgid "No rooms yet. Create one to get started."
+msgstr "Aún no hay salas. Crea una para empezar."
+
+#: src/views/admin/room/RoomPage.tsx:148
+msgid "No session yet"
+msgstr "Aún no hay sesiones"
+
+#: src/views/Docs.tsx:462
+msgid "No such room or recording in this workspace, or no such path."
+msgstr "No existe esa sala o grabación en este espacio de trabajo, o no existe la ruta."
+
+#: src/views/admin/components/TeamSettingsCard.tsx:88
+msgid "No team members yet. Invite someone by email to get started."
+msgstr "Sin miembros del equipo aún. Invite a alguien por correo electrónico para comenzar."
+
+#: src/views/meeting/TranscriptPanel.tsx:161
+msgid "No transcript text is available."
+msgstr "No hay texto de transcripción disponible."
+
+#: src/views/Landing.tsx:257
+msgid "No. Guests join from the room link or the room name in a browser, on desktop or on a phone. Only people who create or manage rooms need an account."
+msgstr "No. Los invitados entran con el enlace o el nombre de la sala desde el navegador, en el ordenador o en el móvil. Solo necesita una cuenta quien crea o gestiona salas."
+
+#: src/views/admin/room/SessionPage.tsx:137
+msgid "Nobody drew, wrote or noted anything in this meeting."
+msgstr "En esta reunión nadie dibujó, escribió ni anotó nada."
+
+#: src/views/Lobby.tsx:722
+#: src/views/meeting/EffectsPanel.tsx:141
+#: src/views/meeting/EffectsPanel.tsx:147
+#: src/views/meeting/SettingsModal.tsx:160
+msgid "Noise Reduction"
+msgstr "Reducción de ruido"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:116
+#: src/views/meeting/EffectsPanel.tsx:27
+msgid "bg_none"
+msgstr "Ninguno"
+
+#: src/components/whiteboard/StylePanel.tsx:256
+msgid "None"
+msgstr "Ninguna"
+
+#: src/views/meeting/LKControls.tsx:147
+msgid "Not connected to the room yet."
+msgstr "Aún no está conectado a la sala."
+
+#: src/router.tsx:557
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: src/components/Whiteboard.tsx:1912
+#: src/components/Whiteboard.tsx:2000
+msgid "Note"
+msgstr "Nota adhesiva"
+
+#: src/views/Docs.tsx:326
+#: src/views/Docs.tsx:359
+msgid "Note:"
+msgstr "Nota:"
+
+#: src/components/MeetingDoc.tsx:209
+#: src/views/admin/components/RoomMenu.tsx:120
+#: src/views/admin/room/RoomPage.tsx:67
+#: src/views/admin/room/RoomPage.tsx:130
+#: src/views/admin/room/SessionPage.tsx:121
+#: src/views/admin/room/SessionPage.tsx:173
+#: src/views/Goodbye.tsx:35
+#: src/views/Meeting.tsx:752
+#: src/views/Meeting.tsx:764
+#: src/views/meeting/LKControls.tsx:302
+msgid "Notes"
+msgstr "Notas"
+
+#: src/views/Meeting.tsx:780
+msgid "Notes could not be loaded. Leave the meeting and join again to retry."
+msgstr "No se pudieron cargar las notas. Salga de la reunión y vuelva a entrar para reintentarlo."
+
+#: src/views/Landing.tsx:258
+msgid "Notes, whiteboard and recording stay in the room. At the end, a summary shows the duration, the participants and the next step."
+msgstr "Las notas, la pizarra y la grabación permanecen en la sala. Al final, un resumen muestra la duración, los participantes y el siguiente paso."
+
+#: src/views/admin/room/RoomPage.tsx:113
+msgid "Nothing in the room yet. The board and the notes of the next meeting stay here."
+msgstr "Todavía no hay nada en la sala. La pizarra y las notas de la próxima reunión se quedan aquí."
+
+#: src/views/admin/room/RoomPage.tsx:63
+msgid "Nothing kept"
+msgstr "Nada guardado"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:118
+#: src/views/meeting/EffectsPanel.tsx:29
+msgid "bg_office"
+msgstr "Oficina"
+
+#: src/views/admin/components/RoomsTable.tsx:90
+#: src/views/admin/room/RoomPage.tsx:184
+msgid "Offline"
+msgstr "Desconectado"
+
+#: src/views/admin/room/SessionPage.tsx:155
+msgid "On “{on}”"
+msgstr "Sobre «{on}»"
+
+#: src/views/admin/room/SessionPage.tsx:155
+msgid "On an element"
+msgstr "Sobre un elemento"
+
+#: src/views/meeting/boards/RoomBoard.tsx:360
+msgid "On the board"
+msgstr "En la pizarra"
+
+#: src/views/Docs.tsx:522
+msgid "On this page"
+msgstr "En esta pagina"
+
+#: src/components/Whiteboard.tsx:1745
+msgid "One idea per note"
+msgstr "Una idea por nota"
+
+#: src/views/PasswordReset.tsx:176
+msgid "One lowercase letter"
+msgstr "Una letra minuscula"
+
+#: src/views/PasswordReset.tsx:177
+msgid "One number"
+msgstr "Un numero"
+
+#: src/views/PasswordReset.tsx:175
+msgid "One uppercase letter"
+msgstr "Una letra mayuscula"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:73
+msgid "Only organization owners and admins can invite or remove members."
+msgstr "Solo los propietarios de organizaciones y administradores pueden invitar o eliminar miembros."
+
+#: src/views/meeting/chat/chatMedia.ts:54
+#: src/views/meeting/chat/ChatPanel.tsx:90
+msgid "Only PNG, JPEG, GIF and WebP images can be shared."
+msgstr "Solo se pueden compartir imágenes PNG, JPEG, GIF y WebP."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:68
+msgid "Only workspace owners and admins can manage API keys."
+msgstr "Solo los propietarios y administradores del espacio de trabajo pueden gestionar claves de API."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:357
+msgid "Only you see this preview. Everyone else sees your screen full size."
+msgstr "Solo tú ves esta vista previa. Los demás ven tu pantalla en grande."
+
+#: src/components/whiteboard/StylePanel.tsx:286
+#: src/components/whiteboard/StylePanel.tsx:295
+msgid "Opacity"
+msgstr "Opacidad"
+
+#: src/components/whiteboard/BoardView.tsx:30
+#: src/views/admin/components/RecordingsSection.tsx:81
+#: src/views/admin/components/RoomsTable.tsx:103
+msgid "Open"
+msgstr "Abrir"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:78
+msgid "Open a live room or create the next one."
+msgstr "Abre una sala en directo o crea la siguiente."
+
+#: src/views/meeting/chat/ChatMessageItem.tsx:52
+msgid "Open image from {name}"
+msgstr "Abrir imagen de {name}"
+
+#: src/views/Landing.tsx:127
+msgid "Open menu"
+msgstr "Abrir menú"
+
+#: src/views/meeting/chat/ChatPanel.tsx:255
+msgid "Open original"
+msgstr "Abrir original"
+
+#: src/views/admin/components/RecordingsSection.tsx:80
+msgid "Open recording"
+msgstr "Abrir grabación"
+
+#: src/views/admin/room/SessionPage.tsx:202
+msgid "Open recordings"
+msgstr "Abrir grabaciones"
+
+#: src/views/meeting/boards/RoomBoard.tsx:418
+msgid "Open the room's history"
+msgstr "Abrir el historial de la sala"
+
+#. placeholder {0}: formatLongDate(session.startedAt)
+#: src/views/admin/room/RoomPage.tsx:92
+msgid "Open the session from {0}"
+msgstr "Abrir la sesión del {0}"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:67
+msgid "Open this one-time link on your phone or another computer. Your meeting identity and breakout room will transfer."
+msgstr "Abre este enlace de un solo uso en tu teléfono u otro ordenador. Tu identidad de reunión y tu sala de grupos se transferirán."
+
+#: src/views/Goodbye.tsx:63
+msgid "Open this session in the history"
+msgstr "Abrir esta sesión en el historial"
+
+#: src/views/Docs.tsx:390
+msgid "Optional. Sends password reset and verification email."
+msgstr "Opcional. Envía correos de restablecimiento de contraseña y de verificación."
+
+#: src/views/Docs.tsx:391
+msgid "Optional. Sign-in with GitHub or Google, together with their secrets."
+msgstr "Opcional. Inicio de sesión con GitHub o Google, junto con sus secretos."
+
+#: src/views/Docs.tsx:388
+msgid "Optional. Storage for recordings, together with its access keys."
+msgstr "Opcional. Almacenamiento de grabaciones, junto con sus claves de acceso."
+
+#: src/views/Docs.tsx:479
+msgid "Optional. The end of the room link: 3 to 50 lowercase letters, digits and hyphens. Without it the API makes one from the name, such as <0>weekly-sync-7awlt8</0>."
+msgstr "Opcional. El final del enlace de la sala: de 3 a 50 letras minúsculas, cifras y guiones. Sin él, la API crea uno a partir del nombre, como <0>weekly-sync-7awlt8</0>."
+
+#: src/views/Docs.tsx:389
+msgid "Optional. Transcribes recordings."
+msgstr "Opcional. Transcribe las grabaciones."
+
+#: src/views/Docs.tsx:392
+msgid "Optional. Turns on paid plans."
+msgstr "Opcional. Activa los planes de pago."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:181
+msgid "Options for {name}"
+msgstr "Opciones para {name}"
+
+#: src/views/Auth.tsx:334
+msgid "Or continue with"
+msgstr "O continuar con"
+
+#: src/views/admin/components/modals/RoomModal.tsx:645
+msgid "or enter URL below"
+msgstr "o ingrese la URL a continuación"
+
+#: src/components/MeetingDoc.tsx:306
+msgid "Ordered List"
+msgstr "Lista numerada"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:147
+msgid "Other rooms"
+msgstr "Otras salas"
+
+#: src/views/admin/components/AdminTopBar.tsx:20
+#: src/views/admin/components/MobileTabNav.tsx:13
+#: src/views/Docs.tsx:51
+msgid "Overview"
+msgstr "Descripción general"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:23
+#: src/views/admin/components/TeamSettingsCard.tsx:109
+msgid "Owner"
+msgstr "Propietario"
+
+#: src/views/Docs.tsx:445
+msgid "Owners and admins create keys in the dashboard under Settings, API keys. A key acts for its workspace and sees only that workspace's rooms. The dashboard shows a key once, when you create it. If a key gets out, revoke it there; requests with it stop at once."
+msgstr "Los propietarios y administradores crean claves en el panel, en Ajustes, Claves de API. Una clave actúa para su espacio de trabajo y solo ve sus salas. El panel muestra una clave una sola vez, al crearla. Si una clave se filtra, revóquela allí; las solicitudes con ella dejan de funcionar al instante."
+
+#: src/components/Whiteboard.tsx:1477
+msgid "Pages and uploaded images stay in their room: paste them there, or upload them here."
+msgstr "Las páginas y las imágenes subidas se quedan en su sala: pégalas allí o súbelas aquí."
+
+#: src/components/Whiteboard.tsx:1996
+msgid "Pan"
+msgstr "Desplazar"
+
+#: src/components/Whiteboard.tsx:1727
+msgid "Parallelogram"
+msgstr "Paralelogramo"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:99
+msgid "Participant"
+msgstr "Participante"
+
+#: src/views/admin/room/SessionPage.tsx:118
+#: src/views/Auth.tsx:40
+#: src/views/Goodbye.tsx:31
+#: src/views/Landing.tsx:163
+#: src/views/Meeting.tsx:751
+#: src/views/Meeting.tsx:763
+#: src/views/meeting/LKControls.tsx:295
+#: src/views/meeting/LKControls.tsx:332
+msgid "Participants"
+msgstr "Participantes"
+
+#: src/views/admin/components/modals/RoomModal.tsx:505
+msgid "Partner Logo"
+msgstr "Logotipo del socio"
+
+#: src/views/admin/components/modals/RoomModal.tsx:490
+msgid "Partner Website"
+msgstr "Sitio web del socio"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:244
+#: src/views/Lobby.tsx:978
+msgid "Password"
+msgstr "Contrasena"
+
+#: src/views/admin/components/modals/RoomModal.tsx:421
+#: src/views/admin/components/RoomsTable.tsx:30
+msgid "Password protected"
+msgstr "Protegida con contraseña"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:581
+msgid "msg_password_required"
+msgstr "Se requiere contraseña"
+
+#: src/views/PasswordReset.tsx:172
+msgid "Password requirements:"
+msgstr "Requisitos de la contrasena:"
+
+#: src/views/PasswordReset.tsx:107
+msgid "Password Reset Successful"
+msgstr "Restablecimiento de contrasena correcto"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:22
+msgid "Past due"
+msgstr "Vencido"
+
+#: src/views/meeting/RoomTimer.tsx:102
+msgid "Pause"
+msgstr "Pausar"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:25
+#: src/views/meeting/RoomTimer.tsx:83
+msgid "Paused"
+msgstr "En pausa"
+
+#: src/components/Whiteboard.tsx:1998
+msgid "Pen"
+msgstr "Lápiz"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:265
+msgid "msg_permission_denied"
+msgstr "Permiso denegado"
+
+#: src/views/admin/components/modals/RoomModal.tsx:404
+msgid "Personal"
+msgstr "Personal"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:172
+msgid "Pin {name} for me"
+msgstr "Fijar a {name} para mí"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:203
+msgid "Pin for me"
+msgstr "Fijar para mí"
+
+#: src/components/Whiteboard.tsx:1722
+msgid "Pink"
+msgstr "Rosa"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:673
+msgid "Pinned for you"
+msgstr "Fijado para ti"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:45
+msgid "Plan & Billing"
+msgstr "Plan y facturación"
+
+#: src/views/Lobby.tsx:803
+msgid "Please allow camera and microphone access to join the meeting."
+msgstr "Permita el acceso a la cámara y el micrófono para unirse a la reunión."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:542
+msgid "msg_enter_name"
+msgstr "Introduzca su nombre"
+
+#: src/views/admin/components/modals/RoomModal.tsx:184
+#: src/views/admin/components/modals/RoomModal.tsx:233
+msgid "Please select an image file."
+msgstr "Selecciona un archivo de imagen."
+
+#: src/components/Whiteboard.tsx:1724
+msgid "Plus one"
+msgstr "Más uno"
+
+#: src/views/meeting/chat/GifPicker.tsx:72
+msgid "Powered by KLIPY"
+msgstr "Con tecnología de KLIPY"
+
+#: src/router.tsx:416
+msgid "Preparing secure device handoff…"
+msgstr "Preparando el cambio seguro de dispositivo…"
+
+#: src/views/Lobby.tsx:639
+msgid "Preparing your lobby for /{roomSlug}"
+msgstr "Preparando tu lobby para /{roomSlug}"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:274
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: src/views/admin/components/modals/RoomModal.tsx:454
+#: src/views/admin/components/modals/RoomModal.tsx:466
+msgid "Primary Color"
+msgstr "Color primario"
+
+#: src/views/Onboarding.tsx:88
+msgid "Privacy First"
+msgstr "Privacidad primero"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:64
+msgid "Pro adds more rooms, higher participant limits and more recording minutes."
+msgstr "Pro añade más salas, límites de participantes más altos y más minutos de grabación."
+
+#: src/views/admin/components/RecordingsSection.tsx:64
+msgid "Processing"
+msgstr "Procesando"
+
+#: src/views/Landing.tsx:105
+#: src/views/Landing.tsx:133
+msgid "Product"
+msgstr "Producto"
+
+#: src/views/Onboarding.tsx:52
+msgid "Profile"
+msgstr "Perfil"
+
+#: src/views/admin/components/AdminTopBar.tsx:64
+#: src/views/admin/components/AdminTopBar.tsx:64
+msgid "Profile and sign out"
+msgstr "Perfil y cerrar sesión"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:46
+msgid "Profile Details"
+msgstr "Detalles del perfil"
+
+#: src/views/admin/hooks/useAdminController.ts:231
+msgid "Profile updated"
+msgstr "Perfil actualizado"
+
+#: src/views/Docs.tsx:384
+msgid "Public address of the app, used for sign-in redirects."
+msgstr "Dirección pública de la app, usada para las redirecciones de inicio de sesión."
+
+#: src/views/admin/components/modals/RoomModal.tsx:420
+#: src/views/admin/components/RoomsTable.tsx:30
+msgid "Public link"
+msgstr "Enlace público"
+
+#: src/views/admin/components/modals/RoomModal.tsx:429
+msgid "Public link (host required)"
+msgstr "Enlace público (se requiere anfitrión)"
+
+#: src/views/admin/components/modals/RoomModal.tsx:428
+msgid "Public link with passcode"
+msgstr "Enlace público con código de acceso"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:75
+msgid "Put an overview on the board"
+msgstr "Se puso un resumen en la pizarra"
+
+#: src/views/admin/room/SessionPage.tsx:145
+#: src/views/meeting/boards/RoomBoard.tsx:314
+msgid "Put back on the board"
+msgstr "Volver a poner en la pizarra"
+
+#: src/components/Whiteboard.tsx:1724
+#: src/components/Whiteboard.tsx:1744
+msgid "Question"
+msgstr "Pregunta"
+
+#: src/views/Landing.tsx:255
+msgid "Questions, answered plainly."
+msgstr "Preguntas con respuestas claras."
+
+#: src/views/Docs.tsx:26
+#: src/views/Docs.tsx:315
+msgid "Quick Start"
+msgstr "Inicio rapido"
+
+#: src/components/MeetingDoc.tsx:317
+msgid "Quote"
+msgstr "Cita"
+
+#: src/views/meeting/LKControls.tsx:278
+#: src/views/meeting/LKControls.tsx:338
+msgid "Raise Hand"
+msgstr "Levantar mano"
+
+#: src/views/meeting/chat/ChatPanel.tsx:143
+msgid "Reaction not saved. Try again."
+msgstr "Reacción no guardada. Inténtalo de nuevo."
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:78
+msgid "Read the API docs"
+msgstr "Leer la documentación de la API"
+
+#: src/components/MeetingDoc.tsx:214
+#: src/views/meeting/boards/RoomBoard.tsx:304
+msgid "Read-only"
+msgstr "Solo lectura"
+
+#: src/views/Onboarding.tsx:54
+msgid "Ready"
+msgstr "Listo"
+
+#: src/views/Lobby.tsx:885
+msgid "Ready?"
+msgstr "¿Listo?"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:78
+msgid "Rearranged the board"
+msgstr "Pizarra reorganizada"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:142
+msgid "Reconnect"
+msgstr "Reconectar"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:90
+#: src/views/meeting/ConnectionStatusOverlay.tsx:101
+#: src/views/meeting/ConnectionStatusOverlay.tsx:142
+msgid "Reconnecting..."
+msgstr "Reconectando…"
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:106
+msgid "Reconnection attempt {reconnectAttempts}"
+msgstr "Intento de reconexion {reconnectAttempts}"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:101
+msgid "Recorded meeting time"
+msgstr "Tiempo de reunión grabado"
+
+#: src/views/admin/components/RecordingsSection.tsx:64
+#: src/views/meeting/MeetingTopBar.tsx:89
+msgid "Recording"
+msgstr "Grabando"
+
+#: src/views/admin/room/RoomPage.tsx:71
+#: src/views/admin/room/SessionPage.tsx:201
+msgctxt "a finished recording"
+msgid "Recording"
+msgstr "Grabación"
+
+#: src/components/BreakoutRooms.tsx:234
+msgid "Recording covers the main room only during breakout sessions."
+msgstr "Durante las sesiones de grupos, la grabación solo cubre la sala principal."
+
+#: src/views/Meeting.tsx:442
+msgid "Recording error"
+msgstr "Error de grabación"
+
+#: src/views/admin/room/RoomPage.tsx:70
+#: src/views/admin/room/SessionPage.tsx:205
+msgid "Recording failed"
+msgstr "La grabación falló"
+
+#: src/views/meeting/LKControls.tsx:347
+msgid "Recording is starting…"
+msgstr "La grabación está empezando…"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:60
+msgid "Recording mins: not set"
+msgstr "Minutos de grabación: no establecido"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:57
+msgid "Recording minutes"
+msgstr "Minutos de grabación"
+
+#: src/views/Meeting.tsx:437
+msgid "Recording requires a paid workspace plan. Upgrade to Pro to enable it."
+msgstr "La grabación requiere un plan de pago. Mejora a Pro para activarla."
+
+#: src/views/admin/components/RecordingViewerModal.tsx:59
+msgid "Recording video"
+msgstr "Vídeo de la grabación"
+
+#: src/views/Landing.tsx:226
+msgid "Recording, notes and next steps stay in the room, so everyone knows what was said and what comes next."
+msgstr "La grabación, las notas y los próximos pasos permanecen en la sala, para que todos sepan qué se dijo y qué viene después."
+
+#: src/views/admin/components/AdminTopBar.tsx:22
+#: src/views/admin/components/MobileTabNav.tsx:15
+#: src/views/admin/components/RecordingsSection.tsx:142
+#: src/views/admin/components/RecordingsSection.tsx:150
+#: src/views/admin/components/sections/OverviewSection.tsx:165
+#: src/views/Docs.tsx:53
+#: src/views/Docs.tsx:503
+msgid "Recordings"
+msgstr "Grabaciones"
+
+#: src/views/admin/components/RecordingsSection.tsx:144
+#: src/views/admin/components/sections/OverviewSection.tsx:167
+msgid "Recordings could not be loaded"
+msgstr "No se pudieron cargar las grabaciones"
+
+#: src/views/admin/components/RecordingsSection.tsx:88
+#: src/views/admin/components/RecordingsSection.tsx:142
+msgid "Recordings from your workspace will appear here."
+msgstr "Las grabaciones de tu espacio de trabajo aparecerán aquí."
+
+#: src/components/Whiteboard.tsx:2002
+msgid "Rectangle"
+msgstr "Rectángulo"
+
+#: src/components/BreakoutRooms.tsx:206
+msgid "Redistribute"
+msgstr "Redistribuir"
+
+#: src/components/MeetingDoc.tsx:331
+#: src/components/Whiteboard.tsx:1991
+msgid "Redo"
+msgstr "Rehacer"
+
+#: src/views/Goodbye.tsx:114
+msgid "Rejoin meeting"
+msgstr "Volver a la reunión"
+
+#: src/components/BreakoutRooms.tsx:357
+msgid "Release to unassign"
+msgstr "Suelta para quitar la asignación"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:75
+#: src/views/admin/components/TeamSettingsCard.tsx:136
+msgid "Remove"
+msgstr "Eliminar"
+
+#: src/views/meeting/chat/ChatComposer.tsx:104
+msgid "Remove attachment"
+msgstr "Quitar adjunto"
+
+#: src/views/admin/components/modals/RoomModal.tsx:601
+msgid "Remove background"
+msgstr "Quitar fondo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:516
+msgid "Remove logo"
+msgstr "Quitar logotipo"
+
+#: src/components/BreakoutRooms.tsx:205
+msgid "Remove room"
+msgstr "Quitar sala"
+
+#: src/views/meeting/boards/DotVote.tsx:19
+msgid "Removed from the board"
+msgstr "Quitado de la pizarra"
+
+#: src/views/meeting/boards/CommentPin.tsx:129
+#: src/views/meeting/boards/CommentPin.tsx:132
+msgid "Reply"
+msgstr "Responder"
+
+#: src/views/Onboarding.tsx:125
+msgid "Request Permissions"
+msgstr "Solicitar permisos"
+
+#. placeholder {0}: confirmRevoke?.name
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:156
+msgid "Requests with <0>{0}</0> stop working at once."
+msgstr "Las solicitudes con <0>{0}</0> dejan de funcionar al instante."
+
+#: src/views/Docs.tsx:481
+msgid "Required when access is <0>PASSWORD</0>. The API never returns it."
+msgstr "Obligatorio cuando access es <0>PASSWORD</0>. La API nunca lo devuelve."
+
+#: src/views/Docs.tsx:478
+msgid "Required. Up to 100 characters."
+msgstr "Obligatorio. Hasta 100 caracteres."
+
+#: src/views/Auth.tsx:206
+msgid "Reset password"
+msgstr "Restablecer contraseña"
+
+#: src/views/PasswordReset.tsx:187
+msgid "Reset Password"
+msgstr "Restablecer contrasena"
+
+#: src/views/PasswordReset.tsx:126
+msgid "Reset Your Password"
+msgstr "Restablece tu contrasena"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:258
+msgid "Reset zoom"
+msgstr "Restablecer zoom"
+
+#: src/views/PasswordReset.tsx:187
+msgid "Resetting..."
+msgstr "Restableciendo..."
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:67
+msgid "Restart onboarding"
+msgstr "Reiniciar onboarding"
+
+#: src/views/meeting/boards/DotVote.tsx:66
+msgid "Result"
+msgstr "Resultado"
+
+#: src/views/meeting/RoomTimer.tsx:102
+msgid "Resume"
+msgstr "Reanudar"
+
+#: src/components/Whiteboard.tsx:1732
+msgid "Retrospective"
+msgstr "Retrospectiva"
+
+#: src/components/BreakoutRooms.tsx:244
+msgid "Return"
+msgstr "Volver"
+
+#: src/views/Docs.tsx:509
+msgid "Returns one recording. When the file is stored, <0>downloadUrl</0> holds a link to it that works for 15 minutes; fetch the recording again for a new one."
+msgstr "Devuelve una grabación. Si el archivo está guardado, <0>downloadUrl</0> contiene un enlace válido durante 15 minutos; vuelva a pedir la grabación para obtener uno nuevo."
+
+#: src/views/Docs.tsx:491
+msgid "Returns one room."
+msgstr "Devuelve una sala."
+
+#: src/views/Docs.tsx:513
+msgid "Returns the transcript: <0>status</0>, the full <1>text</1>, and <2>segments</2> with start and end in milliseconds and a speaker number. Answers 404 while there is none."
+msgstr "Devuelve la transcripción: <0>status</0>, el <1>text</1> completo y <2>segments</2> con inicio y fin en milisegundos y un número de hablante. Responde 404 mientras no exista."
+
+#: src/views/admin/hooks/useAdminController.ts:172
+msgid "Review billing settings"
+msgstr "Revisa la facturación"
+
+#: src/components/MeetingDoc.tsx:112
+msgid "Review last week's metrics"
+msgstr "Revisar las métricas de la semana pasada"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:116
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:159
+msgid "Revoke"
+msgstr "Revocar"
+
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:154
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:155
+msgid "Revoke API key?"
+msgstr "¿Revocar la clave de API?"
+
+#. placeholder {0}: confirmRevoke.name
+#: src/views/admin/components/settings/ApiKeysPanel.tsx:59
+msgid "Revoked \"{0}\""
+msgstr "«{0}» revocada"
+
+#: src/components/whiteboard/StylePanel.tsx:281
+msgid "Right"
+msgstr "Derecha"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:94
+#: src/views/admin/components/settings/ProfilePanel.tsx:63
+#: src/views/admin/components/settings/ProfilePanel.tsx:83
+#: src/views/admin/components/TeamSettingsCard.tsx:93
+#: src/views/admin/components/TeamSettingsCard.tsx:112
+#: src/views/admin/components/TeamSettingsCard.tsx:165
+msgid "Role"
+msgstr "Rol"
+
+#: src/components/BreakoutRooms.tsx:77
+#: src/views/admin/components/RecordingsSection.tsx:152
+#: src/views/admin/room/SessionPage.tsx:47
+msgid "Room"
+msgstr "Sala"
+
+#: src/views/admin/hooks/useAdminController.ts:215
+msgid "Room created"
+msgstr "Sala creada"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:54
+msgid "Room limit: not set"
+msgstr "Límite de sala: no establecido"
+
+#: src/views/Auth.tsx:52
+#: src/views/Landing.tsx:157
+#: src/views/Lobby.tsx:875
+msgid "Room link"
+msgstr "Enlace de la sala"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:620
+msgid "Room logo"
+msgstr "Logotipo de la sala"
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:53
+msgid "Room Members"
+msgstr "Miembros de la sala"
+
+#: src/views/admin/components/modals/RoomModal.tsx:368
+msgid "Room Name"
+msgstr "Nombre de la sala"
+
+#: src/views/admin/components/modals/RoomModal.tsx:315
+msgid "Room name is required"
+msgstr "El nombre de la sala es obligatorio"
+
+#: src/views/Landing.tsx:118
+#: src/views/Landing.tsx:119
+msgid "Room name or link"
+msgstr "Nombre o enlace de la sala"
+
+#: src/views/Lobby.tsx:657
+msgid "Room Not Found"
+msgstr "Sala no encontrada"
+
+#: src/router.tsx:418
+msgid "Room not found."
+msgstr "Sala no encontrada."
+
+#: src/app-state/joinErrors.ts:22
+msgid "Room not found. Check the room link and try again."
+msgstr "Sala no encontrada. Revisa el enlace e inténtalo de nuevo."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:992
+msgid "placeholder_room_password"
+msgstr "Contraseña"
+
+#: src/views/admin/components/modals/RoomModal.tsx:435
+msgid "Room password"
+msgstr "Contraseña de la sala"
+
+#: src/views/admin/components/modals/RoomModal.tsx:396
+#: src/views/admin/components/modals/RoomModal.tsx:399
+msgid "Room Type (optional label)"
+msgstr "Tipo de sala (etiqueta opcional)"
+
+#: src/views/admin/hooks/useAdminController.ts:197
+msgid "Room updated"
+msgstr "Sala actualizada"
+
+#: src/components/BreakoutRooms.tsx:202
+#: src/views/admin/components/AdminTopBar.tsx:21
+#: src/views/admin/components/MobileTabNav.tsx:14
+#: src/views/admin/components/RoomsTable.tsx:71
+#: src/views/admin/components/sections/OverviewSection.tsx:98
+#: src/views/admin/components/sections/RoomsSection.tsx:49
+#: src/views/admin/components/settings/BillingPanel.tsx:51
+#: src/views/admin/room/RoomPage.tsx:161
+#: src/views/Docs.tsx:52
+#: src/views/Docs.tsx:470
+msgid "Rooms"
+msgstr "Salas"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:110
+#: src/views/admin/components/sections/RoomsSection.tsx:64
+msgid "Rooms could not be loaded"
+msgstr "No se pudieron cargar las salas"
+
+#: src/views/admin/components/modals/RoomModal.tsx:348
+msgid "Rooms: {roomsUsed}/{maxRooms}"
+msgstr "Salas: {roomsUsed}/{maxRooms}"
+
+#: src/components/whiteboard/StylePanel.tsx:244
+msgid "Round"
+msgstr "Redondeadas"
+
+#: src/views/Docs.tsx:299
+msgid "Run it on your own machines, or use LiveKit Cloud and Convex Cloud. You decide where your meetings and data live."
+msgstr "Ejecútelo en sus propias máquinas o use LiveKit Cloud y Convex Cloud. Usted decide dónde están sus reuniones y datos."
+
+#: src/views/admin/room/RoomPage.tsx:82
+#: src/views/admin/room/SessionPage.tsx:113
+msgid "Running now"
+msgstr "En curso"
+
+#: src/views/Landing.tsx:181
+msgid "Runs in the browser"
+msgstr "Funciona en el navegador"
+
+#: src/views/meeting/boards/RoomBoard.tsx:384
+msgid "Save"
+msgstr "Guardar"
+
+#: src/views/admin/components/modals/RoomModal.tsx:671
+#: src/views/admin/components/settings/ProfilePanel.tsx:70
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: src/components/MeetingDoc.tsx:350
+#: src/views/admin/room/RoomPage.tsx:135
+#: src/views/Auth.tsx:49
+#: src/views/Goodbye.tsx:37
+#: src/views/Landing.tsx:168
+msgid "Saved in this room"
+msgstr "Guardado en esta sala"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:140
+msgid "Say “Vivo”, then what you need."
+msgstr "Di «Vivo» y luego lo que necesitas."
+
+#: src/components/Whiteboard.tsx:1958
+msgid "Say something"
+msgstr "Di algo"
+
+#: src/components/Whiteboard.tsx:1957
+msgid "Say something at your cursor"
+msgstr "Di algo junto a tu cursor"
+
+#: src/views/admin/components/sections/RoomsSection.tsx:46
+msgid "Search by name or slug..."
+msgstr "Buscar por nombre o slug…"
+
+#: src/views/Docs.tsx:213
+#: src/views/Docs.tsx:214
+msgid "Search documentation..."
+msgstr "Buscar en la documentación…"
+
+#: src/views/meeting/chat/GifPicker.tsx:52
+#: src/views/meeting/chat/GifPicker.tsx:53
+msgid "Search GIFs"
+msgstr "Buscar GIF"
+
+#: src/components/Whiteboard.tsx:2028
+msgid "Section"
+msgstr "Sección"
+
+#: src/components/Whiteboard.tsx:2105
+msgid "Section without a name"
+msgstr "Sección sin nombre"
+
+#: src/components/Whiteboard.tsx:2094
+msgid "Sections"
+msgstr "Secciones"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:73
+msgid "Secure handoff link"
+msgstr "Enlace seguro de transferencia"
+
+#: src/views/Landing.tsx:245
+msgid "See Tavio on GitHub"
+msgstr "Ver Tavio en GitHub"
+
+#: src/views/Landing.tsx:186
+msgid "See what a room looks like"
+msgstr "Vea cómo es una sala"
+
+#. placeholder {0}: formatTranscriptTime(start)
+#: src/views/meeting/TranscriptPanel.tsx:144
+msgid "Seek to {0}"
+msgstr "Ir a {0}"
+
+#: src/components/Whiteboard.tsx:1995
+msgid "Select"
+msgstr "Seleccionar"
+
+#: src/views/meeting/boards/DotVote.tsx:77
+msgid "Select an element on the board to give it a dot."
+msgstr "Seleccione un elemento de la pizarra para darle un punto."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:84
+#: src/views/admin/components/RoomMembershipEditor.tsx:88
+msgid "Select user…"
+msgstr "Seleccionar usuario..."
+
+#: src/components/Whiteboard.tsx:2123
+msgid "Selection as PNG"
+msgstr "Selección como PNG"
+
+#: src/components/Whiteboard.tsx:2126
+msgid "Selection as SVG"
+msgstr "Selección como SVG"
+
+#: src/views/Landing.tsx:106
+#: src/views/Landing.tsx:134
+msgid "Self-host"
+msgstr "Autoalojar"
+
+#: src/views/Landing.tsx:180
+msgid "Self-hostable"
+msgstr "Autoalojable"
+
+#: src/components/whiteboard/StylePanel.tsx:306
+msgid "Send backward"
+msgstr "Enviar atrás"
+
+#: src/views/admin/components/TeamSettingsCard.tsx:176
+msgid "Send Invite"
+msgstr "Enviar invitación"
+
+#: src/views/meeting/chat/ChatComposer.tsx:174
+msgid "Send message"
+msgstr "Enviar mensaje"
+
+#: src/views/Auth.tsx:326
+msgid "Send Reset Link"
+msgstr "Enviar enlace de restablecimiento"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:149
+#: src/views/meeting/assistant/AssistantOverlay.tsx:193
+msgid "Send the assistant away"
+msgstr "Despedir al asistente"
+
+#: src/views/Docs.tsx:448
+msgid "Send the key in the <0>Authorization</0> header. Call the API from your server only: it does not answer browsers from other sites, and a key in a web page would be readable by anyone."
+msgstr "Envíe la clave en la cabecera <0>Authorization</0>. Llame a la API solo desde su servidor: no responde a navegadores de otros sitios, y una clave en una página web sería legible para cualquiera."
+
+#: src/components/whiteboard/StylePanel.tsx:305
+msgid "Send to back"
+msgstr "Enviar al fondo"
+
+#: src/views/Goodbye.tsx:26
+msgid "Session"
+msgstr "Sesión"
+
+#: src/components/BreakoutRooms.tsx:232
+msgid "Session active"
+msgstr "Sesión activa"
+
+#. placeholder {0}: formatLongDate(session.startedAt)
+#: src/views/admin/room/SessionPage.tsx:111
+msgid "Session from {0}"
+msgstr "Sesión del {0}"
+
+#: src/views/admin/room/SessionPage.tsx:136
+msgid "Session without content"
+msgstr "Sesión sin contenido"
+
+#: src/views/admin/components/sections/OverviewSection.tsx:100
+msgid "Sessions recorded"
+msgstr "Sesiones grabadas"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:82
+msgid "Set <0>STRIPE_SECRET_KEY</0>, <1>STRIPE_PRICE_PRO</1>, and <2>SITE_URL</2> in your Convex environment to enable Checkout. Billing portal support will be added in a later release."
+msgstr "Define <0>STRIPE_SECRET_KEY</0>, <1>STRIPE_PRICE_PRO</1> y <2>SITE_URL</2> en tu entorno de Convex para habilitar Checkout. El soporte del portal de facturacion se agregara en una version posterior."
+
+#: src/views/admin/components/modals/RoomModal.tsx:321
+msgid "Set a password for this room"
+msgstr "Define una contraseña para esta sala"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:47
+msgid "Set an avatar URL to personalize your profile."
+msgstr "Configura una URL de avatar para personalizar tu perfil."
+
+#: src/views/Docs.tsx:89
+#: src/views/Docs.tsx:377
+msgid "Set in"
+msgstr "Se define en"
+
+#: src/views/admin/components/modals/RoomModal.tsx:436
+msgid "Set password"
+msgstr "Definir contraseña"
+
+#: src/views/admin/components/AdminTopBar.tsx:23
+#: src/views/admin/components/MobileTabNav.tsx:16
+#: src/views/admin/components/sections/SettingsSection.tsx:54
+#: src/views/admin/components/sections/SettingsSection.tsx:56
+#: src/views/meeting/LKControls.tsx:370
+#: src/views/meeting/MeetingTopBar.tsx:115
+#: src/views/meeting/SettingsModal.tsx:119
+#: src/views/meeting/SettingsModal.tsx:121
+msgid "Settings"
+msgstr "Configuración"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:78
+#: src/views/meeting/LKControls.tsx:270
+#: src/views/meeting/LKControls.tsx:335
+msgid "Share"
+msgstr "Compartir"
+
+#: src/views/Landing.tsx:202
+msgid "Share one room link and guests join straight from the browser. You set who gets in, room by room."
+msgstr "Comparta un enlace de sala y los invitados entran directamente desde el navegador. Usted decide quién entra, sala por sala."
+
+#: src/views/meeting/LKControls.tsx:269
+msgid "Share Screen"
+msgstr "Compartir pantalla"
+
+#: src/views/Landing.tsx:166
+#: src/views/Landing.tsx:233
+msgid "Share the prototype before Friday."
+msgstr "Comparte el prototipo antes del viernes."
+
+#: src/views/Auth.tsx:46
+msgid "Share the prototype by Friday."
+msgstr "Compartir el prototipo antes del viernes."
+
+#: src/views/Goodbye.tsx:41
+msgid "Shared notes were saved to this room"
+msgstr "Las notas compartidas se guardaron en esta sala"
+
+#: src/components/whiteboard/StylePanel.tsx:244
+msgid "Sharp"
+msgstr "Rectas"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:176
+msgid "Show {name} large"
+msgstr "Mostrar a {name} en grande"
+
+#. placeholder {0}: session.messageTotal
+#: src/views/admin/room/SessionPage.tsx:191
+msgid "Show all {0} messages"
+msgstr "Mostrar los {0} mensajes"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:197
+msgid "Show large"
+msgstr "Mostrar en grande"
+
+#. js-lingui-explicit-id
+#: src/views/Auth.tsx:251
+#: src/views/Lobby.tsx:995
+msgid "Show password"
+msgstr "Mostrar contraseña"
+
+#: src/views/meeting/boards/DotVote.tsx:96
+msgid "Show result"
+msgstr "Mostrar resultado"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:168
+#: src/views/meeting/LiveKitVideoArea.tsx:208
+msgid "Show the whole picture"
+msgstr "Mostrar la imagen completa"
+
+#: src/views/Auth.tsx:324
+msgid "Sign In"
+msgstr "Iniciar sesión"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:113
+msgid "Sign out"
+msgstr "Cerrar sesión"
+
+#: src/views/Docs.tsx:387
+msgid "Sign the tokens for joining a call."
+msgstr "Firman los tokens para unirse a una llamada."
+
+#: src/views/Auth.tsx:369
+msgid "Sign up"
+msgstr "Registrarse"
+
+#: src/views/admin/room/RoomPage.tsx:82
+msgid "since"
+msgstr "desde"
+
+#: src/views/Landing.tsx:97
+msgid "Skip to content"
+msgstr "Saltar al contenido"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:82
+msgid "Slug"
+msgstr "Slug"
+
+#: src/views/admin/components/modals/RoomModal.tsx:382
+msgid "Slug (URL)"
+msgstr "Slug (URL)"
+
+#: src/views/admin/components/modals/RoomModal.tsx:126
+msgid "Slug is required"
+msgstr "El slug es obligatorio"
+
+#: src/components/Whiteboard.tsx:1930
+msgid "Small"
+msgstr "Pequeña"
+
+#: src/components/whiteboard/StylePanel.tsx:200
+msgid "Solid"
+msgstr "Sólido"
+
+#: src/components/whiteboard/StylePanel.tsx:230
+msgid "Solid line"
+msgstr "Continua"
+
+#: src/views/meeting/ScreenShareToast.tsx:23
+msgid "Someone"
+msgstr "Alguien"
+
+#: src/views/Meeting.tsx:465
+msgid "Someone else updated the notes. Copy or download your draft before reloading."
+msgstr "Otra persona ha actualizado las notas. Copia o descarga tu borrador antes de recargar la página."
+
+#: src/components/ToastProvider.tsx:18
+#: src/views/admin/room/SessionPage.tsx:87
+#: src/views/admin/room/SessionPage.tsx:99
+#: src/views/meeting/boards/CommentPin.tsx:83
+#: src/views/meeting/boards/DotVote.tsx:43
+#: src/views/meeting/boards/RoomBoard.tsx:202
+msgid "Something went wrong. Please try again."
+msgstr "Algo salió mal. Inténtalo de nuevo."
+
+#: src/views/Docs.tsx:304
+#: src/views/Landing.tsx:179
+msgid "Source available"
+msgstr "Código fuente disponible"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:743
+#: src/views/Lobby.tsx:750
+msgid "lobby_speaker_label"
+msgstr "Altavoz"
+
+#: src/views/meeting/SettingsModal.tsx:149
+#: src/views/meeting/SettingsModal.tsx:155
+msgid "Speaker"
+msgstr "Altavoz"
+
+#: src/views/meeting/MeetingTopBar.tsx:109
+msgctxt "meeting layout"
+msgid "Speaker"
+msgstr "Orador"
+
+#. placeholder {0}: Number(segment.speaker) + 1
+#: src/views/meeting/TranscriptPanel.tsx:136
+msgid "Speaker {0}"
+msgstr "Hablante {0}"
+
+#: src/views/meeting/MeetingTopBar.tsx:107
+msgid "Speaker view"
+msgstr "Vista del orador"
+
+#: src/components/Whiteboard.tsx:1727
+msgid "Speech bubble"
+msgstr "Bocadillo"
+
+#: src/views/Docs.tsx:32
+#: src/views/Docs.tsx:400
+msgid "SSL & Domains"
+msgstr "SSL y dominios"
+
+#: src/components/Whiteboard.tsx:2036
+msgid "Stamp"
+msgstr "Sello"
+
+#: src/components/Whiteboard.tsx:2040
+msgid "Stamps"
+msgstr "Sellos"
+
+#: src/components/Whiteboard.tsx:1724
+#: src/components/Whiteboard.tsx:1727
+msgid "Star"
+msgstr "Estrella"
+
+#: src/components/BreakoutRooms.tsx:218
+msgid "Start"
+msgstr "Iniciar"
+
+#: src/views/meeting/boards/DotVote.tsx:51
+msgid "Start a dot vote"
+msgstr "Iniciar votación con puntos"
+
+#: src/views/meeting/LKControls.tsx:347
+msgid "Start Recording"
+msgstr "Iniciar grabacion"
+
+#: src/components/MeetingDoc.tsx:110
+msgid "Start typing your agenda, minutes, and action items here..."
+msgstr "Empieza a escribir aquí tu agenda, acta y elementos de acción…"
+
+#: src/views/admin/components/RecordingsSection.tsx:153
+msgid "Started"
+msgstr "Iniciado"
+
+#: src/views/admin/room/SessionPage.tsx:76
+#: src/views/Goodbye.tsx:15
+msgid "State kept"
+msgstr "Estado guardado"
+
+#: src/views/admin/components/RecordingsSection.tsx:156
+#: src/views/admin/components/RoomsTable.tsx:75
+#: src/views/admin/components/settings/BillingPanel.tsx:49
+#: src/views/Docs.tsx:458
+msgid "Status"
+msgstr "Estado"
+
+#. placeholder {0}: currentStep + 1
+#. placeholder {1}: steps.length
+#: src/components/OnboardingTour.tsx:317
+msgid "Step {0} of {1}"
+msgstr "Paso {0} de {1}"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:355
+msgid "Stop presenting"
+msgstr "Dejar de presentar"
+
+#: src/views/meeting/LKControls.tsx:347
+msgid "Stop Recording"
+msgstr "Detener grabacion"
+
+#: src/views/meeting/LKControls.tsx:269
+#: src/views/meeting/LKControls.tsx:335
+msgid "Stop Sharing"
+msgstr "Dejar de compartir"
+
+#: src/views/meeting/RoomTimer.tsx:104
+msgid "Stop timer"
+msgstr "Detener temporizador"
+
+#: src/components/MeetingDoc.tsx:272
+msgid "Strikethrough"
+msgstr "Tachado"
+
+#: src/views/Docs.tsx:431
+msgid "Stripe reports subscription changes here."
+msgstr "Stripe informa aquí de los cambios de suscripción."
+
+#: src/components/whiteboard/StylePanel.tsx:170
+msgid "Stroke"
+msgstr "Trazo"
+
+#: src/components/whiteboard/StylePanel.tsx:172
+msgid "Stroke {c}"
+msgstr "Trazo {c}"
+
+#: src/components/whiteboard/StylePanel.tsx:223
+#: src/components/whiteboard/StylePanel.tsx:225
+msgid "Stroke style"
+msgstr "Estilo de trazo"
+
+#: src/components/whiteboard/StylePanel.tsx:208
+#: src/components/whiteboard/StylePanel.tsx:210
+msgid "Stroke width"
+msgstr "Grosor del trazo"
+
+#: src/components/Whiteboard.tsx:2080
+#: src/components/whiteboard/StylePanel.tsx:165
+msgid "Style"
+msgstr "Estilo"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:163
+#: src/views/meeting/LiveKitVideoArea.tsx:214
+#: src/views/meeting/LiveKitVideoArea.tsx:425
+#: src/views/meeting/LKControls.tsx:366
+msgid "Switch camera"
+msgstr "Cambiar de cámara"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:61
+msgid "Switch device"
+msgstr "Cambiar de dispositivo"
+
+#: src/views/meeting/DeviceHandoffDialog.tsx:64
+#: src/views/meeting/LKControls.tsx:361
+#: src/views/meeting/SettingsModal.tsx:183
+msgid "Switch to another device"
+msgstr "Cambiar a otro dispositivo"
+
+#: src/views/meeting/MeetingTopBar.tsx:112
+msgid "Switch to dark mode"
+msgstr "Cambiar al modo oscuro"
+
+#: src/views/meeting/MeetingTopBar.tsx:112
+msgid "Switch to light mode"
+msgstr "Cambiar al modo claro"
+
+#: src/views/meeting/SettingsModal.tsx:132
+#: src/views/meeting/SettingsModal.tsx:143
+#: src/views/meeting/SettingsModal.tsx:153
+msgid "System Default"
+msgstr "Predeterminado del sistema"
+
+#: src/components/Whiteboard.tsx:1902
+#: src/components/Whiteboard.tsx:2033
+msgid "Table"
+msgstr "Tabla"
+
+#: src/views/meeting/boards/DotVote.tsx:86
+msgid "Take a dot back"
+msgstr "Retirar un punto"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:82
+msgid "Taken out of the notes"
+msgstr "Quitado de las notas"
+
+#: src/views/Landing.tsx:214
+msgid "Talk, take shared notes, sketch on the whiteboard, share your screen and open breakout rooms, all in the same room."
+msgstr "Hable, tome notas compartidas, dibuje en la pizarra, comparta su pantalla y abra salas de grupos, todo en la misma sala."
+
+#: src/components/Whiteboard.tsx:1724
+msgid "Tape"
+msgstr "Cinta"
+
+#: src/components/Whiteboard.tsx:1873
+#: src/components/Whiteboard.tsx:2001
+msgid "Task"
+msgstr "Tarea"
+
+#: src/views/Goodbye.tsx:47
+msgid "Tasks from the board"
+msgstr "Tareas de la pizarra"
+
+#: src/views/admin/components/AdminTopBar.tsx:29
+#: src/views/Landing.tsx:101
+msgid "Tavio home"
+msgstr "Inicio de Tavio"
+
+#: src/views/Docs.tsx:289
+msgid "Tavio is a meeting platform with public source code. Calls, shared notes, whiteboard, chat and recording live in one room, and guests join from the browser without an account."
+msgstr "Tavio es una plataforma de reuniones con código fuente público. Las llamadas, las notas compartidas, la pizarra, el chat y la grabación están en una sala, y los invitados entran desde el navegador sin cuenta."
+
+#: src/views/Docs.tsx:336
+msgid "Tavio keeps what is live apart from what lasts, so shared work survives a dropped connection."
+msgstr "Tavio separa lo que está en directo de lo que perdura, para que el trabajo compartido sobreviva a una conexión perdida."
+
+#: src/views/Onboarding.tsx:120
+msgid "Tavio needs access to your camera and microphone."
+msgstr "Tavio necesita acceso a tu camara y microfono."
+
+#: src/views/admin/components/sections/SettingsSection.tsx:62
+#: src/views/admin/components/TeamSettingsCard.tsx:70
+#: src/views/admin/components/TeamSettingsCard.tsx:78
+#: src/views/admin/components/TeamSettingsCard.tsx:90
+msgid "Team Members"
+msgstr "Miembros del equipo"
+
+#: src/components/Whiteboard.tsx:2059
+#: src/components/Whiteboard.tsx:2061
+msgid "Templates"
+msgstr "Plantillas"
+
+#: src/components/Whiteboard.tsx:1845
+#: src/components/Whiteboard.tsx:2032
+msgid "Text"
+msgstr "Texto"
+
+#: src/components/whiteboard/StylePanel.tsx:275
+#: src/components/whiteboard/StylePanel.tsx:277
+msgid "Text align"
+msgstr "Alineación del texto"
+
+#: src/components/Whiteboard.tsx:1845
+msgid "Text in the shape"
+msgstr "Texto en la forma"
+
+#: src/views/Docs.tsx:327
+msgid "The app runs at <0>http://localhost:3333</0>."
+msgstr "La app se ejecuta en <0>http://localhost:3333</0>."
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:35
+msgid "The assistant could not be sent away. Please try again."
+msgstr "No se pudo despedir al asistente. Inténtalo de nuevo."
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:35
+msgid "The assistant could not join. Please try again."
+msgstr "El asistente no pudo unirse. Inténtalo de nuevo."
+
+#. placeholder {0}: formatShortDate(filed.startedAt)
+#: src/views/meeting/boards/RoomBoard.tsx:431
+msgid "The board from <0>{0}</0> is in the history."
+msgstr "La pizarra del <0>{0}</0> está en el historial."
+
+#: src/views/admin/room/SessionPage.tsx:97
+msgid "The board is back on the room's whiteboard"
+msgstr "La pizarra vuelve a estar en la sala"
+
+#: src/views/admin/room/SessionPage.tsx:214
+msgid "The board, chat and notes of this session are deleted for good. The recording stays under Recordings."
+msgstr "La pizarra, el chat y las notas de esta sesión se eliminan definitivamente. La grabación sigue en Grabaciones."
+
+#: src/views/Docs.tsx:459
+msgid "The body or a field is not valid. The message says which."
+msgstr "El cuerpo o un campo no es válido. El mensaje indica cuál."
+
+#: src/views/Goodbye.tsx:97
+msgid "The call is over."
+msgstr "La llamada ha terminado."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:688
+#: src/views/meeting/LKControls.tsx:124
+msgid "The camera could not be switched. Try again, or pick one in Settings."
+msgstr "No se pudo cambiar la cámara. Inténtalo de nuevo o elige una en Ajustes."
+
+#: src/views/Landing.tsx:230
+msgid "The end-of-call summary: duration, participants, chat messages, notes saved to the room and a recording in processing"
+msgstr "El resumen al terminar la llamada: duración, participantes, mensajes de chat, notas guardadas en la sala y una grabación en proceso"
+
+#: src/views/admin/room/RoomPage.tsx:142
+#: src/views/admin/room/SessionPage.tsx:49
+msgid "The history could not be loaded"
+msgstr "No se pudo cargar el historial"
+
+#: src/views/Goodbye.tsx:103
+msgid "The host ended the meeting for everyone. Thanks for being there!"
+msgstr "El anfitrión finalizó la reunión para todos. ¡Gracias por participar!"
+
+#: src/components/BreakoutRooms.tsx:158
+msgid "The host has not started breakout rooms yet."
+msgstr "El anfitrión aún no ha iniciado las salas de grupos."
+
+#: src/views/meeting/boards/RoomBoard.tsx:230
+#: src/views/meeting/chat/chatMedia.ts:55
+#: src/views/meeting/chat/chatMedia.ts:67
+#: src/views/meeting/chat/ChatPanel.tsx:110
+msgid "The image could not be uploaded."
+msgstr "No se pudo subir la imagen."
+
+#: src/views/Docs.tsx:460
+msgid "The key is missing, unknown or revoked."
+msgstr "La clave falta, es desconocida o está revocada."
+
+#: src/views/Landing.tsx:219
+msgid "The meeting room with one person shown large, the others beside them and the shared notes open in the side panel: agenda, decisions and next step"
+msgstr "{'de': 'Der Meetingraum mit einer groß gezeigten Person, den anderen daneben und den geteilten Notizen in der Seitenleiste: Agenda, Entscheidungen und nächster Schritt', 'es': 'La sala de reunión con una persona en grande, las demás al lado y las notas compartidas abiertas en el panel lateral: agenda, decisiones y siguiente paso', 'fr': 'La salle de réunion avec une personne affichée en grand, les autres à côté et les notes partagées ouvertes dans le panneau latéral : ordre du jour, décisions et prochaine étape'}"
+
+#: src/views/meeting/boards/RoomBoard.tsx:218
+msgid "The page could not be added."
+msgstr "No se pudo añadir la página."
+
+#: src/components/Whiteboard.tsx:662
+msgid "The page is too large (at most 300 KB)."
+msgstr "La página es demasiado grande (300 KB como máximo)."
+
+#: src/views/Docs.tsx:463
+msgid "The path exists, but not with this method. The <0>Allow</0> header lists the methods."
+msgstr "La ruta existe, pero no con este método. La cabecera <0>Allow</0> indica los métodos."
+
+#: src/views/meeting/boards/RoomBoard.tsx:432
+msgid "The previous board is in the history."
+msgstr "La pizarra anterior está en el historial."
+
+#: src/views/Lobby.tsx:660
+msgid "The room /{roomSlug} does not exist or has been deleted."
+msgstr "La sala /{roomSlug} no existe o se ha eliminado."
+
+#: src/views/Goodbye.tsx:99
+msgid "The room stays."
+msgstr "La sala se queda."
+
+#: src/views/meeting/MeetingAccessBoundary.tsx:29
+msgid "The room's access settings were updated, so you have left the meeting. Join again to continue."
+msgstr "Se actualizaron los ajustes de acceso de la sala, por lo que has salido de la reunión. Vuelve a unirte para continuar."
+
+#: src/views/Landing.tsx:152
+msgid "The room's whiteboard with its drawing tools and a sketched flow from lobby to room to summary"
+msgstr "La pizarra de la sala con sus herramientas de dibujo y un flujo esbozado del vestíbulo a la sala y al resumen"
+
+#: src/views/Landing.tsx:207
+msgid "The Tavio lobby: a camera preview with the room link, beside the display name, the microphone and camera choice and the join button"
+msgstr "{'de': 'Die Tavio-Lobby: eine Kameravorschau mit dem Raumlink neben dem Anzeigenamen, der Mikrofon- und Kameraauswahl und der Schaltfläche zum Beitreten', 'es': 'El vestíbulo de Tavio: una vista previa de la cámara con el enlace de la sala, junto al nombre visible, la elección de micrófono y cámara y el botón para unirse', 'fr': 'La salle d’attente de Tavio : un aperçu de la caméra avec le lien de la salle, à côté du nom affiché, du choix du microphone et de la caméra et du bouton pour rejoindre'}"
+
+#: src/views/Landing.tsx:155
+msgid "The Tavio meeting room with six people on camera and the toolbar"
+msgstr "La sala de reunión de Tavio con seis personas en cámara y la barra de herramientas"
+
+#: src/views/meeting/TranscriptPanel.tsx:106
+msgid "The transcript could not be loaded. Leave the meeting and join again to retry."
+msgstr "No se pudo cargar la transcripción. Salga de la reunión y vuelva a entrar para reintentarlo."
+
+#: src/views/meeting/TranscriptPanel.tsx:123
+msgid "The transcript will appear here when processing finishes."
+msgstr "La transcripción aparecerá aquí cuando termine el procesamiento."
+
+#: src/views/Docs.tsx:354
+msgid "The trial does not push the backend on its own. Create an admin key, save it in <0>.env.trial</0> with the backend address, then set the backend settings and push the functions."
+msgstr "La prueba no publica el backend por sí sola. Cree una clave de administrador, guárdela con la dirección del backend en <0>.env.trial</0>, defina luego los ajustes del backend y publique las funciones."
+
+#: src/views/admin/components/RecordingViewerModal.tsx:59
+msgid "The video is not available for this recording yet."
+msgstr "El vídeo de esta grabación aún no está disponible."
+
+#: src/views/Docs.tsx:342
+msgid "The web app is React and Vite, and it is served as static files."
+msgstr "La app web usa React y Vite y se sirve como archivos estáticos."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:619
+msgid "The whiteboard could not be loaded. Leave the meeting and join again to retry."
+msgstr "No se pudo cargar la pizarra. Salga de la reunión y vuelva a entrar para reintentarlo."
+
+#: src/views/Docs.tsx:461
+msgid "The workspace has as many rooms as its plan allows."
+msgstr "El espacio de trabajo tiene tantas salas como permite su plan."
+
+#: src/views/admin/components/modals/RoomModal.tsx:475
+#: src/views/admin/components/modals/RoomModal.tsx:478
+msgid "Theme Mode"
+msgstr "Modo de tema"
+
+#: src/components/whiteboard/StylePanel.tsx:215
+msgid "Thin"
+msgstr "Fina"
+
+#: src/components/sessions/BoardThumb.tsx:296
+#: src/components/Whiteboard.tsx:1974
+msgid "This board is empty"
+msgstr "Esta pizarra está vacía"
+
+#: src/views/meeting/boards/RoomBoard.tsx:447
+msgid "This board is from an earlier session."
+msgstr "Esta pizarra es de una sesión anterior."
+
+#. placeholder {0}: formatShortDate(carried.from)
+#: src/views/meeting/boards/RoomBoard.tsx:446
+msgid "This board is from the session on <0>{0}</0>."
+msgstr "Esta pizarra es de la sesión del <0>{0}</0>."
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:123
+msgid "This device is no longer connected. You can close this meeting."
+msgstr "Este dispositivo ya no está conectado. Puedes cerrar esta reunión."
+
+#: src/router.tsx:400
+msgid "This handoff link is invalid or expired."
+msgstr "Este enlace de cambio de dispositivo no es válido o ha caducado."
+
+#: src/views/meeting/chat/chatMedia.ts:36
+msgid "This image could not be read."
+msgstr "No se pudo leer esta imagen."
+
+#: src/views/meeting/chat/chatMedia.ts:52
+msgid "This image is too large to share."
+msgstr "Esta imagen es demasiado grande para compartirla."
+
+#: src/views/admin/constants.ts:14
+msgid "This is your mission control. From here you can manage all aspects of your video infrastructure."
+msgstr "Este es tu centro de control. Desde aquí gestionas toda tu infraestructura de vídeo."
+
+#: src/app-state/joinErrors.ts:28
+msgid "This meeting has ended. Only a host can reopen the room right now."
+msgstr "Esta reunión ha terminado. Por ahora, solo un anfitrión puede volver a abrir la sala."
+
+#: src/views/admin/room/RoomPage.tsx:168
+msgid "This room does not exist, or you do not have access to it."
+msgstr "Esta sala no existe o no tienes acceso a ella."
+
+#: src/app-state/joinErrors.ts:25
+msgid "This room has not started yet. Please wait for a host or member to join first."
+msgstr "Esta sala aún no ha comenzado. Espera a que se una un anfitrión o miembro."
+
+#: src/app-state/joinErrors.ts:19
+msgid "This room is password-protected. Please enter the password to join."
+msgstr "Esta sala está protegida con contraseña. Introduce la contraseña para unirte."
+
+#: src/views/meeting/boards/RoomBoard.tsx:366
+msgid "This session"
+msgstr "Esta sesión"
+
+#: src/views/admin/room/SessionPage.tsx:66
+msgid "This session is no longer in the history."
+msgstr "Esta sesión ya no está en el historial."
+
+#: src/views/admin/components/modals/RoomModal.tsx:132
+#: src/views/admin/components/modals/RoomModal.tsx:318
+msgid "This slug is already in use"
+msgstr "Este slug ya está en uso"
+
+#: src/components/Whiteboard.tsx:1724
+msgid "Thumbs up"
+msgstr "Pulgar arriba"
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Thursday"
+msgstr "Jueves"
+
+#: src/views/meeting/RoomTimer.tsx:83
+msgid "Time is up"
+msgstr "Se acabó el tiempo"
+
+#: src/views/meeting/RoomTimer.tsx:82
+#: src/views/meeting/RoomTimer.tsx:89
+msgid "Timer"
+msgstr "Temporizador"
+
+#: src/components/Whiteboard.tsx:1739
+msgid "To do"
+msgstr "Por hacer"
+
+#: src/components/Whiteboard.tsx:1734
+msgid "To improve"
+msgstr "A mejorar"
+
+#: src/components/sessions/format.ts:25
+msgid "Today"
+msgstr "Hoy"
+
+#: src/views/meeting/SettingsModal.tsx:179
+msgid "Toggle dark mode"
+msgstr "Alternar el modo oscuro"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:737
+msgid "lobby_noise_reduction_toggle"
+msgstr "Alternar la reducción de ruido"
+
+#: src/views/meeting/SettingsModal.tsx:174
+msgid "Toggle noise reduction"
+msgstr "Alternar la reducción de ruido"
+
+#: src/views/meeting/chat/chatMedia.ts:53
+msgid "Too many images for now. Try again later."
+msgstr "Demasiadas imágenes por ahora. Inténtalo más tarde."
+
+#: src/views/Docs.tsx:465
+msgid "Too many requests with this key."
+msgstr "Demasiadas solicitudes con esta clave."
+
+#: src/views/admin/components/RecordingsSection.tsx:155
+#: src/views/admin/components/RecordingViewerModal.tsx:61
+#: src/views/admin/components/RecordingViewerModal.tsx:62
+#: src/views/Meeting.tsx:755
+#: src/views/Meeting.tsx:767
+#: src/views/meeting/LKControls.tsx:351
+#: src/views/meeting/TranscriptPanel.tsx:102
+msgid "Transcript"
+msgstr "Transcripción"
+
+#: src/views/admin/components/RecordingsSection.tsx:70
+msgid "Transcript failed"
+msgstr "Transcripción fallida"
+
+#: src/views/admin/components/RecordingsSection.tsx:72
+msgid "Transcript pending"
+msgstr "Transcripción pendiente"
+
+#: src/views/admin/components/RecordingsSection.tsx:71
+msgid "Transcript processing"
+msgstr "Procesando transcripción"
+
+#: src/views/admin/components/RecordingsSection.tsx:69
+#: src/views/meeting/TranscriptPanel.tsx:81
+msgid "Transcript ready"
+msgstr "Transcripción lista"
+
+#: src/views/meeting/TranscriptPanel.tsx:82
+msgid "Transcription failed"
+msgstr "La transcripción falló"
+
+#: src/views/meeting/TranscriptPanel.tsx:80
+msgid "Transcription in progress"
+msgstr "Transcripción en curso"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:21
+msgid "Trial"
+msgstr "Prueba"
+
+#: src/components/Whiteboard.tsx:1728
+msgid "Triangle"
+msgstr "Triángulo"
+
+#: src/router.tsx:90
+#: src/views/admin/components/RecordingsSection.tsx:96
+#: src/views/admin/components/settings/BillingPanel.tsx:76
+#: src/views/Lobby.tsx:804
+#: src/views/Onboarding.tsx:142
+msgid "Try Again"
+msgstr "Intentar de nuevo"
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Tuesday"
+msgstr "Martes"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:838
+msgid "turn_camera_off"
+msgstr "Apagar cámara"
+
+#: src/views/meeting/LKControls.tsx:258
+msgid "Turn camera off"
+msgstr "Apagar cámara"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:838
+msgid "turn_camera_on"
+msgstr "Encender cámara"
+
+#: src/views/meeting/LKControls.tsx:258
+msgid "Turn camera on"
+msgstr "Encender cámara"
+
+#: src/views/Docs.tsx:477
+#: src/views/Docs.tsx:478
+#: src/views/Docs.tsx:479
+#: src/views/Docs.tsx:480
+#: src/views/Docs.tsx:481
+msgid "Type"
+msgstr "Tipo"
+
+#: src/views/meeting/chat/ChatComposer.tsx:114
+#: src/views/meeting/chat/ChatComposer.tsx:115
+msgid "Type a message..."
+msgstr "Escriba un mensaje..."
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:72
+#: src/views/meeting/ConnectionStatusOverlay.tsx:75
+msgid "Unable to reconnect."
+msgstr "No se pudo volver a conectar."
+
+#: src/views/Meeting.tsx:466
+msgid "Unable to save notes."
+msgstr "No se pudieron guardar las notas."
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:510
+msgid "bg_effect_init_failed"
+msgstr "No se pudieron iniciar los efectos de fondo."
+
+#: src/views/admin/hooks/useAdminController.ts:316
+#: src/views/admin/hooks/useAdminController.ts:317
+msgid "Unable to start upgrade"
+msgstr "No se pudo iniciar la mejora"
+
+#: src/views/meeting/useWhiteboardSync.ts:98
+msgid "Unable to sync whiteboard."
+msgstr "No se pudo sincronizar la pizarra."
+
+#: src/views/Meeting.tsx:501
+msgid "Unable to update lock."
+msgstr "No se pudo cambiar el bloqueo."
+
+#: src/components/BreakoutRooms.tsx:342
+#: src/components/BreakoutRooms.tsx:428
+msgid "Unassigned"
+msgstr "Sin asignar"
+
+#: src/components/MeetingDoc.tsx:324
+#: src/components/Whiteboard.tsx:1990
+#: src/views/meeting/assistant/AssistantOverlay.tsx:172
+#: src/views/meeting/boards/RoomBoard.tsx:437
+msgid "Undo"
+msgstr "Deshacer"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:93
+msgid "Undone"
+msgstr "Deshecho"
+
+#: src/components/whiteboard/StylePanel.tsx:332
+msgid "Ungroup"
+msgstr "Desagrupar"
+
+#: src/components/whiteboard/StylePanel.tsx:334
+msgid "Unlock"
+msgstr "Desbloquear"
+
+#: src/components/MeetingDoc.tsx:220
+msgid "Unlock for everyone"
+msgstr "Desbloquear para todos"
+
+#. js-lingui-explicit-id
+#: src/views/Lobby.tsx:825
+msgid "unmute_microphone"
+msgstr "Activar micrófono"
+
+#: src/views/meeting/LKControls.tsx:248
+msgid "Unmute microphone"
+msgstr "Activar micrófono"
+
+#: src/views/admin/components/settings/BillingPanel.tsx:24
+msgid "Unpaid"
+msgstr "Impago"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:202
+msgid "Unpin"
+msgstr "Dejar de fijar"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:172
+msgid "Unpin {name}"
+msgstr "Dejar de fijar a {name}"
+
+#: src/views/admin/hooks/useAdminController.ts:201
+msgid "Untitled Room"
+msgstr "Sala sin título"
+
+#: src/views/Auth.tsx:45
+msgid "Up next"
+msgstr "A continuación"
+
+#: src/views/admin/hooks/useAdminController.ts:311
+#: src/views/admin/hooks/useAdminController.ts:312
+msgid "Upgrade is not available right now"
+msgstr "La mejora no está disponible ahora"
+
+#: src/views/admin/components/modals/RoomModal.tsx:352
+#: src/views/admin/components/settings/BillingPanel.tsx:68
+msgid "Upgrade to Pro"
+msgstr "Actualizar a Pro"
+
+#: src/views/meeting/EffectsPanel.tsx:130
+msgid "Upload"
+msgstr "Cargar"
+
+#: src/views/admin/components/modals/RoomModal.tsx:656
+msgid "Upload an image (max 5MB) or paste an image URL"
+msgstr "Cargue una imagen (máximo 5MB) o pegue una URL de imagen"
+
+#: src/views/admin/components/modals/RoomModal.tsx:205
+#: src/views/admin/components/modals/RoomModal.tsx:254
+msgid "Upload failed"
+msgstr "Error al subir el archivo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:633
+msgid "Upload Image"
+msgstr "Cargar imagen"
+
+#: src/views/admin/components/modals/RoomModal.tsx:569
+msgid "Upload Logo"
+msgstr "Subir logotipo"
+
+#: src/views/meeting/chat/ChatComposer.tsx:99
+msgid "Uploading image"
+msgstr "Subiendo imagen"
+
+#: src/views/admin/components/modals/RoomModal.tsx:564
+#: src/views/admin/components/modals/RoomModal.tsx:628
+msgid "Uploading..."
+msgstr "Cargando..."
+
+#: src/views/admin/components/sections/OverviewSection.tsx:94
+msgid "Usage metrics will appear after your first meeting."
+msgstr "Las métricas de uso aparecerán después de tu primera reunión."
+
+#: src/views/admin/components/modals/RoomModal.tsx:128
+msgid "Use lowercase letters, numbers, and hyphens only"
+msgstr "Usa solo letras minúsculas, números y guiones"
+
+#: src/views/admin/components/modals/RoomModal.tsx:499
+msgid "Used for automatic logo discovery. Domains without https:// are supported."
+msgstr "Se usa para detectar logotipos automáticamente. Se admiten dominios sin https://."
+
+#: src/views/admin/components/RoomMembershipEditor.tsx:46
+msgid "User"
+msgstr "Usuario"
+
+#: src/views/Docs.tsx:376
+msgid "Variable"
+msgstr "Variable"
+
+#: src/views/Landing.tsx:177
+msgid "Video meetings in the browser, with notes, whiteboard and recording in the same room. Guests join from a link, with no account and nothing to install."
+msgstr "Videorreuniones en el navegador, con notas, pizarra y grabación en la misma sala. Los invitados entran con un enlace, sin cuenta y sin instalar nada."
+
+#: src/views/Landing.tsx:259
+msgid "Video, audio, screen sharing, chat, shared notes, whiteboard, breakout rooms and recordings."
+msgstr "Video, audio, pantalla compartida, chat, notas compartidas, pizarra, salas de grupos y grabaciones."
+
+#: src/views/meeting/boards/RoomBoard.tsx:404
+msgid "View"
+msgstr "Ver"
+
+#: src/views/admin/constants.ts:20
+msgid "View active sessions, create new permanent rooms, and manage access controls."
+msgstr "Consulta sesiones activas, crea salas permanentes y gestiona los accesos."
+
+#: src/views/admin/components/sections/OverviewSection.tsx:118
+msgid "View your rooms"
+msgstr "Ver tus salas"
+
+#: src/components/Whiteboard.tsx:1722
+msgid "Violet"
+msgstr "Violeta"
+
+#: src/views/Lobby.tsx:696
+#: src/views/meeting/EffectsPanel.tsx:80
+msgid "Virtual Backgrounds"
+msgstr "Fondos virtuales"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:631
+#: src/views/meeting/LiveKitVideoArea.tsx:644
+msgid "Waiting for participants..."
+msgstr "Esperando a los participantes..."
+
+#: src/views/meeting/TranscriptPanel.tsx:83
+msgid "Waiting for transcript"
+msgstr "Esperando la transcripción"
+
+#: src/views/meeting/TranscriptPanel.tsx:110
+msgid "We could not create a transcript for this recording."
+msgstr "No pudimos crear una transcripción para esta grabación."
+
+#: src/views/Auth.tsx:193
+msgid "We've sent a password reset link to <0>{email}</0>."
+msgstr "Hemos enviado un enlace de restablecimiento de contraseña a <0>{email}</0>."
+
+#: src/views/Docs.tsx:33
+#: src/views/Docs.tsx:411
+msgid "Webhooks"
+msgstr "Webhooks"
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: src/components/Whiteboard.tsx:1748
+msgid "Week plan"
+msgstr "Plan semanal"
+
+#: src/views/Onboarding.tsx:51
+msgid "Welcome"
+msgstr "Bienvenido"
+
+#: src/views/Auth.tsx:204
+msgid "Welcome back"
+msgstr "Bienvenido de nuevo"
+
+#: src/views/Onboarding.tsx:82
+msgid "Welcome to Tavio"
+msgstr "Bienvenido a Tavio"
+
+#: src/views/admin/constants.ts:13
+msgid "Welcome to your Dashboard"
+msgstr "Bienvenido a tu panel"
+
+#: src/components/Whiteboard.tsx:1733
+msgid "Went well"
+msgstr "Fue bien"
+
+#: src/components/Whiteboard.tsx:1735
+msgid "What could we try?"
+msgstr "¿Qué podríamos probar?"
+
+#: src/components/Whiteboard.tsx:1744
+msgid "What do we want to solve?"
+msgstr "¿Qué queremos resolver?"
+
+#: src/components/Whiteboard.tsx:1734
+msgid "What got in the way?"
+msgstr "¿Qué nos frenó?"
+
+#: src/views/Landing.tsx:259
+msgid "What is included in a room?"
+msgstr "¿Qué incluye una sala?"
+
+#: src/views/Landing.tsx:258
+msgid "What stays after the meeting?"
+msgstr "¿Qué queda después de la reunión?"
+
+#: src/components/Whiteboard.tsx:1733
+msgid "What went well?"
+msgstr "¿Qué fue bien?"
+
+#: src/views/Docs.tsx:472
+msgid "Wherever a path takes <0>{ROOM_PARAM}</0>, you can give the room's id or its slug."
+msgstr "Donde una ruta lleva <0>{ROOM_PARAM}</0>, puede indicar el id o el slug de la sala."
+
+#: src/components/sessions/BoardThumb.tsx:279
+#: src/components/Whiteboard.tsx:1794
+#: src/components/Whiteboard.tsx:1988
+#: src/views/admin/room/RoomPage.tsx:66
+#: src/views/admin/room/RoomPage.tsx:121
+#: src/views/admin/room/SessionPage.tsx:120
+#: src/views/admin/room/SessionPage.tsx:144
+#: src/views/Goodbye.tsx:34
+#: src/views/meeting/LKControls.tsx:308
+#: src/views/meeting/LKControls.tsx:341
+msgid "Whiteboard"
+msgstr "Pizarra"
+
+#: src/views/admin/room/SessionPage.tsx:147
+msgid "Whiteboard from {shortDate}"
+msgstr "Pizarra del {shortDate}"
+
+#: src/components/Whiteboard.tsx:1882
+#: src/components/Whiteboard.tsx:1883
+msgid "Who"
+msgstr "Quién"
+
+#: src/views/admin/components/modals/RoomModal.tsx:411
+#: src/views/admin/components/modals/RoomModal.tsx:415
+msgid "Who can join?"
+msgstr "¿Quién puede unirse?"
+
+#: src/components/Whiteboard.tsx:1736
+msgid "Who does what, by when?"
+msgstr "¿Quién hace qué y para cuándo?"
+
+#: src/views/Docs.tsx:441
+msgid "With the REST API your own software creates and deletes rooms, lists them, and reads recordings, transcripts and past sessions. A booking system can open a room for each appointment and send the link to the guests."
+msgstr "Con la API REST su propio software crea, elimina y lista salas, y lee grabaciones, transcripciones y sesiones pasadas. Un sistema de reservas puede abrir una sala para cada cita y enviar el enlace a los invitados."
+
+#: src/views/Landing.tsx:213
+msgid "Work together without tab-hopping"
+msgstr "Trabaja en equipo sin saltar entre pestañas"
+
+#: src/views/admin/components/modals/RoomModal.tsx:403
+msgid "Workspace"
+msgstr "Espacio de trabajo"
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:78
+msgid "Workspace Details"
+msgstr "Detalles del espacio de trabajo"
+
+#: src/views/admin/hooks/useAdminController.ts:299
+#: src/views/admin/hooks/useAdminController.ts:300
+msgid "Workspace is not ready yet"
+msgstr "El espacio de trabajo aún no está listo"
+
+#: src/views/admin/components/modals/RoomModal.tsx:426
+msgid "Workspace members only"
+msgstr "Solo miembros del espacio de trabajo"
+
+#: src/views/admin/components/AdminTopBar.tsx:32
+#: src/views/admin/components/MobileTabNav.tsx:20
+msgid "Workspace navigation"
+msgstr "Navegación del espacio de trabajo"
+
+#: src/views/meeting/boards/CommentPin.tsx:129
+msgid "Write a comment"
+msgstr "Escriba un comentario"
+
+#: src/views/meeting/assistant/AssistantOverlay.tsx:81
+msgid "Written into the notes"
+msgstr "Escrito en las notas"
+
+#: src/components/Whiteboard.tsx:1722
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: src/views/Landing.tsx:260
+msgid "Yes. Tavio's source code is public under the FSL-1.1-ALv2. Use the hosted version or run the stack in your own environment."
+msgstr "Sí. El código fuente de Tavio es público bajo la licencia FSL-1.1-ALv2. Use la versión alojada o ejecute la pila en su propio entorno."
+
+#: src/views/meeting/LiveKitVideoArea.tsx:447
+msgid "You"
+msgstr "Tú"
+
+#: src/views/meeting/LiveKitVideoArea.tsx:354
+msgid "You are presenting to everyone"
+msgstr "Estás presentando para todos"
+
+#: src/views/meeting/LeaveMeetingDialog.tsx:23
+msgid "You can leave on your own, or end the meeting and disconnect everyone."
+msgstr "Puedes salir tú solo o finalizar la reunión y desconectar a todos."
+
+#: src/views/Onboarding.tsx:138
+msgid "You can still continue, but camera and microphone won't work until you allow access in your browser settings."
+msgstr "Puedes continuar, pero la cámara y el micrófono no funcionarán hasta que permitas el acceso en la configuración de tu navegador."
+
+#: src/app-state/joinErrors.ts:35
+msgid "You do not have access to join this room."
+msgstr "No tienes acceso a esta sala."
+
+#: src/views/meeting/ConnectionStatusOverlay.tsx:135
+msgid "You have been disconnected from the meeting. Please check your internet connection."
+msgstr "Has sido desconectado de la reunion. Revisa tu conexion a internet."
+
+#: src/views/Docs.tsx:317
+msgid "You need Node.js, a Convex account, and a LiveKit server or LiveKit Cloud account."
+msgstr "Necesita Node.js, una cuenta de Convex y un servidor LiveKit o una cuenta de LiveKit Cloud."
+
+#: src/views/Onboarding.tsx:153
+msgid "You're all set!"
+msgstr "Ya esta todo listo!"
+
+#: src/views/Lobby.tsx:888
+msgid "You're joining"
+msgstr "Se está uniendo"
+
+#: src/components/OnboardingChecklist.tsx:71
+msgid "You're ready to use Tavio."
+msgstr "Estas listo para usar Tavio."
+
+#: src/views/admin/components/modals/RoomModal.tsx:357
+msgid "You've reached the room limit. Please upgrade your plan to create more rooms."
+msgstr "Has alcanzado el limite de salas. Mejora tu plan para crear mas salas."
+
+#: src/views/Onboarding.tsx:84
+msgid "You've taken the first step towards secure, high-performance video infrastructure. Let's get your workspace set up in less than a minute."
+msgstr "Has dado el primer paso hacia una infraestructura de video segura y de alto rendimiento. Configuremos tu espacio de trabajo en menos de un minuto."
+
+#: src/views/meeting/MeetingAccessBoundary.tsx:27
+msgid "Your access to this room has changed"
+msgstr "Tu acceso a esta sala ha cambiado"
+
+#: src/views/Lobby.tsx:729
+#: src/views/meeting/SettingsModal.tsx:166
+msgid "Your browser does not expose noise suppression controls."
+msgstr "Tu navegador no ofrece controles de supresión de ruido."
+
+#: src/views/admin/components/settings/ProfilePanel.tsx:79
+msgid "Your current workspace. To switch workspaces, use a different email."
+msgstr "Su espacio de trabajo actual. Para cambiar espacios de trabajo, use un correo electrónico diferente."
+
+#: src/views/Landing.tsx:195
+msgid "Your meeting ends. The work scatters."
+msgstr "Tu reunión termina. El trabajo se dispersa."
+
+#: src/router.tsx:435
+msgid "Your meeting identity, selected room, and breakout assignment will move here. The previous device will be disconnected."
+msgstr "Tu identidad en la reunión, la sala seleccionada y la asignación a una sala de grupos pasarán aquí. El dispositivo anterior se desconectará."
+
+#: src/views/Landing.tsx:243
+msgid "Your meetings. Your infrastructure. Your rules."
+msgstr "Tus reuniones. Tu infraestructura. Tus reglas."
+
+#: src/views/PasswordReset.tsx:110
+msgid "Your password has been updated. Redirecting to login..."
+msgstr "Tu contrasena se ha actualizado. Redirigiendo al inicio de sesion..."
+
+#: src/views/Lobby.tsx:911
+msgid "Your transferred meeting identity is fixed for this handoff."
+msgstr "Tu identidad de reunión transferida queda fijada para este traspaso."
+
+#: src/views/admin/components/sections/OverviewSection.tsx:77
+msgid "Your workspace"
+msgstr "Tu espacio de trabajo"
+
+#: src/views/Onboarding.tsx:155
+msgid "Your workspace has been created. You can now create rooms, invite team members, and start meetings."
+msgstr "Tu espacio de trabajo ha sido creado. Ahora puedes crear salas, invitar al equipo e iniciar reuniones."
+
+#: src/views/Docs.tsx:296
+msgid "Yours to run"
+msgstr "En sus manos"
+
+#: src/components/Whiteboard.tsx:2090
+msgid "Zoom in"
+msgstr "Acercar"
+
+#: src/components/Whiteboard.tsx:2086
+msgid "Zoom out"
+msgstr "Alejar"
+
+#: src/components/Whiteboard.tsx:2087
+#: src/components/Whiteboard.tsx:2087
+msgid "Zoom to fit"
+msgstr "Ajustar a la vista"

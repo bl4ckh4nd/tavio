@@ -1,0 +1,20 @@
+allowBuilds:
+  '@swc/core': true
+  core-js: false
+  esbuild: true
+  workerd: true
+minimumReleaseAgeExclude:
+  - '@cloudflare/workerd-darwin-64@1.20261102.1'
+  - '@cloudflare/workerd-darwin-arm64@1.20261102.1'
+  - '@cloudflare/workerd-linux-64@1.20261102.1'
+  - '@cloudflare/workerd-linux-arm64@1.20261102.1'
+  - '@cloudflare/workerd-windows-64@1.20261102.1'
+  - miniflare@5.20261102.0-beta
+  - workerd@1.20261102.1
+  - wrangler@4.156.2
+overrides:
+  # Patched releases; the versions pulled in through @lingui have known advisories.
+  browserslist: '>=4.28.7'
+  baseline-browser-mapping: '>=2.11.0'
+patchedDependencies:
+  '@livekit/track-processors@0.8.2': patches/@livekit__track-processors@0.8.2.patch

@@ -1,0 +1,17 @@
+[project]
+name = "tavio-assistant"
+version = "0.1.0"
+description = "Tavio's meeting assistant: joins a call, hears \"Vivo, ...\", writes to the whiteboard and the notes."
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "livekit-agents[deepgram]==1.8.11",
+  "openai==3.50.0",
+  "httpx==0.28.1",
+]
+
+[dependency-groups]
+dev = ["pytest==9.2.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

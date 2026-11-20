@@ -1,0 +1,200 @@
+/* Tavio design tokens, see DESIGN.md. Imported right after `@import 'tailwindcss'` in index.css. Six --text-* names and the
+ * three --ease-* names are Tailwind's own, so they change text-sm, text-lg, ease-out and the others everywhere.
+ * `.dark` sits on <html> for the app-wide mode, or on a subtree for a room whose branding asks for it. */
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: Coral (by request) · axes: light/grotesk-sans/warm · posture: restrained · modes: light+dark · v2.0.0 */
+
+@theme static {
+  /* Grounds */
+  --color-paper: oklch(97% 0.006 55); --color-paper-2: oklch(94.5% 0.007 55); --color-paper-3: oklch(91.5% 0.009 55);
+  --color-desk: oklch(94.3% 0.008 64); --color-cotton: oklch(98.8% 0.0045 80);
+  --color-whiteboard: oklch(98.6% 0.004 80); --color-board: oklch(22% 0.011 40); --color-board-2: oklch(28% 0.012 40);
+  --color-board-3: oklch(34% 0.013 40); --color-board-rule: oklch(38% 0.012 42);
+  --color-board-type: oklch(96.5% 0.006 70); --color-board-muted: oklch(76% 0.01 60);
+
+  /* Type colours and rules */
+  --color-ink: oklch(21% 0.012 38); --color-ink-2: oklch(29% 0.013 40); --color-print: oklch(23% 0.012 38);
+  --color-muted: oklch(47% 0.013 45); --color-rule: oklch(87% 0.009 55); --color-rule-2: oklch(81% 0.011 55);
+
+  /* The one primary action */
+  --color-action: oklch(21.6% 0.011 40); --color-action-2: oklch(29.5% 0.012 40);
+  --color-action-type: oklch(96.4% 0.006 70);
+
+  /* Coral: what stays, plus link underline and focus */
+  --color-accent: oklch(74% 0.125 30); --color-accent-ink: oklch(21.2% 0.012 38); --color-accent-2: oklch(54% 0.165 29);
+  --color-focus: oklch(54% 0.17 30); --color-paid: oklch(55.5% 0.15 33);
+
+  /* Semantics: errors sit colder and darker than the stamp */
+  --color-error: oklch(47% 0.18 22); --color-error-fill: oklch(45% 0.17 22); --color-error-2: oklch(40% 0.16 22);
+  --color-error-type: oklch(98.5% 0.005 70); --color-success: oklch(50% 0.12 150);
+
+  /* Light from the left */
+  --color-lit: oklch(100% 0.005 80 / 0.9); --color-shade-1: oklch(32% 0.03 50 / 0.07);
+  --color-shade-2: oklch(32% 0.03 50 / 0.12); --color-shade-3: oklch(32% 0.03 50 / 0.22);
+  --color-cast: oklch(32% 0.03 50 / 0.3); --color-groove-1: oklch(32% 0.03 50 / 0.16);
+  --color-groove-2: oklch(32% 0.03 50 / 0.2); --color-cast-board: oklch(7% 0.01 40 / 0.55);
+  --color-scrim: oklch(21% 0.012 38 / 0.4); --color-press-lit: oklch(98.7% 0.0045 80);
+
+  /* Type: app scale, ratio 1.2. The landing keeps its fluid scale on top */
+  --text-xs: 0.75rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.2rem; --text-xl: 1.44rem; --text-2xl: 1.728rem;
+  --text-3xl: 2.074rem; --text-threshold: 2.986rem; --text-display-s: 1.44rem; --text-display: 1.728rem;
+  --text-section: 1.2rem; --text-title: 1rem; --text-lead: 1rem;
+  --font-display: "General Sans", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --font-outlier: "Geist Mono", ui-monospace, monospace; --tracking-display: -0.02em;
+  --font-sans: var(--font-display); --font-mono: var(--font-outlier);
+
+  /* Shape */
+  --radius-stock: 8px; --radius-card: 8px; --radius-input: 6px; --radius-tag: 4px; --radius-groove: 10px;
+  --radius-pill: 999px; --shadow-card: 0 1px 2px var(--color-shade-1);
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Space. Never map these to --spacing-*: Tailwind sizes max-w-* from that namespace */
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px;
+  --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px; --container: 1344px; --gutter: 32px;
+  --gap-columns: 24px;
+
+  /* Type weight */
+  --display-weight: 600;
+
+  /* A room's own colour, set at runtime from its branding. It recolours the join action and nothing else */
+  --room-primary: oklch(45% 0.08 195); --room-primary-type: oklch(98% 0.008 195);
+
+  /* Whiteboard ink: the board's own palette, the same in both modes */
+  --ink-black: oklch(21.1% 0.006 286); --ink-red: oklch(57.7% 0.215 27.3); --ink-orange: oklch(64.6% 0.194 41.1);
+  --ink-green: oklch(62.7% 0.17 149.2); --ink-blue: oklch(54.6% 0.215 262.9); --ink-violet: oklch(54.1% 0.247 293);
+
+  /* Textures. Dark mode has none */
+  --tex-cotton: url("cotton.svg"); --tex-desk: url("felt.svg");
+
+  /* Rule width */
+  --rule-hair: 1px;
+
+  /* Density: threshold screens, work screens, the live toolbar, coarse pointers */
+  --control-threshold: 48px; --control-work: 40px; --control-work-s: 32px; --control-live: 56px; --hit-target: 44px;
+
+  /* Durations */
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+
+  /* Layers */
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500;
+  --z-tooltip: 600;
+}
+
+@media (max-width: 60rem) { :root { --gutter: 24px; } }
+@media (max-width: 40rem) { :root { --gutter: 16px; } }
+
+/* Edges and cast shadows, built from the light tokens. Declared on .dark too: a custom property resolves its var()s where it
+ * is declared, so a .dark subtree would otherwise inherit the light shadows from :root. */
+:root, .dark {
+  --edge-stock: inset 0 1px 0 var(--color-lit), inset 0 -1px 0 var(--color-shade-1), 0 0 0 0.5px var(--color-shade-3), 0 1px 0 var(--color-shade-2);
+  --cast-stock: 6px 5px 10px -6px var(--color-cast); --cast-stock-lift: 12px 10px 18px -8px var(--color-cast);
+  --cast-board: 8px 8px 20px -6px var(--color-cast-board);
+  --press-groove: inset 1px 1.5px 2px var(--color-groove-1), inset -1px -1px 0 var(--color-lit), 0 0 0 0.5px var(--color-groove-2);
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Grounds. The whiteboard stays light */
+  --color-paper: oklch(17% 0.01 40); --color-paper-2: oklch(20.5% 0.011 40); --color-paper-3: oklch(30% 0.012 40);
+  --color-desk: oklch(15% 0.01 40); --color-cotton: oklch(23% 0.012 40); --color-board: oklch(13.5% 0.009 40);
+  --color-board-2: oklch(21% 0.011 40); --color-board-3: oklch(27% 0.012 40); --color-board-rule: oklch(32% 0.011 42);
+  --color-board-type: oklch(94.5% 0.006 70); --color-board-muted: oklch(74% 0.009 60);
+
+  /* Type colours and rules */
+  --color-ink: oklch(94% 0.006 60); --color-ink-2: oklch(84% 0.008 60); --color-print: oklch(91% 0.007 60);
+  --color-muted: oklch(70% 0.01 55); --color-rule: oklch(29% 0.011 40); --color-rule-2: oklch(35% 0.012 42);
+
+  /* Action, coral, semantics */
+  --color-action: oklch(93% 0.006 70); --color-action-2: oklch(86% 0.007 70); --color-action-type: oklch(20% 0.011 40);
+  --color-accent: oklch(76% 0.1 30); --color-accent-ink: oklch(20% 0.011 40); --color-accent-2: oklch(72% 0.125 30);
+  --color-focus: oklch(74% 0.125 30); --color-paid: oklch(74% 0.115 33); --color-error: oklch(73% 0.14 22);
+  --color-error-fill: oklch(48% 0.165 22); --color-error-2: oklch(54% 0.165 22);
+  --color-error-type: oklch(98% 0.004 70); --color-success: oklch(72% 0.11 150);
+
+  /* Light: cards read lighter than the ground instead of casting shadows */
+  --color-lit: oklch(100% 0 0 / 0.05); --color-shade-1: oklch(0% 0 0 / 0); --color-shade-2: oklch(0% 0 0 / 0);
+  --color-shade-3: oklch(100% 0 0 / 0.1); --color-cast: oklch(0% 0 0 / 0); --color-groove-1: oklch(0% 0 0 / 0.3);
+  --color-groove-2: oklch(100% 0 0 / 0.08); --color-cast-board: oklch(0% 0 0 / 0);
+  --color-scrim: oklch(5% 0.005 40 / 0.6); --color-press-lit: oklch(0% 0 0 / 0);
+
+  /* Textures */
+  --tex-cotton: none; --tex-desk: none;
+}
+
+/* The landing page keeps the proposal's own fluid type scale and spacing, and stays light in both modes. Its composite
+ * shadows are declared again for the same reason as on .dark. */
+.landing {
+  color-scheme: light;
+
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
+  --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --text-hero: clamp(2.75rem, 6.65vw, 6rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
+  --color-paper: oklch(97% 0.006 55); --color-paper-2: oklch(94.5% 0.007 55); --color-paper-3: oklch(91.5% 0.009 55);
+  --color-ink: oklch(21% 0.012 38); --color-ink-2: oklch(29% 0.013 40); --color-muted: oklch(47% 0.013 45);
+  --color-rule: oklch(87% 0.009 55); --color-rule-2: oklch(81% 0.011 55);
+  --color-accent: oklch(74% 0.125 30); --color-accent-ink: oklch(21% 0.012 38); --color-accent-2: oklch(54% 0.165 29); --color-focus: oklch(54% 0.17 30);
+  --color-cotton: oklch(98.8% 0.0045 80); --color-desk: oklch(94.3% 0.008 64); --color-print: oklch(23% 0.012 38);
+  --color-board: oklch(22% 0.011 40); --color-board-type: oklch(96.5% 0.006 70); --color-paid: oklch(55.5% 0.15 33);
+  --tex-cotton: url("cotton.svg"); --tex-desk: url("felt.svg");
+  --shade: 32% 0.03 50; --lit: 100% 0.005 80; --deep: 7% 0.01 40;
+  --font-display: "General Sans", ui-sans-serif, system-ui, sans-serif; --font-body: var(--font-display);
+  --font-outlier: "Geist Mono", ui-monospace, monospace;
+  --radius-card: 8px; --radius-input: 6px; --radius-pill: 999px; --radius-stock: 8px; --rule-hair: 1px;
+  --shadow-card: 0 1px 2px oklch(20% 0.01 35 / 0.05);
+  --edge-stock: inset 0 1px 0 oklch(var(--lit) / 0.9), inset 0 -1px 0 oklch(var(--shade) / 0.07), 0 0 0 0.5px oklch(var(--shade) / 0.22), 0 1px 0 oklch(var(--shade) / 0.12);
+  --cast-stock: 6px 5px 10px -6px oklch(var(--shade) / 0.3); --cast-stock-lift: 12px 10px 18px -8px oklch(var(--shade) / 0.3);
+  --cast-board: 10px 12px 24px -8px oklch(var(--deep) / 0.7);
+  --cast-pile: 18px 16px 34px -14px oklch(var(--shade) / 0.42);
+  --press-groove: inset 1px 1.5px 2px oklch(var(--shade) / 0.16), inset -1px -1px 0 oklch(var(--lit) / 0.9), 0 0 0 0.5px oklch(var(--shade) / 0.2);
+  --tracking-display: -0.03em; --display-weight: 600;
+  --control-s: 44px; --control-m: 52px;
+
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  caret-color: var(--color-accent);
+
+  /* The German head runs longer; it keeps one line and the fold */
+  &:lang(de) { --text-hero: clamp(2.75rem, 6vw, 5.5rem); }
+  &:lang(fr) { --text-hero: clamp(2.75rem, 5.5vw, 5rem); }
+
+  @media (max-width: 60rem) { --gutter: 24px; --section-gap-s: 80px; --section-gap: 96px; --section-gap-l: 120px; }
+  @media (max-width: 40rem) { --gutter: 16px; --section-gap-s: 56px; --section-gap: 72px; --section-gap-l: 96px; --gap-columns: 16px; }
+}
+
+/* Whiteboard: paper in both modes, so what sits on it keeps the light values in dark mode too.
+ * Custom properties inherit, so setting them on .wb beats the .dark values from <html>. The shadows are declared again for
+ * the same reason tokens.css declares them on .dark: a custom property resolves its var()s where it is declared. */
+.dark .wb {
+  color-scheme: light;
+  --color-paper: oklch(97% 0.006 55); --color-paper-2: oklch(94.5% 0.007 55); --color-paper-3: oklch(91.5% 0.009 55);
+  --color-cotton: oklch(98.8% 0.0045 80); --color-ink: oklch(21% 0.012 38); --color-ink-2: oklch(29% 0.013 40);
+  --color-print: oklch(23% 0.012 38); --color-muted: oklch(47% 0.013 45); --color-rule: oklch(87% 0.009 55);
+  --color-rule-2: oklch(81% 0.011 55); --color-focus: oklch(54% 0.17 30);
+  --color-lit: oklch(100% 0.005 80 / 0.9); --color-shade-1: oklch(32% 0.03 50 / 0.07);
+  --color-shade-2: oklch(32% 0.03 50 / 0.12); --color-shade-3: oklch(32% 0.03 50 / 0.22);
+  --color-cast: oklch(32% 0.03 50 / 0.3); --color-groove-1: oklch(32% 0.03 50 / 0.16);
+  --color-groove-2: oklch(32% 0.03 50 / 0.2); --color-press-lit: oklch(98.7% 0.0045 80);
+  --edge-stock: inset 0 1px 0 var(--color-lit), inset 0 -1px 0 var(--color-shade-1), 0 0 0 0.5px var(--color-shade-3), 0 1px 0 var(--color-shade-2);
+  --cast-stock: 6px 5px 10px -6px var(--color-cast); --cast-stock-lift: 12px 10px 18px -8px var(--color-cast);
+  --press-groove: inset 1px 1.5px 2px var(--color-groove-1), inset -1px -1px 0 var(--color-lit), 0 0 0 0.5px var(--color-groove-2);
+}

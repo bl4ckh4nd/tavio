@@ -1,0 +1,151 @@
+/* Additions to system.css for this surface. Imported into layer(components) from index.css.
+ * Rules aimed at LiveKit's own elements live in the LiveKit section of index.css: its stylesheet is unlayered and beats this layer. */
+
+/* The room: every row and the stage hold their height, so tiles fit instead of pushing the toolbar away */
+.meet { grid-template-columns: minmax(0, 1fr); }
+.meet .meet__mid { position: relative; grid-template-rows: minmax(0, 1fr); }
+.meet .stage { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
+.meet .meet__bar { padding-bottom: env(safe-area-inset-bottom); }
+.meet .mtop__l { flex: 0 1 auto; min-width: 0; }
+.meet .mtop__name { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meet .mtop__time { flex: none; }
+.meet .mtop__r { flex: none; }
+.meet .mtop .groove__opt .icon { width: 16px; height: 16px; }
+
+/* Toolbar */
+.mbar { position: relative; }
+.mbar .ctl { width: auto; min-width: 76px; padding-inline: var(--space-2xs); } /* a longer translation widens its tool, the word is never cut */
+.mbar .ctl--leave { min-width: 96px; }
+.ctl__badge { position: absolute; top: 4px; left: calc(50% + 6px); display: flex; align-items: center; justify-content: center; min-width: 16px; height: 16px; padding: 0 var(--space-2xs); border-radius: var(--radius-tag); background-color: var(--color-board-type); color: var(--color-board); font-size: var(--text-xs); line-height: 1; }
+.mbar__error { position: absolute; bottom: calc(100% + var(--space-xs)); left: 50%; transform: translateX(-50%); z-index: var(--z-raised); width: max-content; max-width: min(480px, calc(100vw - 2 * var(--space-sm))); }
+
+/* More: a menu over the toolbar, a sheet on a phone */
+.mmore-anchor { position: relative; display: flex; }
+.mmore__scrim { position: fixed; inset: 0; z-index: var(--z-dropdown); }
+.mmore { position: absolute; bottom: calc(100% + var(--space-xs)); left: 50%; transform: translateX(-50%); z-index: var(--z-dropdown); width: 280px; }
+.mmore__phone { display: none; }
+
+/* Toasts over the stage */
+.mtoast { position: absolute; bottom: 96px; left: 50%; transform: translateX(-50%); z-index: var(--z-toast); width: max-content; max-width: calc(100% - 2 * var(--space-sm)); }
+.toast.mtoast { border-radius: var(--radius-stock); background-color: var(--color-board-2); color: var(--color-board-type); }
+/* The assistant: what it heard above what it did */
+.mtoast--assistant { flex-direction: column; align-items: stretch; gap: var(--space-2xs); width: min(520px, calc(100% - 2 * var(--space-sm))); padding: var(--space-sm) var(--space-xs) var(--space-xs) var(--space-md); }
+.mtoast__heard { font-size: var(--text-xs); opacity: 0.72; }
+.mtoast__done { display: flex; align-items: center; gap: var(--space-xs); }
+.mtoast--assistant .btn { color: inherit; }
+.mhint { width: min(440px, calc(100% - 2 * var(--space-sm))); padding: var(--space-md) var(--space-md) var(--space-sm); background-color: var(--color-cotton); color: var(--color-print); }
+.mhint__title { font-weight: 600; }
+.mhint__list { display: grid; gap: var(--space-2xs); margin: var(--space-xs) 0 var(--space-sm); font-size: var(--text-sm); color: var(--color-ink-2); }
+.mhint__note { margin-bottom: var(--space-sm); font-size: var(--text-xs); color: var(--color-muted); }
+.mhint__acts { display: flex; justify-content: flex-end; gap: var(--space-xs); }
+
+/* Tiles: the parts LiveKit does not draw */
+.mtile__cam { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; pointer-events: none; }
+.mtile__cam.is-off { display: flex; }
+.mtile__cam .tile__initial { width: auto; height: min(72px, 44%); aspect-ratio: 1; }
+.meet .lk-participant-metadata { z-index: 1; }
+.mtile__flag { z-index: var(--z-base); max-width: calc(100% - 2 * var(--space-xs)); overflow: hidden; text-overflow: ellipsis; }
+.mtile__flag > span { overflow: hidden; text-overflow: ellipsis; }
+
+/* You: a pill by default, a small picture when opened */
+.mself { z-index: var(--z-raised); }
+/* Real names are longer than the frame's: on narrow tiles the pill sits above the name chip so it never covers one */
+@media (max-width: 60rem) { .selfpill { bottom: calc(var(--space-xs) + 32px); } }
+button.mself { padding: 0; border: 0; background: transparent; cursor: pointer; }
+.mself .tile__name { position: static; gap: var(--space-2xs); }
+.mself__name { max-width: 96px; overflow: hidden; text-overflow: ellipsis; }
+.mself--open { width: 160px; aspect-ratio: 16 / 9; overflow: hidden; border-radius: var(--radius-stock); box-shadow: var(--cast-board); }
+.mself--open { touch-action: none; cursor: grab; }
+.mself--open[data-corner^="t"] { top: var(--space-xs); bottom: auto; }
+.mself--open[data-corner$="l"] { left: var(--space-xs); right: auto; }
+.mself__flip { position: absolute; top: var(--space-2xs); left: var(--space-2xs); width: 32px; height: 32px; background-color: var(--color-board); }
+.mself__close { position: absolute; top: var(--space-2xs); right: var(--space-2xs); width: 32px; height: 32px; background-color: var(--color-board); }
+@media (pointer: coarse) {
+  .mself__close::after, .mself__flip::after { content: ""; position: absolute; top: 50%; left: 50%; width: var(--hit-target); height: var(--hit-target); transform: translate(-50%, -50%); }
+  button.mself::after { content: ""; position: absolute; top: 50%; left: 50%; width: max(100%, var(--hit-target)); height: max(100%, var(--hit-target)); transform: translate(-50%, -50%); }
+}
+
+/* Presenting: what you see instead of your own screen */
+.mpresent { flex-wrap: wrap; justify-content: center; max-width: 100%; min-height: 48px; padding-block: var(--space-xs); border-radius: var(--radius-stock); background-color: var(--color-board-2); color: var(--color-board-type); }
+.mpresent__preview { width: min(340px, 80%); aspect-ratio: 16 / 10; overflow: hidden; border-radius: var(--radius-stock); background-color: var(--color-board); box-shadow: 0 0 0 1px var(--color-board-rule), var(--cast-board); }
+.mpresent__preview > video { display: block; width: 100%; height: 100%; }
+.mpresent__hint { margin: 0; font-size: var(--text-xs); color: var(--color-board-muted); text-align: center; }
+
+/* Strips: beside the whiteboard, and under a sheet on a phone */
+.mstrip--column { min-width: 0; }
+.mstrip--column > * { flex: 0 0 calc((100% - 4 * var(--space-xs)) / 5); min-height: 0; }
+.mstrip--row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--mgrid-gap); height: 100%; min-height: 0; }
+.mwb { min-height: 0; }
+.mwb--alone { grid-template-columns: minmax(0, 1fr); }
+.mwb__sheet { min-width: 0; min-height: 0; overflow: hidden; border-radius: var(--radius-stock); background-color: var(--color-whiteboard); box-shadow: var(--edge-stock), var(--cast-board); }
+
+/* Quiet states in a sheet */
+.mquiet { display: grid; justify-items: center; align-content: center; gap: var(--space-2xs); height: 100%; padding: var(--space-lg); text-align: center; }
+.mquiet .notice { text-align: start; }
+
+/* Effects */
+.meffects { display: grid; gap: var(--space-md); align-content: start; height: 100%; padding: var(--space-md); }
+.meffects .bgopt__pic { position: relative; }
+.mbgblur { position: absolute; inset: -8px; background: url("/participant-portraits.webp") 2% 8% / 300% 200% no-repeat; filter: blur(6px); }
+
+/* A stage too narrow for the panel beside it: the panel takes the room under a row of tiles */
+@media (max-width: 60rem) {
+  .meet { padding: 0 var(--space-xs); }
+  .meet .meet__mid { row-gap: var(--space-xs); }
+  .meet .meet__bar { min-height: 0; }
+  .meet .meet__mid--panel { grid-template-rows: 142px minmax(0, 1fr); }
+  .meet .meet__mid--panel.meet__mid--board { grid-template-rows: minmax(0, 1fr); }
+  .meet .meet__mid--panel.meet__mid--board .mpanel { position: absolute; inset: 0; z-index: var(--z-raised); }
+
+  .mbar { flex: 1 1 auto; gap: var(--space-3xs); max-width: 560px; padding-top: var(--space-2xs); padding-bottom: var(--space-xs); }
+  .mbar .mbar__wide { display: none; }
+  .mbar .ctl { flex: 1 1 0; min-width: min-content; height: 52px; padding-inline: 0; }
+  .mbar .ctl--leave { flex-grow: 1.3; min-width: min-content; margin-left: var(--space-3xs); }
+  .mbar .mmore-anchor { flex: 1 1 0; min-width: min-content; }
+  .mbar .mmore-anchor .ctl { width: 100%; }
+  .mbar .mbar__more--phone-open { background-color: var(--color-board-3); box-shadow: inset 1px 1.5px 2px var(--color-cast-board); }
+
+  .mmore__scrim { background-color: var(--color-scrim); }
+  .mmore { position: fixed; top: auto; right: var(--space-xs); bottom: calc(var(--space-xs) + env(safe-area-inset-bottom)); left: var(--space-xs); transform: none; width: auto; max-height: calc(100dvh - 2 * var(--space-xs)); overflow-y: auto; }
+  .mmore .menu__item { min-height: 44px; }
+  .mmore__phone { display: flex; }
+  .mmore .bsheet__rule.mmore__phone { display: block; }
+}
+
+@media (max-width: 40rem) {
+  .meet .mtop { min-height: 44px; gap: var(--space-xs); }
+}
+
+/* A sideways phone has no height for a row of tiles and a panel: the panel takes the stage */
+@media (max-width: 60rem) and (max-height: 30rem) {
+  .meet .meet__mid--panel { grid-template-rows: minmax(0, 1fr); }
+  .meet .meet__mid--panel .mpanel { position: absolute; inset: 0; z-index: var(--z-raised); }
+}
+
+/* Grid: the rows are as tall as the videos need, and the leftover stage stays even above and below */
+.mgrid__stage { display: flex; flex: 1 1 0; flex-direction: column; justify-content: center; gap: var(--mgrid-gap); min-height: 0; }
+
+/* Tile tools: on hover or keyboard focus with a mouse, one tap on the tile for a sheet on touch */
+.mtile__tools { position: absolute; top: var(--space-2xs); right: var(--space-2xs); z-index: var(--z-base); display: flex; gap: var(--space-2xs); opacity: 0; }
+.mtile:hover > .mtile__tools, .mtile__tools:focus-within { opacity: 1; }
+.mtile__tap { display: none; position: absolute; inset: 0; z-index: var(--z-base); padding: 0; border: 0; background: transparent; cursor: pointer; }
+@media (hover: none) {
+  .mtile__tools { display: none; }
+  .mtile__tap { display: block; }
+}
+
+.mtile__zoomreset { position: absolute; top: var(--space-xs); right: var(--space-xs); z-index: var(--z-raised); }
+
+.mfocusbar { position: absolute; top: var(--space-xs); left: var(--space-xs); z-index: var(--z-raised); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs); }
+.mfocusbar__tag { position: static; gap: var(--space-2xs); }
+
+.msheet { align-self: flex-end; display: flex; flex-direction: column; gap: var(--space-2xs); padding: var(--space-sm); }
+@media (min-width: 60.01rem) { .msheet { align-self: center; } }
+.msheet__name { padding: var(--space-2xs) var(--space-xs); font-weight: 500; }
+.msheet__close { margin-top: var(--space-2xs); }
+.msheet .menu__item { min-height: 44px; }
+
+/* The room timer in the top bar; its menu opens below it. */
+.mtimer { display: inline-flex; align-items: center; gap: var(--space-2xs); min-width: 0; }
+.mtimer__menu { position: relative; display: inline-flex; }
+.mtimer__list { position: absolute; top: calc(100% + 6px); left: 0; z-index: 30; width: 160px; }

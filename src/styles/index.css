@@ -1,0 +1,485 @@
+@import 'tailwindcss';
+@import './tokens.css';
+@import './system.css' layer(components);
+@import './landing.css' layer(components);
+@import './dashboard.css' layer(components);
+@import './meeting.css' layer(components);
+@import './meeting-panels.css' layer(components);
+@import './sessions.css' layer(components);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face { font-family: "General Sans"; src: url("/fonts/GeneralSans-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "General Sans"; src: url("/fonts/GeneralSans-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "General Sans"; src: url("/fonts/GeneralSans-Semibold.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Geist Mono"; src: url("/fonts/GeistMono-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+
+@theme {
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@layer base {
+  html { overflow-x: clip; scrollbar-color: var(--color-rule-2) transparent; scroll-padding-top: var(--space-3xl); }
+  body { background-color: var(--color-paper); color: var(--color-ink); font-family: var(--font-body); font-size: var(--text-sm); line-height: 1.45; caret-color: var(--color-accent); }
+  ::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); color: var(--color-ink); }
+  :focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+  a { text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+  h1, h2, h3 { font-family: var(--font-display); font-synthesis: none; overflow-wrap: break-word; text-wrap: balance; }
+  p { text-wrap: pretty; }
+}
+
+/* Motion reports state and never decorates; under reduced motion everything ends at once. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Explicit entry motion.
+   The `animate-in` / `fade-in` / `slide-in-*` / `zoom-in-*` classes used across
+   the views were never installed, so those entrances did not animate at all.
+   These classes ship the intended feedback and collapse to the resting state
+   when a visitor asks for reduced motion. */
+@keyframes entry-fade {
+  from { opacity: 0; }
+}
+
+@keyframes entry-rise {
+  from { opacity: 0; transform: translate3d(0, 1rem, 0); }
+}
+
+@keyframes entry-rise-sm {
+  from { opacity: 0; transform: translate3d(0, 0.5rem, 0); }
+}
+
+@keyframes entry-drift-right {
+  from { opacity: 0; transform: translate3d(2rem, 0, 0); }
+}
+
+@keyframes entry-pop {
+  from { opacity: 0; transform: scale(0.95); }
+}
+
+@keyframes entry-pop-check {
+  from { opacity: 0; transform: scale(0.6) rotate(-90deg); }
+}
+
+@keyframes entry-drawer {
+  from { transform: translate3d(0, 100%, 0); }
+}
+
+.entry-fade {
+  animation: entry-fade 200ms var(--ease-standard) both;
+}
+
+.entry-rise {
+  animation: entry-rise 260ms var(--ease-standard) both;
+}
+
+.entry-rise-sm {
+  animation: entry-rise-sm 200ms var(--ease-standard) both;
+}
+
+.entry-drift-right {
+  animation: entry-drift-right 260ms var(--ease-standard) both;
+}
+
+.entry-pop {
+  animation: entry-pop 200ms var(--ease-standard) both;
+}
+
+.entry-pop-check {
+  animation: entry-pop-check 240ms var(--ease-standard) both;
+}
+
+.entry-drawer {
+  animation: entry-drawer 300ms var(--ease-standard) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .entry-fade,
+  .entry-rise,
+  .entry-rise-sm,
+  .entry-drift-right,
+  .entry-pop,
+  .entry-pop-check,
+  .entry-drawer {
+    animation: none;
+  }
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-rule-2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
+
+/* Tiptap Editor Styles */
+.ProseMirror {
+  outline: none;
+  min-height: 100%;
+}
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: var(--color-muted);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* The notes editor and viewer use these class names, but the typography plugin isn't
+   installed: without these rules headings and lists look like body text. */
+.prose h1 {
+  margin: 1em 0 0.5em;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.prose h2 {
+  margin: 1em 0 0.5em;
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.prose p {
+  margin: 0.5em 0;
+}
+.prose ul,
+.prose ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+.prose ul {
+  list-style: disc;
+}
+.prose ol {
+  list-style: decimal;
+}
+.prose blockquote {
+  margin: 0.75em 0;
+  padding-left: 1em;
+  border-left: 2px solid currentColor;
+  opacity: 0.8;
+}
+.prose > :first-child {
+  margin-top: 0;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Skeleton shimmer is decoration; the block colour still reads as loading. */
+  .animate-pulse {
+    animation: none;
+  }
+
+  /* Layout motion in the LiveKit grid is decoration; drop it when asked. */
+  .lk-grid-tile-wrapper,
+  .lk-participant-tile[data-lk-speaking="true"] {
+    transition: none;
+  }
+}
+
+/* LiveKit Component Overrides */
+
+/* LiveKit's stylesheet loads after this one, so these rules start at .meet to outrank it.
+   The classes in styles/*.css sit in a layer and lose to it, which is why tiles are styled here. */
+
+/* Ensure root fills viewport */
+#root {
+  height: 100vh;
+  height: 100dvh; /* for mobile browsers with dynamic viewport */
+  width: 100%;
+}
+
+.meet[data-lk-theme] {
+  --lk-bg: var(--color-board);
+  --lk-bg2: var(--color-board-2);
+  --lk-control-bg: var(--color-board-2);
+  --lk-control-hover-bg: var(--color-board-3);
+  --lk-fg: var(--color-board-type);
+  --lk-border-color: var(--color-board-rule);
+  --lk-accent-bg: var(--color-board-type);
+  --lk-accent-fg: var(--color-board);
+  --lk-connection-excellent: var(--color-board-type);
+  --lk-connection-good: var(--color-board-type);
+  --lk-connection-poor: var(--color-board-type);
+  --lk-font-family: var(--font-body);
+  --lk-font-size: var(--text-sm);
+  --lk-line-height: 1.45;
+  --lk-border-radius: var(--radius-stock);
+  --lk-grid-gap: var(--mgrid-gap);
+  --mgrid-gap: var(--space-xs);
+  height: 100dvh;
+  width: 100%;
+  color-scheme: inherit;
+}
+
+@media (max-width: 40rem) {
+  .meet[data-lk-theme] {
+    --mgrid-gap: var(--space-2xs);
+  }
+}
+
+/* Grid: LiveKit picks the layout and the page, the rows centre a short last row */
+.meet .lk-grid-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mgrid-gap);
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.meet .lk-grid-layout[data-lk-pagination="true"] {
+  padding-bottom: 0;
+}
+
+.meet .lk-grid-row {
+  align-items: stretch;
+  gap: var(--mgrid-gap);
+}
+
+/* The pager has its own row under the tiles, so it never covers a name */
+.meet .lk-pagination-controls {
+  flex: none;
+  display: flex;
+  justify-content: center;
+}
+
+.meet .lk-pagination-control {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  transform: none;
+  opacity: 1;
+  background-color: var(--color-board-2);
+}
+
+.meet .lk-pagination-count {
+  padding: 0 var(--space-2xs);
+  border-inline: 0;
+  white-space: nowrap;
+}
+
+/* The pill stays on the last tile, above the pager's row */
+.meet .lk-grid-layout[data-lk-pagination="true"] ~ [data-testid="local-pip"]:not([data-corner^="t"]) {
+  bottom: calc(40px + var(--mgrid-gap) + var(--space-xs));
+}
+
+/* Tiles */
+.meet .lk-participant-tile {
+  --lk-speaking-indicator-width: 2px;
+  width: 100%;
+  height: 100%;
+  gap: 0;
+  overflow: hidden;
+  border-radius: var(--radius-stock);
+  background-color: var(--color-board-2);
+}
+
+.meet .lk-participant-tile::after {
+  border-radius: var(--radius-stock);
+}
+
+/* Nobody is cropped by default: a grid tile has the video's shape, and the large tile shows the whole picture */
+.meet .lk-participant-media-video {
+  background-color: var(--color-board-2);
+}
+
+.meet .lk-participant-media-video[data-lk-source="camera"] {
+  object-fit: contain;
+}
+
+/* Small tiles beside the real work keep a fixed shape, so there a face matters more than the edges */
+.meet [data-fill="true"] .lk-participant-media-video[data-lk-source="camera"],
+.meet .lk-carousel .lk-participant-media-video[data-lk-source="camera"],
+.meet .strip .lk-participant-media-video[data-lk-source="camera"],
+.meet .mstrip--row .lk-participant-media-video[data-lk-source="camera"] {
+  object-fit: cover;
+}
+
+/* LiveKit mirrors your own camera, which is only right for the front one */
+.meet [data-rear-camera="true"] .lk-participant-media-video[data-lk-local-participant="true"] {
+  transform: none;
+}
+
+.meet .lk-participant-media-video[data-lk-source="screen_share"] {
+  object-fit: contain;
+  background-color: var(--color-board);
+}
+
+/* Camera off: the initial from LiveKitVideoArea replaces LiveKit's silhouette */
+.meet .lk-participant-tile .lk-participant-placeholder {
+  border-radius: var(--radius-stock);
+  background-color: var(--color-board-2);
+}
+
+.meet .lk-participant-tile .lk-participant-placeholder svg {
+  display: none;
+}
+
+.meet .lk-participant-tile[data-lk-video-muted="true"][data-lk-source="camera"] + .mtile__cam {
+  display: flex;
+}
+
+/* Name chip in cotton */
+.meet .lk-participant-metadata {
+  right: var(--space-xs);
+  bottom: var(--space-xs);
+  left: var(--space-xs);
+  gap: var(--space-xs);
+}
+
+.meet .lk-participant-metadata-item {
+  min-width: 0;
+  min-height: 24px;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-tag);
+  background-color: var(--color-cotton);
+  color: var(--color-print);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  box-shadow: var(--cast-board);
+}
+
+.meet .lk-participant-name {
+  overflow: hidden;
+  font-size: var(--text-xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meet .lk-participant-metadata-item .lk-track-muted-indicator-microphone {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  margin-inline-end: var(--space-2xs);
+  opacity: 1;
+}
+
+.meet .lk-participant-metadata-item .lk-track-muted-indicator-microphone svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* A weak link reads as a flag, in board type */
+.meet .lk-participant-tile .lk-connection-quality.lk-participant-metadata-item {
+  flex: none;
+  justify-content: center;
+  width: 24px;
+  padding: 0;
+  background-color: var(--color-board);
+  color: var(--color-board-type);
+  box-shadow: none;
+}
+
+/* TileTools replaces LiveKit's toggle, which is one icon for two meanings */
+.meet .lk-participant-tile .lk-focus-toggle-button {
+  display: none;
+}
+
+/* Speaker view: the speaker, then a column of five, or a row under them where the stage folds */
+.meet .lk-focus-layout {
+  grid-template-columns: minmax(0, 1fr) 200px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: var(--mgrid-gap);
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.meet .lk-focus-layout > .lk-carousel {
+  order: 2;
+  width: 200px;
+  min-height: 0;
+  gap: var(--mgrid-gap);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-board-3) transparent;
+}
+
+.meet .lk-carousel[data-lk-orientation="vertical"] > * {
+  flex: 0 0 calc((100% - 4 * var(--mgrid-gap)) / 5);
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+
+@media (max-width: 60rem) {
+  /* Your window sits above the strip of small tiles, so it never hides one */
+  .meet .lk-focus-layout ~ [data-testid="local-pip"]:not([data-corner^="t"]) {
+    bottom: calc(96px + var(--mgrid-gap) + var(--space-xs));
+  }
+
+  .meet .lk-focus-layout {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) 96px;
+  }
+
+  .meet .lk-focus-layout > .lk-carousel {
+    width: 100%;
+  }
+}
+
+/* A phone held sideways: the strip beside the large tile, and your window beside the strip */
+@media (max-width: 60rem) and (orientation: landscape) and (max-height: 30rem) {
+  .meet .lk-focus-layout {
+    grid-template-columns: minmax(0, 1fr) 140px;
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .meet .lk-focus-layout > .lk-carousel {
+    width: 140px;
+  }
+
+  .meet .lk-carousel[data-lk-orientation="vertical"] > * {
+    flex-basis: calc((100% - 2 * var(--mgrid-gap)) / 3);
+  }
+
+  .meet .lk-focus-layout ~ .mself--open {
+    max-width: 112px;
+  }
+
+  .meet .lk-focus-layout ~ [data-testid="local-pip"]:not([data-corner^="t"]) {
+    bottom: var(--space-xs);
+  }
+
+  .meet .lk-focus-layout ~ [data-testid="local-pip"]:not([data-corner$="l"]) {
+    right: calc(140px + var(--mgrid-gap) + var(--space-xs));
+  }
+}
+
+/* Pinching a large shared screen moves the picture, not the page */
+.meet .mtile[data-zoomable="true"] {
+  touch-action: none;
+}
+
+.meet .mtile[data-zoomed="true"] .lk-participant-media-video {
+  transform: var(--mzoom);
+}
+
+/* Hide default LiveKit controls since we have custom ones */
+.lk-control-bar {
+  display: none !important;
+}

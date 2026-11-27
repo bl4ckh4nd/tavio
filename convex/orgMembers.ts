@@ -1,4 +1,4 @@
-import { query, mutation, internalMutation } from "./_generated/server";
+import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 import { api } from "./_generated/api";
 
@@ -124,20 +124,6 @@ export const invite = mutation({
     }
 
     return membership ? mapMember(membership, user) : null;
-  },
-});
-
-export const _enqueueInviteEmail = internalMutation({
-  args: {
-    email: v.string(),
-    orgId: v.id("organizations"),
-    inviterName: v.optional(v.string()),
-  },
-  handler: async (ctx, args) => {
-    // This internal mutation exists only so that the generated API includes the
-    // email action; the actual sending is done via `email.sendOrgInvite`.
-    // No-op at runtime.
-    return;
   },
 });
 

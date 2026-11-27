@@ -27,7 +27,6 @@ import type * as crons from "../crons.js";
 import type * as deviceHandoffs from "../deviceHandoffs.js";
 import type * as deviceHandoffsDb from "../deviceHandoffsDb.js";
 import type * as e2e from "../e2e.js";
-import type * as email from "../email.js";
 import type * as http from "../http.js";
 import type * as lib_assistantEdits from "../lib/assistantEdits.js";
 import type * as lib_boardLayout from "../lib/boardLayout.js";
@@ -89,7 +88,6 @@ declare const fullApi: ApiFromModules<{
   deviceHandoffs: typeof deviceHandoffs;
   deviceHandoffsDb: typeof deviceHandoffsDb;
   e2e: typeof e2e;
-  email: typeof email;
   http: typeof http;
   "lib/assistantEdits": typeof lib_assistantEdits;
   "lib/boardLayout": typeof lib_boardLayout;
